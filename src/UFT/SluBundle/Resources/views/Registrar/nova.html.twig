@@ -1,0 +1,210 @@
+{% extends '::base.html.twig' %}
+
+{% block page_content -%}
+    {{ macro_uft.flash() }}
+    {{ macro_uft.new_form_horizontal(form,'Novo','registro_verificacao', {obrigatorio: 'obrigatorio'}) }}
+{% endblock %}
+
+{% block javascripts_inline %}
+    {{ macro_uft.mascara_telefone() }}
+    {{ macro_uft.mascara_cpf() }}
+    {{ macro_uft.date_picker() }}
+    <link href="{{ asset('bundles/slu/select2/select2-bootstrap.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('bundles/slu/select2/select2.css') }}" rel="stylesheet"/>
+    <script src="{{ asset('bundles/slu/select2/select2.min.js') }}"></script>
+    <script src="{{ asset('bundles/slu/select2/i18n/pt-BR.js') }}"></script>
+    <script type="text/javascript">
+        $('#nova_conta_ldap_Campus').hide();
+        $(document).delegate("li input[id^='nova_conta_ldap_telephoneNumber_']", "focus", function () {
+            $(this).inputmask("+55 (99) 9999-9999[9]").keyup(function () {
+                var valor = $(this).val();
+                if (valor[9] == '9') {
+                    $(this).inputmask("+55 (99) 99999-9999");
+                } else {
+                    $(this).inputmask("+55 (99) 9999-9999");
+                }
+            }).focusout(function () {
+                var valor = $(this).val();
+                if (valor.replace(/\D/g, '').length == '12') {
+                    $(this).inputmask("+55 (99) 9999-9999");
+                }
+            }).focusin(function () {
+                $(this).inputmask("+55 (99) 99999-9999");
+            });
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        $(function () { // declaro o início do jquery
+            $(document).ready(function () {
+                if ($("#nova_conta_ldap_Funcionario").val() == 1 || $("#nova_conta_ldap_Professor").val() == 1) {
+                    $("#nova_conta_ldap_uids").append(
+                            "<div class='radio'><label for='nova_conta_ldap_uids_5' class='required'><input id='nova_conta_ldap_uids_5' name='nova_conta_ldap[uids]' required='required' class='checkbox' value='' type='radio'>" +
+                            "<input id='nova_conta_ldap_uids_5_input' type='text' placeholder='Outro' name='nova_conta_ldap[uids]'>" +
+                            "</label></div>"
+                    );
+
+                    $(document).delegate("#nova_conta_ldap_uids_5_input", 'focus', function () {
+                        $("#nova_conta_ldap_uids_5").attr("checked", "checked")
+                    });
+                    $(document).delegate("#nova_conta_ldap_uids_5_input", 'blur', function () {
+                        var nomeUsuario = $(this).val().toLowerCase();
+                        $("#nova_conta_ldap_uids_5").val(nomeUsuario);
+                        $(this).val(nomeUsuario);
+                        $.ajax({
+                            type: "POST",
+                            data: {login: nomeUsuario},
+                            url: "{{ path('ajax_verifica_login') }}",
+                            success: function (data) {
+                                if (!$("#nova_conta_ldap_uids").attr('readonly')) {
+                                    $('#resultado_uids').html(data);
+                                    if (data == 'Login disponivel!') {
+                                        $('#resultado_uids').attr('style', 'color:green');
+                                        $('#btn_submit').removeAttr('disabled');
+                                        if (nomeUsuario == "" && $("#nova_conta_ldap_uids_5").is(":checked")) {
+                                            $('#nova_conta_ldap_mail_0').val("");
+                                        } else if ($("#nova_conta_ldap_uids_5").is(":checked")) {
+                                            $('#nova_conta_ldap_mail_0').val(nomeUsuario.concat('@uft.edu.br'));
+                                            $('#nova_conta_ldap_uid').val(nomeUsuario);
+                                        }
+                                    } else {
+                                        $('#resultado_uid').attr('style', 'color:red');
+                                        $('#btn_submit').attr('disabled', 'disabled');
+                                    }
+                                }
+                            }
+                        });
+                    });
+                    $("input[name='nova_conta_ldap[uids]']").on('click', function () {
+                        if ($("#nova_conta_ldap_Funcionario").val() == 1) {
+                            if ($("#nova_conta_ldap_uids_5").is(":checked")) {
+                                $("#nova_conta_ldap_uids_5_input").attr('require', 'require');
+                            } else {
+                                $("#nova_conta_ldap_uids_5_input").removeAttr('require');
+                                $('#btn_submit').removeAttr('disabled');
+                            }
+                        }
+                    });
+                }
+                $(document).delegate("input[name='nova_conta_ldap[uids]']", 'click', function () {
+                    var nomeUsuario = $(this).val().toLowerCase();
+                    if (nomeUsuario == "") {
+                        $('#nova_conta_ldap_mail_0').val("");
+                    } else {
+                        $('#nova_conta_ldap_mail_0').val(nomeUsuario.concat('@uft.edu.br'));
+                        $('#nova_conta_ldap_uid').val(nomeUsuario);
+                    }
+                });
+                $('form[name="nova_conta_ldap"]').submit(function () {
+                    $('#nova_conta_ldap_Professor').removeAttr('disabled');
+                    $('#nova_conta_ldap_Funcionario').removeAttr('disabled');
+                    $('#nova_conta_ldap_Aluno').removeAttr('disabled');
+                    $('#nova_conta_ldap_schacGender').removeAttr('disabled');
+                });
+            });
+        });// fim do jquery
+    </script>
+
+    <script type="text/javascript">
+        //INICIANDO MATRICULA
+        //        var $collectionHolderMatricula;
+        //        var $addMatricula = $('<a href="#" class="add_matriculas">Adicionar Matrícula</a>');
+        //        var $listaMatricula = $('<li></li>').append($addMatricula);
+        //        jQuery(document).ready(function () {
+        //            $collectionHolderMatricula = $('ul.matricula');
+        //            $collectionHolderMatricula.append($listaMatricula);
+        //            $collectionHolderMatricula.data('index', $collectionHolderMatricula.find(':input').length);
+        //            $addMatricula.on('click', function (e) {
+        //                e.preventDefault();
+        //                addMatriculaForm($collectionHolderMatricula, $listaMatricula);
+        //            });
+        //        });
+
+        //INICIANDO E-MAILS
+        var $collectionHolderEmail;
+        // var $addEmail = $('<a href="#" class="add_emails">Adicionar E-mail</a>');
+        // var $listaEmail = $('<li></li>').append($addEmail);
+        jQuery(document).ready(function () {
+            $collectionHolderEmail = $('ul.mail');
+//            $collectionHolderEmail.append($listaEmail);
+            $collectionHolderEmail.data('index', $collectionHolderEmail.find(':input').length);
+//            $addEmail.on('click', function (e) {
+//                e.preventDefault();
+//                addMatriculaForm($collectionHolderEmail, $listaEmail);
+//            });
+            $(window).load(function (e) {
+                e.preventDefault();
+//                addMatriculaForm($collectionHolderEmail, $listaEmail);
+                $('#nova_conta_ldap_mail_0').prop('readonly', true);
+            });
+        });
+
+        function addMatriculaForm($collectionHolder, $lista) {
+            var prototype = $collectionHolder.data('prototype');
+            var index = $collectionHolder.data('index');
+            var newForm = prototype.replace(/__name__/g, index);
+            $collectionHolder.data('index', index + 1);
+            var $newFormLi = $('<li class="col-md-12" > </li>').append(newForm);
+            if ($($newFormLi).children("input").attr("id") == "nova_conta_ldap_mail_0") {
+                $($newFormLi).children("input").removeClass('form-control');
+                $($newFormLi).children("input").addClass('col-md-11');
+                $($newFormLi).children("input").css("border", "1px solid #ccc");
+                $($newFormLi).children("input").css("padding", "6px 12px");
+                $($newFormLi).children("input").css("margin", "6px 0px");
+                $lista.before($newFormLi);
+            } else {
+//                $newFormLi.append('<a href="#" class="remove-tag" style="padding: 10px 10px 10px 10px"><i  class="glyphicon glyphicon-remove" style="top: 10px;"></i></a>');
+                $($newFormLi).children("input").removeClass('form-control');
+                $($newFormLi).children("input").addClass('col-md-11');
+                $($newFormLi).children("input").css("border", "1px solid #ccc");
+                $($newFormLi).children("input").css("padding", "6px 12px");
+                $($newFormLi).children("input").css("margin", "6px 0px");
+                $lista.before($newFormLi);
+                $('.remove-tag').click(function (e) {
+                    e.preventDefault();
+
+                    $(this).parent().remove();
+
+                    return false;
+                });
+            }
+        }
+
+    </script>
+
+    <script type="text/javascript">
+        // Verifica a 'força' da senha digitada...
+        $('#nova_conta_ldap_userPassword_first').keyup(function (e) {
+            var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
+            var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+            var enoughRegex = new RegExp("(?=.{8,}).*", "g");
+            if ($(this).val() == '') {
+                $('#resultado_userpassword').html('');
+                $('#btn_submit').removeAttr('disabled');
+            }
+            else if (false == enoughRegex.test($(this).val())) {
+                $('#resultado_userpassword').html('Senha muito Curta, tamanho mínimo 8 caracteres.');
+                $('#resultado_userpassword').css('color', 'red');
+                $('#btn_submit').attr('disabled', 'disabled');
+            } else if (strongRegex.test($(this).val())) {
+                $('#resultado_userpassword').className = 'ok';
+                $('#resultado_userpassword').html('Forte!');
+                $('#resultado_userpassword').css('color', 'lime');
+                $('#btn_submit').removeAttr('disabled');
+            } else if (mediumRegex.test($(this).val())) {
+                $('#resultado_userpassword').className = 'alert';
+                $('#resultado_userpassword').html('Mediana!');
+                $('#resultado_userpassword').css('color', '#b4d100');
+                $('#btn_submit').removeAttr('disabled');
+            } else {
+                $('#resultado_userpassword').className = 'error';
+                $('#resultado_userpassword').html('Fraca!');
+                $('#resultado_userpassword').css('color', 'red');
+                $('#btn_submit').removeAttr('disabled');
+            }
+            return true;
+        });
+    </script>
+    {#{{ macro_uft.add_colecao([{name:'telephonenumber',link:'Adicionar Telefone'}]) }}#}
+{% endblock %}

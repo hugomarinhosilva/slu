@@ -1,0 +1,150 @@
+{% extends '::base.html.twig' %}
+
+{% block page_content -%}
+    {{ macro_uft.flash() }}
+    {{ macro_uft.new_form_horizontal(form,'Novo','lista_usergrupo') }}
+{% endblock %}
+
+{% block javascripts_inline %}
+    {{ macro_uft.select2() }}
+    {#<link href="{{ asset('bundles/slu/tree/css/jquery.tree-multiselect.min.css') }}" rel="stylesheet"/>#}
+    {#<script src="{{ asset('bundles/slu/tree/js/jquery.tree-multiselect.js') }}"></script>#}
+    <script>
+        {#jQuery(function() {#}
+            {#$("#{{  form.vars.id }}_roles").treeMultiselect({ enableSelectAll: true, sortable: true });#}
+        {#});#}
+
+        $('#{{  form.vars.id }}_filtros').select2({
+            language: 'pt-BR',
+            ajax: {
+                url: '{{ path("ajax_busca_filtro_grupo") }}',
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        q: params.term, // search term
+                        page: params.page
+                    };
+                },
+                processResults: function (data, params) {
+                    console.log(data);
+                    params.page = 1;
+                    return {
+                        results: data,
+                        pagination: {
+                            more: (params.page * 30) < data.total_count
+                        }
+                    };
+                },
+                cache: true
+            },
+            escapeMarkup: function (markup) {
+                return markup;
+            }, // let our custom formatter work
+            minimumInputLength: 5
+        });
+        var studentSelect = $('#slu_rest_form_chefes');
+        var memberSelect = $('#slu_rest_form_users');
+
+        studentSelect.select2({
+            language: 'pt-BR',
+            ajax: {
+                url: '{{ path("ajax_usuario_autocomplete") }}',
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        q: params.term, // search term
+                        page: params.page
+                    };
+                },
+                processResults: function (data, params) {
+                    console.log(data);
+                    params.page = 1;
+                    return {
+                        results: data,
+                        pagination: {
+                            more: (params.page * 20) < data.total_count
+                        }
+                    };
+                },
+                cache: true
+            },
+            escapeMarkup: function (markup) {
+                return markup;
+            }, // let our custom formatter work
+            minimumInputLength: 3
+        });
+
+        memberSelect.select2({
+            language: 'pt-BR',
+            ajax: {
+                url: '{{ path("ajax_usuario_autocomplete") }}',
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        q: params.term, // search term
+                        page: params.page
+                    };
+                },
+                processResults: function (data, params) {
+                    console.log(data);
+                    params.page = 1;
+                    return {
+                        results: data,
+                        pagination: {
+                            more: (params.page * 20) < data.total_count
+                        }
+                    };
+                },
+                cache: true
+            },
+            escapeMarkup: function (markup) {
+                return markup;
+            }, // let our custom formatter work
+            minimumInputLength: 3
+        });
+        // var $unidade = $('#').parent().find('input');
+        //
+        // $('#example').on('select2:select', function (e) {
+        //     console.log('select event');
+        // });
+        // $(document).on('keyup keydown', 'input.select2-search__field', function(e) {
+        //     var select =  $(this).parent().parent().parent().parent().parent().parent().find('select').first()
+        //     console.log(select.attr('id'))
+        //
+        //     var $form = $(this).closest('form');
+        //     // Simulate form data, but only include the selected sport value.
+        //     var data = {};
+        //     console.log( select.val());
+        //     data[select.attr('name')] = $unidade.val();
+        //     // Submit data via AJAX to the form's action path.
+        //     $.ajax({
+        //         url : $form.attr('action'),
+        //         type: $form.attr('method'),
+        //         data : data,
+        //         complete: function(html) {
+        //             // Replace current position field ...sonata-ba-field-container-s61fc3965d9a98_area
+        //             $("#"+select.attr('id')).select2('destroy');
+        //
+        //             $("#"+select.attr('id')).replaceWith(
+        //                 // ... with the returned one from the AJAX response.
+        //                 $(html.responseText).find("#"+select.attr('id'))
+        //             );
+        //
+        //             $("#"+select.attr('id')).select2();
+        //             $("#"+select.attr('id')).select2("open");
+        //             $("#"+select.attr('id')).val("CA").trigger("change");                // Position field now displays the appropriate positions.
+        //
+        //         }
+        //     });
+        //
+        // });
+
+            // When sport gets selected ...
+
+
+    </script>
+
+{% endblock %}

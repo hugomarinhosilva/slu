@@ -1,0 +1,16 @@
+{% trans_default_domain 'FOSUserBundle' %}
+<h1>Perfil</h1>
+<div class="well">
+    <div class="fos_user_user_show">
+        <p>{{ 'Usuário'|trans }}: {{ user.username }}</p>
+        <p>{{ 'E-mail'|trans }}: {{ user.email }}</p>
+    </div>
+    <div class="row">
+        <a href="{{ path('fos_user_profile_edit') }}" class="btn btn-default btn-flat"> Alterar Dados    </a>
+        <a href="{{ path('uft_change_password') }}" class="btn btn-default btn-flat"> Alterar Senha    </a>
+        <a href="{{ path('homepage') }}"  class="btn btn-default btn-flat"> Pagina Inicial    </a>
+        {%   if isContaDepartamento is defined and isContaDepartamento == 1 %}
+        <a href="{{ path('mostra_historico_departamento',{'username': user.username}) }}"  class="btn btn-default btn-flat">Histórico</a>
+        {%  endif %}
+    </div>
+</div>

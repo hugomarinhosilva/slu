@@ -1,0 +1,36 @@
+{
+  "name": "uft/user-bundle",
+  "type": "symfony-bundle",
+  "description": "Symfony UFTUserBundle",
+  "keywords": ["User management"],
+  "homepage": "http://uft.edu.br",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "desenvolvimento UFT",
+      "email": "desenvolvimento@uft.edu.br"
+    }
+  ],
+  "require": {
+
+    "friendsofsymfony/user-bundle": "~2.0@dev",
+    "fr3d/ldap-bundle": "2.0.*@dev"
+  },
+  "require-dev": {
+
+  },
+  "suggest": {
+    "willdurand/propel-typehintable-behavior": "Needed when using the propel implementation"
+  },
+  "autoload": {
+    "psr-4": { "UFT\\UserBundle\\": "" }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  },
+  "support": {
+    "docs": "https://symfony.com/doc/master/bundles/FOSUserBundle/index.html"
+  }
+}

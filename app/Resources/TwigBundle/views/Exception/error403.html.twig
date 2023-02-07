@@ -1,0 +1,27 @@
+{# app/Resources/TwigBundle/views/Exception/error404.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block page_content %}
+
+
+
+    <div class="row" align="center">
+    <div class="col-md-6 col-centered">
+    <div class="box box-primary" style="padding:  12em 3em 12em 3em">
+    <p style="font-size: 600%">Eita!</p>
+    <h3>Bem, isto é constrangedor...</h3>
+    <h4>Aparentemente você está tentando acessar algo que não deveria. Por favor, verifique suas permissões com o administrador do sistema.</h4>
+    <br />
+    {# example security usage, see below #}
+    {#{% if is_granted('IS_AUTHENTICATED_FULLY') %}#}
+        {# ... #}
+    {#{% endif %}#}
+
+    {#<p>#}
+        {#The requested page couldn't be located. Checkout for any URL#}
+        {#misspelling or <a href="{{ path('homepage') }}">return to the homepage</a>.#}
+    {#</p>#}
+    </div>
+    </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,245 @@
+{% extends '::base.html.twig' %}
+
+{% block page_content -%}
+{{ macro_uft.flash() }}
+<div class="row">
+    <div class="col-md-12 col-centered">
+        <div class="box box-primary">
+            <div class="box-header">
+                <h3 class="box-title">Conta: {{ entity.uid }}
+                    {% if 'Desativados' in entity.dn %}
+                        <span class="label label-danger" style="margin-left: 1em;">Inativo</span>
+                    {% else %}
+                        <span class="label label-success" style="margin-left: 1em;">Ativo</span>
+                    {% endif %}
+                    {% if suspenso %}
+                        <span class="label label-danger" style="margin-left: 1em;">Google Suspenso</span>
+                    {% endif %}
+                </h3>
+            </div>
+            {% if is_granted('ROLE_DESENVOLVEDOR') %}
+            <a href="#" id="visao"  class="btn btn-soundcloud"   style="margin-left: 0.5em;"> Dê-me a visão além do alcance </a>
+            <div id="dev" class="row" style="display: none">
+                <pre>{{ entity.dump() }}</pre>
+            </div>
+
+
+            {% endif %}
+            <div class="box-body">
+                <legend class="col-md-12 control-label">Identificação</legend>
+                <div class="row">
+                    <label class="col-md-12 control-label required" style="padding-top: 1em;"></label>
+                    <div class="col-md-12">
+                    </div>
+                </div>
+                <div class="row" style="padding-left: 1em">
+                    <dl class="dl-horizontal">
+                        <dt>Nome:</dt>
+                        {% if entity.cn  is iterable %}
+                            {% for cn in entity.cn %}
+                                <dd>{{ cn }}</dd>
+                            {% endfor %}
+                        {% else %}
+                            <dd>{{ entity.cn }}</dd>
+                        {% endif %}
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Login:</dt>
+                        <dd>{{ entity.uid }}</dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>CPF:</dt>
+                        <dd>{{ entity.brPersonCPF }}</dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Data de Nascimento:</dt>
+                        <dd>
+                            {# refatorar ---  ---- --- gambiarra para formatação da data para exibição#}
+                            {% if(entity.schacDateOfBirth is not null) %}
+                                {{ entity.schacDateOfBirth|split("",2)[0] }}/{{ entity.schacDateOfBirth|split("",2)[1] }}/{{ entity.schacDateOfBirth|split("",4)[1] }}
+                            {% endif %}
+                        </dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Vinculo:</dt>
+                        {% if entity.aluno  >0 %}
+                            <dd> Aluno</dd>
+                        {% endif %}
+                        {% if entity.professor >0 %}
+                            <dd> Professor</dd>
+                        {% endif %}
+                        {% if entity.funcionario > 0 %}
+                            {% if entity.funcionario == 4 %}
+                                <dd>Estagiário</dd>
+                            {% else %}
+                                <dd>Técnico</dd>
+                            {% endif %}
+                        {% endif %}
+                    </dl>
+
+                    <dl class="dl-horizontal">
+                        <dt>Matricula:</dt>
+                        {% if entity.Matricula  is iterable %}
+                        {% for Matricula in entity.Matricula %}
+                            <dd>{{ Matricula }}</dd>
+                        {% endfor %}
+                        {% else %}
+                        <dd>{{ entity.Matricula }}</dd>
+                    {% endif %}</div>
+                </dl>
+                {% if is_granted("ROLE_ADMIN") %}
+                    <dl class="dl-horizontal">
+                        <dt>Tipo de conta:</dt>
+                        <dd>{{ entity.teste ? 'Teste':'Normal' }}</dd>
+                    </dl>
+                {% endif %}
+
+                <legend class="col-md-12">Contato</legend>
+
+                <div class="row" style="padding-left: 1em">
+                    <dl class="dl-horizontal">
+                        <dt>E-mail:</dt>
+                        {% if entity.mail  is iterable %}
+                            {% for mail in entity.mail %}
+                                <dd>{{ mail }}</dd>
+                            {% endfor %}
+                        {% else %}
+                            <dd>{{ entity.mail }}</dd>
+                        {% endif %}
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>E-mail Secundário</dt>
+                            <dd>{{ entity.postalAddress }}</dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Telefone:</dt>
+                        {% if entity.telephoneNumber  is iterable %}
+                            {% for telephoneNumber in entity.telephoneNumber %}
+                                <dd>{{ telephoneNumber }}</dd>
+                            {% endfor %}
+                        {% else %}
+                            <dd>{{ entity.telephoneNumber }}</dd>
+                        {% endif %}
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-footer clearfix">
+            <a href="javascript: history.go(-1)" class="btn btn-primary pull-left btn-flat"><i class="fa fa-arrow-left"></i>
+                Voltar</a>
+
+            {#{{ dump( entity.mail|length ) }}#}
+            {% if 'Desativados' in entity.dn %}
+                {% if is_granted("ROLE_SLU_USUARIO_SITUACAO") %}
+                    <a href="{{ path('ativar_pessoa', { 'uid': entity.uid }) }}"
+                       class="btn btn-success pull-left btn-flat"
+                       style="margin-left: 0.5em;"><i class="fa fa-check"></i> Ativar</a>
+                {% endif %}
+            {% else %}
+                {% if is_granted("ROLE_SLU_USUARIO_EDITAR_BASICO") %}
+
+                    {# ################################################### #}
+                    {# Verifica se a entidade tem e-mail externo #}
+                    {# Primeiro e definido como falso, mas se tiver pelos 1 e-mail externo, entao e definido como true #}
+                    {% set temEmailExterno = entity.postalAddress != null %}
+                    {# ################################################### #}
+
+                    {% if (temEmailExterno and is_granted("ROLE_SUPER_ADMINISTRADOR_SLU")) or app.user.username == 'jefferson.victor' %}
+                            <a class="btn btn-success pull-left btn-flat"
+                               href="{{ path('edita_pessoa_ldap', { 'uid': entity.uid }) }}"
+                               style="margin-left: 0.5em;"><i class="fa fa-pencil-square-o"></i> Alterar</a>
+                                <a class="btn btn-success pull-left btn-flat"
+                           href="{{ path('pre_insere_email_externo', { 'uid': entity.uid }) }}"
+                           style="margin-left: 0.5em;"><i class="fa fa-pencil-square-o"></i> {% if temEmailExterno %} Alterar {% else %} Inserir {% endif %}E-mail Externo</a>
+                   {% elseif temEmailExterno and recadastrado %}
+                        <a class="btn btn-success pull-left btn-flat"
+                           href="{{ path('edita_pessoa_ldap', { 'uid': entity.uid }) }}"
+                           style="margin-left: 0.5em;"><i class="fa fa-pencil-square-o"></i> Alterar</a>
+                    {% else %}
+                        <a class="btn btn-success pull-left btn-flat"
+                           href="{{ path('pre_insere_email_externo', { 'uid': entity.uid }) }}"
+                           style="margin-left: 0.5em;"><i class="fa fa-pencil-square-o"></i> {% if temEmailExterno %} Alterar {% else %} Inserir {% endif %}E-mail Externo</a>
+                    {% endif %}
+
+                {% endif %}
+
+
+                {% if is_granted("ROLE_SLU_USUARIO_SITUACAO") and recadastrado %}
+                    <a href="{{ path('suspender_pessoa', { 'uid': entity.uid }) }}"
+                       class="btn btn-warning pull-left btn-flat"
+                       style="margin-left: 0.5em;"><i class="fa fa-power-off"></i> Suspender</a>
+                {% endif %}
+            {% endif %}
+            {% if is_granted("ROLE_SLU_USUARIO_SINCRONIZAR")  and recadastrado %}
+                <a href="{{ path('sincronizar_pessoa', { 'uid': entity.uid }) }}"
+                   class="btn btn-info pull-left btn-flat"
+                   style="margin-left: 0.5em;"><i class="fa fa-refresh"></i> Sincronizar</a>
+            {% endif %}
+            {% if is_granted("ROLE_DESENVOLVEDOR") %}
+                <a href="{{ macro_uft.status_deletar(entity) }}" class="btn btn-danger pull-left btn-flat" onclick="return confirm('Tem certeza que deseja remover a conta e o email associado a ela?')"
+                   style="margin-left: 0.5em;"><i class="fa fa-times"></i> Excluir</a>
+            {% endif %}
+            {% if is_granted("ROLE_DESENVOLVEDOR") and not is_granted("ROLE_PREVIOUS_ADMIN") %}
+                <a href="{{ path('homepage') }}?_switch_user={{ entity.uid }}"
+                   class="btn btn-ditto pull-left btn-flat"
+                   style="margin-left: 0.5em;"> <i class="glyphicon glyphicon-transfer"></i> Transforme</a>
+            {% endif %}
+            {% if is_granted("ROLE_DESENVOLVEDOR") and not is_granted("ROLE_PREVIOUS_ADMIN") %}
+                   <a href="{{ path('assumir_usuario', { 'uid': entity.uid }) }}"
+                   class="btn btn-chapeu-mario pull-left btn-flat"
+                   style="margin-left: 0.5em;">
+
+                   <i class="glyphicon glyphicon-retweet"></i> {% if flag == false %}Assumir {% else %} Retornar {% endif %}</a>
+            {% endif %}
+
+                {% if is_granted("ROLE_SLU_USUARIO_EDITAR_BASICO")  %}
+                    <form action="{{ path('senha_padrao') }}" method="post">
+                        <input type="hidden" name="username" id="username" value="{{  entity.uid }}" />
+                           <input type="submit" class="btn btn-warning pull-left btn-flat" value="Resetar Conta"
+                              style="margin-left: 0.5em;">
+                    </form>
+                {% endif %}
+                {% if is_granted("ROLE_SUPER_ADMINISTRADOR_SLU") and (entity.cpf is empty or entity.cpf == 0) and (entity.matricula is empty or entity.matricula[0] == 0)  %}
+                    <a href="{{path('departamentalizar_usuario',{ 'uid': entity.uid }) }}" class="btn btn-default pull-left btn-flat"
+                    onclick="return confirm('Tem certeza que deseja modificar a conta para departamental?')"
+                   style="margin-left: 0.5em;"><i class="fa"></i> Departamental</a>
+                {% endif %}
+                {% if is_granted("ROLE_SUPER_ADMINISTRADOR_SLU") and emailCriado == false %}
+                    <a href="{{ path('criar_email_pessoal_manual', { 'username': entity.uid }) }}" class="btn btn-default pull-left btn-flat"
+                       style="margin-left: 0.5em;"><i class="fa fa-refresh"></i> Ativar E-mail</a>
+                {% endif %}
+                {% if is_granted("ROLE_SLU_USUARIO_SINCRONIZAR") and recadastrado %}
+                    <a href="{{ path('sip_sincronizar_pessoa', { 'uid': entity.uid }) }}"
+                        class="btn btn-default pull-left btn-flat"
+                        style="margin-left: 0.5em;"><i class="fa fa-paper-plane"></i> Exportar ao SEI</a>
+                    {% if suspenso %}
+                    <a href="{{ path('reativar_google', { 'uid': entity.uid }) }}"
+                        class="btn btn-success pull-left btn-flat"
+                        style="margin-left: 0.5em;"><i class="fa fa-sync"></i> Reativar E-mail</a>
+                    {% endif %}
+                {% endif %}
+            </div>
+            {#<a href="{{ path('conta') }}">#}
+        </div>
+        {#<a href="{{ path('conta') }}">#}
+        {#Back to the list#}
+        {#</a>#}
+        {#</li>#}
+        {#<li>#}
+        {#<a href="{{ path('conta_edit', { 'id': entity.id }) }}">#}
+        {#Edit#}
+        {#</a>#}
+        {#</li>#}
+        {#<li>{{ form(delete_form) }}</li>#}
+        {#</ul>#}
+        {% endblock %}
+{% block javascripts_inline %}
+        <script>
+            $(document).ready(function () {
+                $('#visao').on('click',function () {
+                    $( "#dev" ).toggle(  );
+                });
+            });
+        </script>
+    {% endblock %}

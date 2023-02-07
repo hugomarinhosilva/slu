@@ -1,0 +1,12 @@
+{% extends "UserBundle:Security:telaPadraoLogin.html.twig" %}
+
+{% block login_content %}
+    {% trans_default_domain 'FOSUserBundle' %}
+            <p class="login-box-action">E-mail enviado</p>
+        <div class="login-box-content">
+            <p>Enviamos um e-mail para <strong>{{ email }}</strong> com as instruções e o link para você recuperar a sua conta.</p>
+            <p>Caso você não receba o e-mail em alguns minutos verifique sua caixa de spam ou envie-nos seu e-mail novamente.</p>
+            <br/>
+            <a href="{{ path('fos_user_security_login') }}" class="btn btn-primary btn-block btn-flat">&larr; Voltar a tela de Login</a>
+        </div>
+{% endblock login_content %}

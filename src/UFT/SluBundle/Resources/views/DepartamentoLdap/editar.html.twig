@@ -1,0 +1,142 @@
+{% extends '::base.html.twig' %}
+{% block page_content -%}
+    {{ macro_uft.flash() }}
+    {{ macro_uft.new_form_horizontal(edit_form,'Editar','lista_departamentos',{obrigatorio: 'obrigatorio'}) }}
+    {#{{ macro_uft.new_form_horizontal(edit_form) }}#}
+{% endblock %}
+
+{% block javascripts_inline %}
+    <link href="{{ asset('bundles/slu/select2/select2-bootstrap.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('bundles/slu/select2/select2.css') }}" rel="stylesheet"/>
+    <script src="{{ asset('bundles/avanzuadmintheme/vendor/adminlte/plugins/select2/select2.full.min.js') }}"></script>
+    <script src="{{ asset('bundles/slu/select2/i18n/pt-BR.js') }}"></script>
+    <script>
+        $('#departamento_ldap_Campus').select2();
+        $('#departamento_ldap_manager').select2({
+            language: 'pt-BR',
+            ajax: {
+                url: '{{ path("ajax_busca_membros") }}',
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        q: params.term, // search term
+                        page: params.page
+                    };
+                },
+                processResults: function (data, params) {
+                    params.page = 1;
+                    return {
+                        results: data,
+                        pagination: {
+                            more: (params.page * 30) < data.total_count
+                        }
+                    };
+                },
+                cache: true
+            },
+            escapeMarkup: function (markup) {
+                return markup;
+            }, // let our custom formatter work
+            minimumInputLength: 5
+            {#,#}
+            {#initSelection: function (element, callback) {#}
+
+                {#var dados = [];#}
+                {#console.log(element.data);#}
+
+                {#$(element.val()).each(function () {#}
+                    {#var $uid = this;#}
+                    {#$.ajax({#}
+                        {#url: "{{ path('ajax_busca_pessoa_uid') }}",#}
+                        {#dataType: "json",#}
+                        {#data: {uid: $uid},#}
+                        {#method: 'post',#}
+                    {#}).done(function (data) {#}
+                        {#if (data.gecos == null) {#}
+                            {#dados.push({id: data.uid, text: data.cn[data.cn.length - 1].trim() + ' - ' + data.uid});#}
+                        {#} else {#}
+                            {#dados.push({id: data.uid, text: data.gecos.trim() + ' - ' + data.uid});#}
+                        {#}#}
+                        {#callback(dados);#}
+
+                    {#});#}
+
+                {#});#}
+
+            {#}#}
+        }).on("select2:select", function(e) {
+            $('#departamento_ldap_postalAddress').val(e.params.data.id.concat('@uft.edu.br'));
+        }).on("select2:unselect", function(e) {
+            if($('#departamento_ldap_postalAddress').val().indexOf(e.params.data.id) !== false){
+                $('#departamento_ldap_postalAddress').val('');
+                var manager = $('#departamento_ldap_manager').val();
+                if(manager && manager.length>0){
+                    $('#departamento_ldap_postalAddress').val(manager[manager.length - 1].concat('@uft.edu.br'));
+                }
+            }
+        });
+    </script>
+    <script>// Verifica a 'força' da senha digitada...
+        $('#departamento_ldap_userPassword_first').keyup(function (e) {
+            var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
+            var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+            var enoughRegex = new RegExp("(?=.{8,}).*", "g");
+            if ($(this).val() == '') {
+                $('#resultado_userpassword').html('');
+                $('#btn_submit').removeAttr('disabled');
+            }
+            else if (false == enoughRegex.test($(this).val())) {
+                $('#resultado_userpassword').html('Senha muito Curta, tamanho mínimo 8 caracteres.');
+                $('#resultado_userpassword').css('color','red');
+                $('#btn_submit').attr('disabled', 'disabled');
+            } else if (strongRegex.test($(this).val())) {
+                $('#resultado_userpassword').className = 'ok';
+                $('#resultado_userpassword').html('Forte!');
+                $('#resultado_userpassword').css('color','lime');
+                $('#btn_submit').removeAttr('disabled');
+            } else if (mediumRegex.test($(this).val())) {
+                $('#resultado_userpassword').className = 'alert';
+                $('#resultado_userpassword').html('Mediana!');
+                $('#resultado_userpassword').css('color','#b4d100');
+                $('#btn_submit').removeAttr('disabled');
+            } else {
+                $('#resultado_userpassword').className = 'error';
+                $('#resultado_userpassword').html('Fraca!');
+                $('#resultado_userpassword').css('color','red');
+                $('#btn_submit').removeAttr('disabled');
+            }
+            return true;
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () { // declaro o início do jquery
+            $("#departamento_ldap_uid").on('blur', function () {
+                var nomeUsuario = $(this).val().toLowerCase();
+                $(this).val(nomeUsuario);
+                $.ajax({
+                    type: "POST",
+                    data: {login: nomeUsuario, uid: '{{ entity.uid }}'},
+                    url: "{{ path('ajax_verifica_login_departamento') }}",
+                    success: function (data) {
+                        if (!$("#departamento_ldap_uid").attr('readonly')) {
+                            $('#resultado_uid').html(data);
+                            if (data == 'Login disponivel!') {
+                                $('#resultado_uid').attr('style', 'color:green');
+                                $('#btn_submit').removeAttr('disabled');
+                            } else {
+                                $('#resultado_uid').attr('style', 'color:red');
+                                $('#btn_submit').attr('disabled', 'disabled');
+                            }
+                        }
+                        if (nomeUsuario == "") {
+                            $('#departamento_ldap_mail_0').val("");
+                        } else {
+                            $('#departamento_ldap_mail_0').val(nomeUsuario.concat('@uft.edu.br'));
+                        }
+                    }
+                });
+            });
+        });// fim do jquery
+    </script>
+{% endblock %}

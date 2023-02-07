@@ -1,0 +1,93 @@
+{% extends '::base.html.twig' %}
+
+{% block page_content -%}
+    {{ macro_uft.flash() }}
+    {{ macro_uft.new_form_horizontal(edit_form,"Editar","lista_grupos", {obrigatorio: "obrigatorio"}) }}
+
+{% endblock %}
+{% block javascripts_inline %}
+    <link href="{{ asset('bundles/slu/select2/select2-bootstrap.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('bundles/slu/select2/select2.css') }}" rel="stylesheet"/>
+    <script src="{{ asset('bundles/avanzuadmintheme/vendor/adminlte/plugins/select2/select2.full.min.js') }}"></script>
+    <script src="{{ asset('bundles/slu/select2/i18n/pt-BR.js') }}"></script>
+    <script>
+        $('#grupo_ldap_member').select2({
+            language: 'pt-BR',
+            ajax: {
+                url: '{{ path("ajax_busca_membros") }}',
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        q: params.term, // search term
+                        page: params.page
+                    };
+                },
+                processResults: function (data, params) {
+                    params.page = 1;
+
+                    return {
+                        results: data,
+                        pagination: {
+                            more: (params.page * 30) < data.total_count
+                        }
+                    };
+                },
+                cache: true
+            },
+            escapeMarkup: function (markup) {
+                return markup;
+            }, // let our custom formatter work
+            minimumInputLength: 5,
+            initSelection: function (element, callback) {
+
+                var dados = [];
+                $(element.val()).each(function () {
+                    var $uid = this;
+                    $.ajax({
+                        url: "{{ path('ajax_busca_pessoa_uid') }}",
+                        dataType: "json",
+                        data: {uid: $uid},
+                        method: 'post',
+                    }).done(function (data) {
+                        if (data.gecos == null) {
+                            dados.push({id: data.uid, text: data.cn[data.cn.length - 1].trim() + ' - ' + data.uid});
+                        } else {
+                            dados.push({id: data.uid, text: data.gecos.trim() + ' - ' + data.uid});
+                        }
+                        callback(dados);
+
+                    });
+
+                });
+                console.log(dados);
+
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () { // declaro o início do jquery
+            $("#grupo_ldap_nomeGrupo").on('blur', function () {
+                var nomeGrupo = $(this).val();
+                $.ajax({
+                    type: "POST",
+                    data: {nomeGrupo: nomeGrupo, cn: '{{ entity.cn[0] }}' },
+                    url: "{{ path('ajax_verifica_nome_grupo') }}",
+                    success: function (data) {
+                        console.log(nomeGrupo);
+                        $('#resultado_nomegrupo').html(data);
+                        if (data == 'Este nome está disponivel!') { //caso sucesso
+                            $('#resultado_nomegrupo').attr('style','color:green');
+                            $('#btn_submit').removeAttr('disabled');
+                        } else { //caso de erro
+                            $('#resultado_nomegrupo').attr('style','color:red');
+                            $('#btn_submit').attr('disabled', 'disabled');
+                        }
+                    }
+                });
+            });
+        });// fim do jquery
+
+    </script>
+{% endblock %}

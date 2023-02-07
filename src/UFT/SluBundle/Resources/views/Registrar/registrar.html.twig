@@ -1,0 +1,62 @@
+{% extends "::base.html.twig" %}
+
+{% block page_content %}
+    {{ macro_uft.flash() }}
+    {{ macro_uft.new_form_horizontal(form,titulo,rota_cancelar) }}
+{% endblock page_content %}
+{#{% block page_title %} Primeiro Acesso {% endblock %}#}
+{#{% block page_subtitle %} Nova Conta {% endblock %}#}
+
+{% block javascripts_inline %}
+    <link rel="stylesheet" href="{{ asset('bundles/avanzuadmintheme/vendor/jquery-ui/themes/base/theme.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('bundles/avanzuadmintheme/vendor/jquery-ui/themes/base/core.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('bundles/avanzuadmintheme/vendor/jquery-ui/themes/base/datepicker.css') }}"/>
+    <script>
+        $('body').attr('class','{{ admin_skin|default('skin-blue') }} '+' sidebar-collapse sidebar-open');
+        $('#pre_registro_vinculo').parent().parent().parent().prepend('<div class="form-group"><label class="col-sm-offset-2  control-label" style="text-transform: uppercase"> <span style="color: red">*</span> Os nomes não devem conter acentuação.</label></div>');
+        $(".datepicker").inputmask("99/99/9999", {placeholder: " ", clearMaskOnLostFocus: true});
+        $(".cpf").inputmask("999.999.999-99", {placeholder: " ", clearMaskOnLostFocus: true});
+        $('.datepicker').datepicker({
+            dateFormat: 'dd/mm/yy',
+            dayNames: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
+            dayNamesMin: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S', 'D'],
+            dayNamesShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'],
+            monthNames: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+            monthNamesShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+            nextText: 'Próximo',
+            prevText: 'Anterior'
+        });
+
+        $(document).ready(function () {
+            $("input[id^='pre_registro_vinculo_']").change(function () {
+                if ($("input[id='pre_registro_vinculo_0']").is(":checked")) {
+                    $("#pre_registro_matricula").attr("maxlength", 10);
+                    $("#pre_registro_matricula").attr("minlength", 10);
+                }
+                if ($("input[id='pre_registro_vinculo_1']").is(":checked")) {
+                    $("#pre_registro_matricula").attr("maxlength", 7);
+                    $("#pre_registro_matricula").attr("minlength", 7);
+                    var sb = $("#pre_registro_matricula").val().substring(0,7);
+                    $("#pre_registro_matricula").val(sb);
+
+                }
+            });
+        });
+
+
+        // necessário melhor estudo de como fazer essa funcionalidade de limite de caracteres das matriculas ora aluno ora servidor
+        $(function () { // declaro o início do jquery
+            $("input[id='slu_bundle_servidor_type_vinculo_0']").on('click', function () {
+                document.getElementById('slu_bundle_servidor_type_matricula').setAttribute("maxlength", 10);
+                document.getElementById('slu_bundle_servidor_type_matricula').setAttribute("minlength", 10);
+            });
+
+            $("input[id='slu_bundle_servidor_type_vinculo_1']").on('click', function () {
+                document.getElementById('slu_bundle_servidor_type_matricula').setAttribute("maxlength", 7);
+                document.getElementById('slu_bundle_servidor_type_matricula').setAttribute("minlength", 7);
+            });
+
+
+        });
+    </script>
+{% endblock %}

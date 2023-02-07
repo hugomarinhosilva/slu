@@ -1,0 +1,86 @@
+{% extends "::base.html.twig" %}
+
+{% block page_content %}
+
+    <div class="box box-primary">
+
+        <div class="page-header">
+            <a class="btn btn-default pull-right hidden-print" role="button"
+               href="{{ path('baixar_relatorio',{'query':query}) }}">Download</a>
+            <a class="btn btn-default pull-right hidden-print" role="button"
+               href="javascript:window.history.back();">Voltar</a>
+            <h1>Lista #{{ filtro.nomeUnidade }}:
+                <small>{{ "%s"|format(filtro.codEstruturado) }}</small>
+            </h1>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <colgroup>
+                    <col class="col-md">
+                    <col class="col-md">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th class="text-center">NOME</th>
+                    <th class="text-center">Vínculo</th>
+                    <th class="text-center">E-mail</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for key4, value4 in data %}
+                    {# CANDIDATOS #}
+                    <tr>
+                        <td class="text-center">{{ value4.nome }}</td>
+                        <td class="text-center">{{ value4.descricaoSituacao }}</td>
+                        <td class="text-center"> {% if value4.email2 is not null and value4.email2 is not empty %}{{ value4.email2 }}{% else %}{{ value4.email }}{% endif %}</td>
+                        {#<td class="text-center">{{ value4.NU_CPF }}</td>#}
+                        {#<td>{{ value4.NO_INSCRITO }}#}
+                        {#<p class="help-block hidden-xs hidden-sm">{{ value4.EMAIL }}</p></td>#}
+
+                        {# FORMATAR NÚMERO DE TELEFONE #}
+                        {#{% set fone01 = value4.TELEFONE_01  %}#}
+                        {#{% if value4.TELEFONE_01 > 9999999999 and value4.TELEFONE_01 != "" %}#}
+                        {#{% set firstChain = fone01|slice(0, 2) %}#}
+                        {#{% set secondChain = fone01|slice(2, 5) %}#}
+                        {#{% set thirdChain = fone01|slice(6, 4) %}#}
+                        {#{% set fone01 = '(' ~ firstChain ~ ') ' ~ secondChain ~ '-' ~ thirdChain %}#}
+                        {#{% elseif value4.TELEFONE_01 != "" %}#}
+                        {#{% set firstChain = fone01|slice(0, 2) %}#}
+                        {#{% set secondChain = fone01|slice(2, 4) %}#}
+                        {#{% set thirdChain = fone01|slice(5, 4) %}#}
+                        {#{% set fone01 = '(' ~ firstChain ~ ') ' ~ secondChain ~ '-' ~ thirdChain %}#}
+                        {#{% endif %}#}
+                        {#{% set fone02 = value4.TELEFONE_02  %}#}
+                        {#{% if value4.TELEFONE_02 > 9999999999 and value4.TELEFONE_02 != "" %}#}
+                        {#{% set firstChain = fone02|slice(0, 2) %}#}
+                        {#{% set secondChain = fone02|slice(2, 5) %}#}
+                        {#{% set thirdChain = fone02|slice(6, 4) %}#}
+                        {#{% set fone02 = '(' ~ firstChain ~ ') ' ~ secondChain ~ '-' ~ thirdChain %}#}
+                        {#{% elseif value4.TELEFONE_02 != "" %}#}
+                        {#{% set firstChain = fone02|slice(0, 2) %}#}
+                        {#{% set secondChain = fone02|slice(2, 4) %}#}
+                        {#{% set thirdChain = fone02|slice(5, 4) %}#}
+                        {#{% set fone02 = '(' ~ firstChain ~ ') ' ~ secondChain ~ '-' ~ thirdChain %}#}
+                        {#{% endif %}#}
+
+                        {#{% if value4.TELEFONE_01 != "" and value4.TELEFONE_02 != "" %}#}
+                        {#<td class="text-center">{{ fone01 }} / {{ fone02 }}</td>#}
+                        {#{% else %}#}
+                        {#<td class="text-center">{{ fone01 }}{{ fone02 }}</td>#}
+                        {#{% endif %}#}
+                        {#<td class="text-center">{{ value4.ESTADO }}</td>#}
+                        {#<td class="text-center">{{ value4.NU_NOTA_INSCRITO|number_format(2,'.') }}</td>#}
+                        {#<td class="text-center">{{ value4.CHAMADA_ATUAL }}</td>#}
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div><!-- .table-responsive -->
+        <div class="text-center hidden-print" style="margin-bottom: 20px">
+            <a class="btn btn-default" role="button" href="{{ path('novo_relatorio') }}">
+                Voltar
+            </a>
+        </div>
+    </div>
+
+{% endblock %}

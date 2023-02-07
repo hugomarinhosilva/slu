@@ -1,0 +1,6 @@
+_main:
+    resource: routing.yml
+
+lightsaml_sp.login_check:
+    path: /saml/login_check
+    schemes:  [https]

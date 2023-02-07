@@ -1,0 +1,47 @@
+{% extends 'AvanzuAdminThemeBundle:layout:base-layout.html.twig' %}
+{% import "::macro.html.twig" as macro_uft %}
+{% block page_content %}
+{% endblock %}
+
+
+  {% block title %}SLU{% endblock %}
+
+  {% block avanzu_logo %}
+      <a class="logo" href="{{ path('homepage') }}">
+          <img src="{{ asset('bundles/slu/image/slu-36x36.png') }}"></img>
+          {{ block('title') }}
+      </a>
+  {% endblock %}
+{% block page_title %}SLU{% endblock %}
+{% block page_subtitle %}- Sistema de Login Unificado{% endblock %}
+
+{% block avanzu_admin_footer %}
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <b>Version</b> 2.0
+        </div>
+        <strong>Copyright &copy; {{ "now"|date("Y") }} <a href="http://uft.edu.br">DTI - UFT</a>.</strong> All rights
+        reserved.
+    </footer>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/slu/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('bundles/tema/vendor/adminlte/dist/css/skins/skin-uft.css') }}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+{% endblock %}
+
+
+{% block javascripts_inline %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120295508-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120295508-3');
+    </script>
+{% endblock %}

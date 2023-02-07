@@ -1,0 +1,40 @@
+{% extends "::login.html.twig" %}
+
+
+
+{% block page_content %}
+   {{ macro_uft.flash() }}
+    <style>
+        #reCap {transform:scale(0.925);-webkit-transform:scale(0.925);transform-origin:0 0;-webkit-transform-origin:0 0;}
+    </style>
+<body class="hold-transition register-page">
+
+<div class="login-box">
+    <div class="login-box-body">
+        <div class="login-logo row">
+            <a href="http://ww1.uft.edu.br/"><img src="{{ asset('bundles/slu/image/logo_slu.png') }}" class="logo-img" height="108px" width="158px"></a>
+        </div>
+        <h5 class="text-center sis-label">Sistema de Login Unificado</h5>
+        <hr>
+        {% block login_content %}
+        {% endblock login_content %}
+    </div><!-- /.login-box-body -->
+</div>
+{% endblock page_content %}
+{% block javascripts_inline %}
+<script type="text/javascript">
+    function recaptchaCallback() {
+        $('#submitBtn').removeAttr('disabled');
+    }
+
+    var onloadCallback = function() {
+        grecaptcha.render('reCap', {
+            'sitekey' : '6Lf5dhQUAAAAAOffHOz2sApZ4nTMW4BrTH_iQan-',
+            'callback' : recaptchaCallback
+        });
+    };
+</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+</script>
+{% endblock javascripts_inline %}

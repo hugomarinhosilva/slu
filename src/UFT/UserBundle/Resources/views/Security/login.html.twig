@@ -1,0 +1,45 @@
+{% extends "UserBundle:Security:telaPadraoLogin.html.twig" %}
+
+
+
+{% block login_content %}
+        {% if error %}
+            <div class="alert alert-danger" role="alert">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+        {% endif %}
+        {#<p class="login-box-msg">O seguinte serviço solicitou autenticação: </p>#}
+        <p class="login-box-action">Faça login para iniciar sua sessão</p>
+        <div class="login-box-content">
+            <div class="column one">
+                <form  method="post">
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}"/>
+                    <div class="form-group has-feedback">
+                        <input type="text" id="username" name="_username" value="{{ last_username }}" autocomplete="off" required="required"
+                               class="form-control" placeholder="Login">
+                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <input type="password" id="password" name="_password" required="required" class="form-control"
+                               placeholder="Senha">
+                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    </div>
+                    {% if  last_username is defined and  last_username is not null  %}
+                    <div class="form-group has-feedback" id="reCap">
+                    </div>
+                    {%  endif %}
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <input type="checkbox" id="remember_me" name="_remember_me" value="on"/>
+                            <label for="remember_me">{{ 'Permanecer logado'|trans }}</label>
+                        </div><!-- /.col -->
+                        <div class="col-xs-4">
+                            <button type="submit" id="submitBtn" {% if   last_username is defined and  last_username is not null  %} disabled {% endif %} class="btn btn-primary btn-block btn-flat">Entrar</button>
+                        </div><!-- /.col -->
+                    </div>
+                </form>
+                <br />
+                <a href="{{ path('senha_perdida') }}">Esqueci meu Usuário ou Senha</a>
+                <br />
+                <a href="{{ path('registro_verificacao') }}">Criar uma nova conta</a>
+            </div>
+        </div>
+        {% endblock login_content %}

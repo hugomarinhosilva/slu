@@ -1,0 +1,93 @@
+<!-- User Account: style can be found in dropdown.less -->
+{% import "AvanzuAdminThemeBundle:layout:macros.html.twig" as macro %}
+<li class="dropdown user user-menu">
+    <ul class="nav pull-right navbar-nav">
+        {#<li class="first last dropdown" icon="glyphicon glyphicon-user">#}
+        <li class="last dropdown" icon="glyphicon glyphicon-user">
+            <a class="dropdown-toogle" data-toggle="dropdown" href="#" aria-expanded="true">
+                <i class="glyphicon glyphicon-user"></i>
+                Ol&aacute; {{ user.username }}
+                <b class="caret"></b>
+            </a>
+            <ul class="menu_level_1 dropdown-menu pull-right">
+                {% if is_granted('ROLE_INSTITUCIONAL') %}
+                    <li class="last" icon="glyphicon ">
+                        <a href="{{ path('mostra_departamento_ldap') }}">
+                            <i class="material-icons md-18">account_circle</i> Minha conta</a>
+                    </li>
+                    <li class="last" icon="glyphicon ">
+                        <a href="{{ path('alterar_senha_departamento') }}">
+                            <i class="material-icons md-18">vpn_key</i> Alterar Senha</a>
+                        </a>
+                    </li>
+                {% else %}
+                    <li class="last" icon="glyphicon ">
+                        <a href="{{ path('mostra_usuario') }}">
+                            <i class="material-icons md-18">account_circle</i> Minha conta</a>
+                    </li>
+                    <li class="last" icon="glyphicon ">
+                        <a href="{{ path('alterar_senha_usuario') }}">
+                            <i class="material-icons md-18">vpn_key</i> Alterar Senha</a>
+                        </a>
+                    </li>
+                {% endif %}
+
+                <li class="last" icon="glyphicon glyphicon-log-out">
+                    <a href="{{ path('lightsaml_sp.logout') }}">
+                        <i class="material-icons md-18">power_settings_new</i> Sair</a>
+                    </a>
+                </li>
+                <li class="last">
+                    {% if is_granted('ROLE_PREVIOUS_ADMIN') %}
+                        <a href="{{ path('homepage', {'_switch_user': '_exit'}) }}"><i
+                                    class="glyphicon glyphicon-backward"></i>Voltar admin</a>
+                    {% endif %}
+                </li>
+            </ul>
+
+
+        </li>
+
+
+    </ul>
+
+
+    {#<a href="#" class="dropdown-toggle" data-toggle="dropdown">#}
+    {#<i class="glyphicon glyphicon-user"></i>#}
+    {#Olá#}
+    {#<b class="caret"></b>#}
+    {#{{ macro.avatar(user.avatar, user.username, 'user-image') }}#}
+    {#<span class="hidden-xs">{{ user.username }}</span>#}
+    {#</a>#}
+    {#<ul class="dropdown-menu">#}
+    {#<!-- User image -->#}
+    {#<li class="user-header user user-menu">#}
+    {#{{ macro.avatar(user.avatar, user.username) }}#}
+    {#<p>#}
+    {#{{user.username}}#}
+    {#</p>#}
+    {#<a href="{{ path('avanzu_admin_logout') }}" class="btn btn-default btn-flat">{{ 'Sair do sistema'|trans({}, 'AvanzuAdminTheme') }}</a>#}
+    {#</li>#}
+    <!-- Menu Body -->
+    {#<li class="user-body">#}
+    {#<div class="col-xs-4 text-center">#}
+    {#<a href="#">Followers</a>#}
+    {#</div>#}
+    {#<div class="col-xs-4 text-center">#}
+    {#<a href="#">Sales</a>#}
+    {#</div>#}
+    {#<div class="col-xs-4 text-center">#}
+    {#<a href="#">Friends</a>#}
+    {#</div>#}
+    {#</li>#}
+    <!-- Menu Footer-->
+    {#<li class="user-footer">#}
+    {#<div class="pull-left">#}
+    {#<a href="{{ path('avanzu_admin_profile', {'userid' : user.identifier}) }}" class="btn btn-default btn-flat">{{'Profile'|trans({}, 'AvanzuAdminTheme')}}</a>#}
+    {#</div>#}
+    {#<div class="pull-right">#}
+    {#<a href="{{ path('avanzu_admin_logout') }}" class="btn btn-default btn-flat">{{ 'Sair'|trans({}, 'AvanzuAdminTheme') }}</a>#}
+    {#</div>#}
+    {#</li>#}
+    </ul>
+</li>

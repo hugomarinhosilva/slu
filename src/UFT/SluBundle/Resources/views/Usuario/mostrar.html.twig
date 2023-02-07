@@ -1,0 +1,144 @@
+{% extends '::base.html.twig' %}
+
+{% block page_content -%}
+{{ macro_uft.flash() }}
+<div class="row">
+    <div class="col-md-8 col-centered">
+        <div class="box box-primary">
+            <div class="box-header">
+                <h3 class="box-title">Conta: {{ entity.uid }}
+                    {% if 'Desativados' in entity.dn %}
+                        <span class="label label-danger" style="margin-left: 1em;">Inativo</span>
+                    {% else %}
+                        <span class="label label-success" style="margin-left: 1em;">Ativo</span>
+                    {% endif %}
+                </h3>
+            </div>
+
+            <div class="box-body">
+                <legend class="col-md-12 control-label">Identificação</legend>
+                <div class="row">
+                    <label class="col-md-12 control-label required" style="padding-top: 1em;"></label>
+                    <div class="col-md-12">
+                    </div>
+                </div>
+                <div class="row" style="padding-left: 1em">
+                    <dl class="dl-horizontal">
+                        <dt>Nome</dt>
+                        {% if entity.cn  is iterable %}
+                            {% for cn in entity.cn %}
+                                <dd>{{ cn }}</dd>
+                            {% endfor %}
+                        {% else %}
+                            <dd>{{ entity.cn }}</dd>
+                        {% endif %}
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Login</dt>
+                        <dd>{{ entity.uid }}</dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>CPF</dt>
+                        <dd>{{ entity.brPersonCPF }}</dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Data de Nascimento</dt>
+                        <dd>{{ entity.schacDateOfBirth }}</dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Vinculo</dt>
+                        {% if entity.aluno  >0 %}
+                            <dd> Aluno</dd>
+                        {% endif %}
+                        {% if entity.professor >0 %}
+                            <dd> Professor</dd>
+                        {% endif %}
+                        {% if entity.funcionario > 0 %}
+                            {% if entity.funcionario == 4 %}
+                                <dd>Estagiário</dd>
+                            {% else %}
+                                <dd>Técnico</dd>
+                            {% endif %}
+                        {% endif %}
+                    </dl>
+
+                    <dl class="dl-horizontal">
+                        <dt>Matricula</dt>
+                        {% if entity.Matricula  is iterable %}
+                        {% for Matricula in entity.Matricula %}
+                            <dd>{{ Matricula }}</dd>
+                        {% endfor %}
+                        {% else %}
+                        <dd>{{ entity.Matricula }}</dd>
+                    {% endif %}</div>
+                </dl>
+
+                <legend class="col-md-12">Contato</legend>
+
+                <div class="row" style="padding-left: 1em">
+                    <dl class="dl-horizontal">
+                        <dt>E-mail</dt>
+                        {% if entity.mail  is iterable %}
+                            {% for mail in entity.mail %}
+                                <dd>{{ mail }}</dd>
+                            {% endfor %}
+                        {% else %}
+                            <dd>{{ entity.mail }}</dd>
+                        {% endif %}
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>E-mail Secundário</dt>
+                            <dd>{{ entity.postalAddress }}</dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Telefone</dt>
+                        {% if entity.telephoneNumber  is iterable %}
+                            {% for telephoneNumber in entity.telephoneNumber %}
+                                <dd>{{ telephoneNumber }}</dd>
+                            {% endfor %}
+                        {% else %}
+                            <dd>{{ entity.telephoneNumber }}</dd>
+                        {% endif %}
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box-footer clearfix">
+            <a href="{{ path('homepage') }}" class="btn btn-primary pull-left btn-flat"><i class="fa fa-arrow-left"></i>
+                Voltar</a>
+            <a href="{{ path('edita_dados_usuario', { 'uid': entity.uid }) }}"
+               class="btn btn-success pull-left btn-flat"
+               style="margin-left: 0.5em;"><i class="fa fa-pencil-square-o"></i> Alterar dados de Contato</a>
+            {% if is_granted("ROLE_ADMIN") %}
+
+                {% if 'Desativados' in entity.dn %}
+                    <a href="{{ path('ativar_pessoa', { 'uid': entity.uid }) }}"
+                       class="btn btn-success pull-left btn-flat"
+                       style="margin-left: 0.5em;"><i class="fa fa-check"></i> Ativar</a>
+                {% else %}
+
+                    <a href="{{ path('suspender_pessoa', { 'uid': entity.uid }) }}"
+                       class="btn btn-warning pull-left btn-flat"
+                       style="margin-left: 0.5em;"><i class="fa fa-power-off"></i> Suspender</a>
+                {% endif %}
+                <a href="{{ path('sincronizar_pessoa', { 'uid': entity.uid }) }}"
+                   class="btn btn-info pull-left btn-flat"
+                   style="margin-left: 0.5em;"><i class="fa fa-refresh"></i> Sincronizar</a>
+                {#<a href="{{ macro_uft.status_deletar(entity) }}" class="btn btn-danger pull-left btn-flat" onclick="return confirm('Tem certeza que deseja remover a conta e o email associado a ela?')"#}
+                   {#style="margin-left: 0.5em;"><i class="fa fa-times"></i> Excluir</a>#}
+            {% endif %}
+        </div>
+        {#<a href="{{ path('conta') }}">#}
+        {#Back to the list#}
+        {#</a>#}
+        {#</li>#}
+        {#<li>#}
+        {#<a href="{{ path('conta_edit', { 'id': entity.id }) }}">#}
+        {#Edit#}
+        {#</a>#}
+        {#</li>#}
+        {#<li>{{ form(delete_form) }}</li>#}
+        {#</ul>#}
+        {% endblock %}

@@ -1,0 +1,76 @@
+{% extends '::base.html.twig' %}
+
+{% block page_content -%}
+    {{ macro_uft.flash() }}
+    <div class="row">
+        <div class="col-md-8 col-centered">
+            <div class="box box-primary">
+                <div class="box-body">
+                    <legend class="col-md-12 control-label">
+                        <h3 style="padding-left: 0.6em">
+                            {% if entity.cn  is iterable %}
+                                {% for cn in entity.cn %}
+                                    {{ cn }}
+                                {% endfor %}
+                            {% else %}
+                                {{ entity.cn }}
+                            {% endif %}
+                        </h3>
+
+                    </legend>
+                    <div class="row">
+                        <label class="col-md-12 control-label required" style="padding-top: 1em;"></label>
+                        <div class="col-md-12">
+                        </div>
+                    </div>
+                    <div class="row" style="padding-left: 1em">
+                        <dl class="dl-horizontal">
+                            <dt>Descrição do grupo:</dt>
+                            <dd style="margin-right: 1em;"><p align="justify">{{ entity.description }}</p></dd>
+                        </dl>
+                        <dl class="dl-horizontal">
+                            <dt>Membros:</dt>
+                            {% if entity.member  is iterable %}
+                                {% for member in entity.member %}
+                                {% if member.uid  is defined %}
+                                        <dd>{{ member.uid}}</dd>
+                                {% else %}
+                                    <dd>{{ member| split(',', 2)[0] |split('=',2)[1] }}</dd>
+                                {% endif %}
+                                {% endfor %}
+                            {% else %}
+                                <dd>{{ entity.member.uid }}</dd>
+                            {% endif %}
+                        </dl>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="box-footer clearfix">
+        <a href="{{ path('lista_grupos') }}" class="btn btn-primary pull-left btn-flat"><i class="fa fa-arrow-left"></i>
+            Voltar</a>
+        {#<a href="{{ path('edita_pessoa_ldap', { 'uid': entity.id }) }}" class="btn btn-success pull-left"#}
+        {#style="margin-left: 0.5em;"><i class="fa fa-pencil-square-o"></i> Alterar</a>#}
+
+        {#{% if is_granted("ROLE_ADMIN") %}#}
+
+        {#<a href="{{ path('remover_pessoa', { 'uid': entity.id }) }}" class="btn btn-danger pull-left"#}
+        {#style="margin-left: 0.5em;"><i class="fa fa-times"></i> Excluir</a>#}
+        {#{% endif %}#}
+    </div>
+    {#<a href="{{ path('conta') }}">#}
+    {#Back to the list#}
+    {#</a>#}
+    {#</li>#}
+    {#<li>#}
+    {#<a href="{{ path('conta_edit', { 'id': entity.id }) }}">#}
+    {#Edit#}
+    {#</a>#}
+    {#</li>#}
+    {#<li>{{ form(delete_form) }}</li>#}
+    {#</ul>#}
+{% endblock %}

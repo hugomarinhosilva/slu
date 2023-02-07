@@ -1,0 +1,133 @@
+body *{
+    list-style-type: none;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+[readonly]{
+    background: #bdbdbd;
+}
+
+.select2-selection__choice{
+    color: black !important;
+}
+
+span.required{
+    color: red !important;
+}
+
+/*.register-box-body{*/
+
+/*}*/
+
+/*.register-logo{*/
+    /*text-align: left;*/
+    /*font-size: 24px;*/
+    /*margin: 0.5em 0 0 0 !important;*/
+    /*padding: 1.5em 0.7em 0.5em 0.7em;*/
+    /*background-color: #28887B;*/
+    /*color: #FFFFFF;*/
+    /*border-bottom:0;border-top-left-radius:3px;border-top-right-radius:3px*/
+/*}*/
+
+/*.register-box{*/
+    /*margin: 2% auto 7% auto !important;*/
+/*}*/
+.login-box{
+    width: 360px;
+    margin: 7% auto;
+}
+.login-box-body{
+    background-color: #F7F7F7;
+    padding: 20px 25px 30px;
+    margin: 0px auto 25px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.login-page{
+    background-color: #FFFFFF;
+}
+
+.logo-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+
+.login-box-action{
+    text-align: center;
+    font-size: 20px;
+}
+
+.login-box-content{
+    /*min-height: 250px;*/
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sis-label{
+    font-size: 20px;
+    padding: 0.5em 0;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-56 { font-size: 56px; }
+.material-icons.md-68 { font-size: 68px; }
+
+.dash-icon:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #00897C;
+}
+.dash-icon{
+    color: #005484;
+    width: 10em;
+    height: 8em;
+}
+
+.dash-button{
+    text-align: center;
+}
+
+.btn-ditto {
+    color: #fff;
+    background-color: #BF2EF0;
+    border-color: #AF2EF0;
+}
+.btn-ditto:focus,
+.btn-ditto.focus {
+    color: #fff;
+    background-color: #8F2EF0;
+    border-color: #5F2EF0;
+}
+.btn-ditto:hover {
+    color: #fff;
+    background-color: #8F2EF0;
+    border-color: #7F2EF0;
+}
+
+
+.btn-chapeu-mario {
+    color: black;
+    background-color: #F2E1CD;
+    border-color: #363439;
+}
+.btn-chapeu-mario:focus,
+.btn-chapeu-mario.focus {
+    color: black;
+    background-color: #6C6D72;
+    border-color: #363439;
+}
+.btn-chapeu-mario:hover {
+    color: black;
+    background-color: #6C6D72;
+    border-color: #363439;
+}

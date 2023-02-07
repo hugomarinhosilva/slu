@@ -1,0 +1,73 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: papaia.uft.edu.br
+    database_name: prod_slu
+    database_user: slu
+    database_password: 8e411aeac0e8a633
+    database_port: 3306
+    moodle_driver: pdo_mysql
+    moodle_name: moodle_19
+    moodle_host: melancia.uft.edu.br
+    moodle_user: moodle_19
+    moodle_password: 7b11fc349bd26555
+    moodle_port: null
+
+    intranet_driver: pdo_mysql
+    intranet_name: prod_intranet
+    intranet_host: mamao.uft.edu.br
+    intranet_user: slu
+    intranet_password: 8e411aeac0e8a633
+    intranet_port: null
+
+    moodle_port: null
+    mailer_transport: smtp
+    mailer_host: mail.dti.uft.edu.br
+    mailer_port: 25
+    mailer_user: naoresponder@dti.uft.edu.br
+    mailer_encryption: ssl
+    mailer_auth_mode: login
+    mailer_password: 45F/#A(4
+    locale: pt_BR
+    secret: f4204ce432c5c46d2d0dd4bbaa208fae
+    manutencao: false #turn it to true to enable maintenance
+    manutencaoAte: null
+
+#GLOBAL PARAMETERS
+    admin_skin: skin-uft
+    cn_grupo_sistema: 'Sistema - SLU'
+
+# DB2 PARAMETRES
+    db2_driver: ibm_db2
+    db2_host:   abacate.uft.edu.br
+    db2_port:   50000
+    db2_name:   dbuft
+    db2_user:   slu
+    db2_password: b72228ea4829b0f
+
+#LDAP PARAMETERS
+    ldap_host: jaca.uft.edu.br
+    ldap_username: 'uid=acesso,ou=People, dc=uft,dc=edu,dc=br'
+    ldap_password: 'wpSnlGNDSp'
+    ldap_basedn: 'dc=uft,dc=edu,dc=br'
+    people_basedn: 'ou=People,dc=uft,dc=edu,dc=br'
+    ldap_filter: '(&(uid=%s)(!(ou:dn:=Desativados)))'
+    people_basedn: 'ou=People,dc=uft,dc=edu,dc=br'
+
+# ACESSO (SLU1) PARAMETERS
+    acesso_driver: pdo_mysql
+    acesso_host: melao.uft.edu.br
+    acesso_port: null
+    acesso_name: sis_acesso
+    acesso_user: acesso
+    acesso_password: D4fiyeXujOs3GuHa6aSICOnigIjE8E
+
+# Habilitar o Email Manager
+    email_manager: true
+    idp_entry: https://sistemas.uft.edu.br/slu/saml/
+    sip_driver: pdo_mysql
+    sip_host: butia.uft.edu.br
+    sip_port: null
+    sip_name: sip
+    sip_user: sip_user
+    sip_password: 862f3e68c95e50a81b05129a

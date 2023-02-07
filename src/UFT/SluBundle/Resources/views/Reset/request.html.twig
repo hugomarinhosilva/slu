@@ -1,0 +1,31 @@
+{% extends "UserBundle:Security:telaPadraoLogin.html.twig" %}
+
+{% block login_content %}
+            {% if invalid_username is defined and invalid_username != "" %}
+                <p class="login-box-msg">O usuário ou CPF "{{ invalid_username }}" não está cadastrado.</p>
+            {% endif %}
+            {% if invalid_email is defined %}
+                <p class="login-box-msg">O usuário sem e-mail secundário cadastrado.</p>
+            {% endif %}
+            {% if null_manager is defined %}
+                <p class="login-box-msg">E-mail departamental não possui responsável cadastrado.</p>
+            {% endif %}
+            {% if invalid_manager is defined %}
+                <p class="login-box-msg">O responsável por este e-mail não foi encontrado.</p>
+            {% endif %}
+            {#<p class="login-box-msg">O seguinte serviço solicitou autenticação: </p>#}
+            <p class="login-box-action">Recuperação de conta</p>
+            <div class="login-box-content">
+                <div class="column one">
+                    <form action="{{ path('envia_email_recuperar_senha') }}" method="POST" class="fos_user_resetting_request">
+                        <div class="form-group has-feedback">
+                            <input class="form-control" id="username" name="username" value="" placeholder="Usuário ou CPF" type="text" required="required" autocomplete="off">
+                            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                        </div>
+                                <button type="submit" class="btn btn-primary btn-block btn-flat">Recuperar conta</button>
+                                <a href="javascript:history.back()" class="btn btn-primary btn-block btn-flat">&larr; Voltar </a>
+                        {#<input type="submit" class="btn btn-primary btn-block btn-flat" value="Recuperar conta"/>#}
+                    </form>
+                </div>
+            </div>
+{% endblock login_content %}

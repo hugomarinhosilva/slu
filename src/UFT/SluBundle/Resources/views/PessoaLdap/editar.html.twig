@@ -1,0 +1,170 @@
+{% extends '::base.html.twig' %}
+{% block page_content -%}
+    {{ macro_uft.flash() }}
+    {{ macro_uft.new_form_horizontal(edit_form,'Editar','lista_pessoas',{obrigatorio: 'obrigatorio'}) }}
+    {#{{ macro_uft.new_form_horizontal(edit_form) }}#}
+{% endblock %}
+
+{% block javascripts_inline %}
+    {{ macro_uft.mascaras(['cpf','telefone']) }}
+    {{ macro_uft.date_picker() }}
+    <link href="{{ asset('bundles/slu/select2/select2-bootstrap.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('bundles/slu/select2/select2.css') }}" rel="stylesheet"/>
+    <script src="{{ asset('bundles/avanzuadmintheme/vendor/adminlte/plugins/select2/select2.full.min.js') }}"></script>
+    <script src="{{ asset('bundles/slu/select2/i18n/pt-BR.js') }}"></script>
+    <script>
+        $(".datepicker").inputmask("99/99/9999", {placeholder: " ", clearMaskOnLostFocus: true});
+        $('.datepicker').datepicker({
+            dateFormat: 'dd/mm/yy',
+            dayNames: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
+            dayNamesMin: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S', 'D'],
+            dayNamesShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'],
+            monthNames: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+            monthNamesShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+            nextText: 'Próximo',
+            prevText: 'Anterior'
+        });
+        $('#pessoa_ldap_grupo').select2({
+            language: 'pt-BR',
+            ajax: {
+                url: '{{ path("ajax_busca_grupo") }}',
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        q: params.term, // search term
+                        page: params.page
+                    };
+                },
+                processResults: function (data, params) {
+                    console.log(data);
+                    params.page = 1;
+                    return {
+                        results: data,
+                        pagination: {
+                            more: (params.page * 30) < data.total_count
+                        }
+                    };
+                },
+                cache: true
+            },
+            escapeMarkup: function (markup) {
+                return markup;
+            }, // let our custom formatter work
+            minimumInputLength: 5,
+            initSelection: function (element, callback) {
+                var dados = [];
+                $("#pessoa_ldap_grupo option:selected").each(function () {
+                    dados.push({id: $(this).val(), text: $(this).val()});
+                });
+                callback(dados);
+            }
+        });
+
+    </script>
+    {#verifica se já existe login no LDAP#}
+    <script type="text/javascript">
+        if($('#pessoa_ldap_alteraSenha_0').is(":checked")){
+            $("input[id^='pessoa_ldap_userPassword_']").attr('disabled','disabled');
+        }
+         $(document).delegate("input[name='pessoa_ldap[alteraSenha]']:checked","click",function(){
+             if($(this).val() == 1){
+                 $("input[id^='pessoa_ldap_userPassword_']").removeAttr('disabled');
+             }else{
+                 $("input[id^='pessoa_ldap_userPassword_']").attr('disabled','disabled');
+             }
+        });
+        $(document).ready(function () {
+            $( "li input[id^='pessoa_ldap_mail_']" ).each(function( index ) {
+                if(index>1){
+                    $(this).parent().append('<a href="#" class="remove-tag" style="padding: 10px 10px 10px 10px"><i  class="glyphicon glyphicon-remove" style="top: 10px;"></i></a>');
+                    $(this).removeClass('form-control');
+                    $(this).addClass('col-md-11');
+                    $(this).css("border", "1px solid #ccc");
+                    $(this).css("padding", "6px 12px");
+                    $(this).css("margin", "6px 0px");
+                    $('.remove-tag').click(function (e) {
+                        e.preventDefault();
+
+                        $(this).parent().remove();
+
+                        return false;
+                    });
+                }
+            });
+        });
+
+
+        $(document).delegate("li input[id^='pessoa_ldap_telephoneNumber_']","focus",function(){
+            $(this).inputmask("+55 (99) 9999-9999[9]").keyup(function () {
+                var valor = $(this).val();
+                if (valor[9] == '9') {
+                    $(this).inputmask("+55 (99) 99999-9999");
+                } else {
+                    $(this).inputmask("+55 (99) 9999-9999");
+                }
+            }).focusout(function () {
+                var valor = $(this).val();
+                if (valor.replace(/\D/g, '').length == '12') {
+                    $(this).inputmask("+55 (99) 9999-9999");
+                }
+            }).focusin(function () {
+                $(this).inputmask("+55 (99) 99999-9999");
+            });
+        });
+
+        $(function () { // declaro o início do jquery
+            $("#pessoa_ldap_uid").on('blur', function () {
+                var nomeUsuario = $(this).val().toLowerCase();
+                $(this).val(nomeUsuario);
+                $.ajax({
+                    type: "POST",
+                    data: {login: nomeUsuario, uid: '{{ entity.uid }}'},
+                    url: "{{ path('ajax_verifica_login') }}",
+                    success: function (data) {
+                        //                      console.log(document.getElementById('uft_slubundle_sluconta_uid').getAttribute('readonly'));
+                        if (!$("#pessoa_ldap_uid").attr('readonly')) {
+//                            console.log(nomeUsuario);
+                            $('#resultado_uid').html(data);
+                            if (data == 'Login disponivel!') {
+                                $('#resultado_uid').attr('style', 'color:green');
+                                $('#btn_submit').removeAttr('disabled');
+                            } else {
+                                $('#resultado_uid').attr('style', 'color:red');
+                                $('#btn_submit').attr('disabled', 'disabled');
+                            }
+                        }
+                        if (nomeUsuario == "") {
+                            $('#pessoa_ldap_mail_0').val("");
+                        } else {
+                            $('#pessoa_ldap_mail_0').val(nomeUsuario.concat('@uft.edu.br'));
+                        }
+                    }
+                });
+            });
+            // VERIFICA SE JÁ HÁ USUÁRIO COM O MESMO CPF
+            $("#pessoa_ldap_brPersonCPF").on('blur', function () {
+                var cpfUsuario = $(this).val();
+                $.ajax({
+                    type: "POST",
+                    data: {cpf: cpfUsuario, userCpf: '{{ entity.cpf }}'}, // cpfUsuario-> CPF sendo digitado; entity-> cpf que já está no cadastro.
+                    url: "{{ path('verifica_cpf') }}",
+                    success: function (data) {
+                        if (!$("#pessoa_ldap_brPersonCPF").attr('readonly') && cpfUsuario.replace(/[\.-]/g, "").trim() != '{{ entity.cpf | trim}}') {
+                            $('#resultado_brpersoncpf').html(data);
+                            if (data == 'Este CPF já está em uso!') {
+                                $('#resultado_brpersoncpf').attr('style', 'color:red');
+                                $('#btn_submit').attr('disabled', 'disabled');
+                            } else {
+                                $('#btn_submit').removeAttr('disabled');
+                            }
+                        }
+                    }
+                });
+            });
+
+        });// fim do jquery
+    </script>
+    {#{{ macro_uft.add_colecao([{name:'matricula',link:'Adicionar Matrícula'},{name:'mail',link:'Adicionar E-mail'},{name:'telephonenumber',link:'Adicionar Telefone'}]) }}#}
+    {{ macro_uft.add_colecao([{name:'matricula',link:'Adicionar Matrícula'}]) }}
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'AvanzuAdminThemeBundle:layout:login-layout.html.twig' %}
+{% import "::macro.html.twig" as macro_uft %}
+{% block page_content %}
+{% endblock %}
+
+{% block title %}SLU{% endblock %}
+{% block page_title %}SLU{% endblock %}
+{% block page_subtitle %}Sistema de Login Unificado{% endblock %}
+
+{% block avanzu_admin_footer %}
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 2.0
+            </div>
+            <strong>Copyright &copy; 2015 <a href="http://uft.edu.br">DTI - UFT</a>.</strong> All rights reserved.
+        </footer>
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent()}}
+    <link rel="stylesheet" href="{{ asset('bundles/slu/style.css') }}">
+{% endblock %}

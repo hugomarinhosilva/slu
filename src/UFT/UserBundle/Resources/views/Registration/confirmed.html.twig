@@ -1,0 +1,9 @@
+{% extends "::base.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block content %}
+            <div class="alert alert-success" role="alert">
+                <p>{{ 'registration.flash.user_created'|trans({'%username%': user.username}) }} <a href="{{path('_welcome')}}">Voltar a Página Inicial</a></p>
+            </div>
+{% endblock content %}

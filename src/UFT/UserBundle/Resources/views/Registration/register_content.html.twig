@@ -1,0 +1,33 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<h1>Cadastro de Usuário</h1>
+<div class="well">
+    <div class="row clearfix">
+        <div class="col-md-4 column">
+            <form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST"
+                  class="form-horizontal">
+                {#{{ form_widget(form) }}#}
+                <div class="form-group">
+                    {{ form_row(form.email,{'label': 'E-mail:','label_attr' : { 'class' : 'col-md-2 control-label' }}) }}
+                </div>
+
+                <div class="form-group">
+
+                    {{ form_row(form.username,{'label': 'Usuário:','label_attr' : { 'class' : 'col-md-2 control-label' }}) }}
+                </div>
+                <div class="form-group">
+
+                    {{ form_row(form.plainPassword.first,{'label': 'Senha:','label_attr' : { 'class' : 'col-md-2 control-label' }}) }}
+                </div>
+                <div class="form-group">
+
+                    {{ form_row(form.plainPassword.second,{'label': 'Confirme a senha:','label_attr' : { 'class' : 'col-md-5 control-label' }}) }}
+                </div>
+                <div display="hidden">{{ form_rest(form) }}</div>
+                <div>
+                    <input type="submit" class="btn btn-default btn-flat" value="{{ 'Cadastrar'|trans }}"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

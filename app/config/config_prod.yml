@@ -1,0 +1,44 @@
+imports:
+    - { resource: config.yml }
+
+#framework:
+#    validation:
+#        cache: validator.mapping.cache.doctrine.apc
+#    serializer:
+#        cache: serializer.mapping.cache.doctrine.apc
+framework:
+    router:
+        resource: "%kernel.root_dir%/config/routing_prod.yml"
+
+#doctrine:
+#    orm:
+#        metadata_cache_driver: apc
+#        result_cache_driver: apc
+#        query_cache_driver: apc
+
+monolog:
+    handlers:
+        main:
+            type:         fingers_crossed
+            action_level: critical
+            handler:      grouped
+        grouped:
+            type:    group
+            members: [streamed, deduplicated]
+        streamed:
+            type:  rotating_file
+            path:  '%kernel.logs_dir%/%kernel.environment%.log'
+            level: debug
+            max_files: 6
+            date_format: 'Y-m'
+        deduplicated:
+            type:    deduplication
+            handler: swift
+        swift:
+            type:       swift_mailer
+            from_email: 'naoresponder@dti.uft.edu.br'
+            to_email:   'desenvolvimento@uft.edu.br'
+            subject:    'SLU - ERROR! %%message%%'
+            level:      debug
+            formatter:  monolog.formatter.html
+            content_type: text/html

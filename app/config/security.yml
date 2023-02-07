@@ -1,0 +1,114 @@
+security:
+    encoders:
+        UFT\UserBundle\Entity\Usuario: sha1
+        Symfony\Component\Security\Core\User\User: bcrypt
+
+    erase_credentials: false
+
+    role_hierarchy:
+        ROLE_INSTITUCIONAL:
+            - ROLE_USUARIO_MOSTRAR
+            - ROLE_USUARIO_ALTERAR_SENHA
+            - ROLE_DEPARTAMENTO_RECADASTRAR
+            - ROLE_SLU_USUARIO_EDITAR_BASICO
+        ROLE_USER:
+            - ROLE_USUARIO_MOSTRAR
+            - ROLE_USUARIO_EDITAR_BASICO
+            - ROLE_USUARIO_ALTERAR_SENHA
+            - ROLE_USUARIO_RECADASTRAR
+        ROLE_RELATORIO:
+            - ROLE_LISTA_EMAIL
+#        ROLE_SLU_GERENTE:
+        ROLE_GERENTE_DEPARTAMENTO:
+            - ROLE_USER
+            - ROLE_SLU_USUARIO_MOSTRAR
+            - ROLE_SLU_USUARIO_EDITAR_BASICO
+            - ROLE_SLU_USUARIO_SITUACAO
+            - ROLE_SLU_USUARIO_SINCRONIZAR
+            - ROLE_RELATORIO
+#        ROLE_SLU_ADMINISTRADOR:
+        ROLE_ADMINISTRADOR_SLU:
+            - ROLE_GERENTE_DEPARTAMENTO
+            - ROLE_SLU_USUARIO_CRIAR
+            - ROLE_SLU_USUARIO_EDITAR
+#        ROLE_GRUPO:
+        ROLE_GERENTE_GRUPO:
+            - ROLE_GRUPO_USUARIO_ADICIONAR
+            - ROLE_GRUPO_USUARIO_REMOVER
+            - ROLE_GRUPO_USUARIO_EDITAR
+            - ROLE_GRUPO_USUARIO_MOSTRAR
+#        ROLE_GRUPO_ADMINISTRADOR:
+        ROLE_ADMINISTRADOR_GRUPO:
+            - ROLE_GERENTE_GRUPO
+            - ROLE_GRUPO_CRIAR
+            - ROLE_GRUPO_REMOVER
+            - ROLE_GRUPO_MOSTRAR
+            - ROLE_GRUPO_EDITAR
+#        ROLE_SLU_SUPER_ADMINISTRADOR:
+        ROLE_SUPER_ADMINISTRADOR_SLU:
+            - ROLE_ADMINISTRADOR_SLU
+            - ROLE_ADMINISTRADOR_GRUPO
+            - ROLE_SLU_USUARIO_DELETAR
+            - ROLE_SLU_USUARIO_CRIAR_TESTE
+        ROLE_DESENVOLVEDOR:
+            - ROLE_SLU_GRUPO_CRIAR
+            - ROLE_SLU_GRUPO_EDITAR
+            - ROLE_SLU_GRUPO_MOSTRAR
+            - ROLE_SLU_GRUPO_REMOVER
+            - ROLE_ADMIN
+            - ROLE_SUPER_ADMINISTRADOR_SLU
+            - ROLE_ALLOWED_TO_SWITCH
+            - ROLE_SLU_USUARIO_CRIAR_TESTE
+
+    providers:
+        chain_provider:
+            chain:
+              providers: [fos_userbundle, fr3d_ldapbundle]
+        fos_userbundle:
+            id: fos_user.user_provider.username
+        fr3d_ldapbundle:
+            id: fr3d_ldap.security.user.provider
+        db_provider:
+            entity:
+                class: UserBundle:Usuario
+                property: username
+
+    firewalls:
+        main:
+            pattern: ^/
+            fr3d_ldap:  ~
+            light_saml_sp:
+                provider: db_provider       # user provider name configured in step 9
+                user_creator: user_creator  # name of the user creator service created in step 10
+                login_path: /saml/login
+                check_path: /saml/login_check
+            form_login:
+                provider:    chain_provider
+                login_path:             uft_fos_user_security_login
+                check_path:             fos_user_security_check
+                remember_me: true
+                always_use_default_target_path: true
+                default_target_path: homepage
+            logout:
+                path:     lightsaml_sp.logout
+                invalidate_session: false
+                success_handler: acme.logout_handler
+                target:         /saml/login
+            anonymous:    true
+            switch_user:  true
+            remember_me:
+                secret:      "%secret%"
+                lifetime: 31536000 # 365 days in seconds
+                path:     /pessoa
+                domain:   ~ # Defaults to the current domain from $_SERVER
+
+    access_control:
+        - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/login, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/registrar, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/profile, role: ROLE_USER }
+        - { path: ^/usuario, role: [ROLE_USER,ROLE_INSTITUCIONAL] }
+        - { path: ^/pessoa/criar_email_manual, role: ROLE_USER }
+        - { path: ^/pessoa, role: ROLE_GERENTE_DEPARTAMENTO }
+        - { path: ^/grupo, role: ROLE_ADMINISTRADOR_SLU }
+        - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }

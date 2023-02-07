@@ -1,0 +1,45 @@
+index:
+    path:     /
+    defaults: { _controller: SluBundle:Default:index}
+
+tema:
+    resource: "@TemaBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+slu:
+    resource: "@SluBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+user:
+    resource: "@UserBundle/Controller/"
+    prefix:   /
+
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+    prefix:   /
+avanzu:
+    resource: "@AvanzuAdminThemeBundle/Resources/config/routes.yml"
+    prefix:   /
+
+lightsaml_sp:
+    resource: "@LightSamlSpBundle/Resources/config/routing.yml"
+    prefix: saml
+
+lightsaml_sp.logout:
+    path: /saml/logout
+
+lightsaml_sp.login:
+    path: /saml/login
+    defaults: { _controller: UserBundle:Default:login }
+
+
+uft_fos_user_security_login:
+    path: /fos/login
+    defaults: { _controller: UserBundle:Security:loginold }
+
+rest_ldap:
+    type:     rest
+    resource:    "@SluBundle/Controller/RestController.php"
+    prefix:  api/

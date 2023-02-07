@@ -1,0 +1,319 @@
+{% extends '::base.html.twig' %}
+{% block page_content -%}
+    {{ macro_uft.flash() }}
+    {% if(recadastrar == false) %}
+        {#{% if  is_granted('ROLE_DESENVOLVEDOR') %}#}
+            {#<div class="col-md-12">#}
+                {#<div class="box box-primary">#}
+                    {#<div class="box-header">#}
+                        {#<h3 class="box-title">Ambiente</h3>#}
+                    {#</div>#}
+
+                    {#<div class="box-body">#}
+                        {#<table class="table">#}
+                            {#<tbody>#}
+                            {#<tr>#}
+                                {#<td class="dash-button">#}
+                                    {#<a class="btn btn-link btn-flat dash-icon"#}
+                                       {#href="#">#}
+                                        {#<i class="material-icons md-56">developer_board</i>#}
+                                        {#<br/>{{ parametros.ldap_host }}</a>#}
+                                {#</td>#}
+                                {#<td class="dash-button">#}
+                                    {#<a class="btn btn-link btn-flat dash-icon"#}
+                                       {#href="#">#}
+                                        {#<i class="material-icons md-56">account_box</i>#}
+                                        {#<br/>{{ parametros.database_host }}</a>#}
+                                {#</td>#}
+                                {#<td class="dash-button">#}
+                                    {#<a class="btn btn-link btn-flat dash-icon"#}
+                                       {#href="#">#}
+                                        {#<i class="material-icons md-56">bug_report</i>#}
+                                        {#<br/>{{ parametros.db2_host }}</a>#}
+                                {#</td>#}
+                            {#</tr>#}
+                            {#</tbody>#}
+                        {#</table>#}
+                    {#</div>#}
+
+                {#</div>#}
+            {#</div>#}
+        {#{% endif %}#}
+        {% if temContaSip == false %}
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="box box-primary">
+                        <div class="box-header">
+                            <h3 class="box-title">Cadastramento SEI</h3>
+                        </div>
+
+                        <div class="box-body">
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td class="dash-button">
+                                            <a class="btn btn-link btn-flat dash-icon"
+                                               href="{{ path('sip_sincronizar_pessoa', { uid : uid }) }}">
+                                                <i class="material-icons  md-56">send</i>
+                                                <br/>Enviar dados ao SEI</a>
+                                    </td>
+
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+        <div class="row">
+            {% if is_granted('ROLE_INSTITUCIONAL') %}
+                <div class="col-md-{% if is_granted('ROLE_GERENTE_DEPARTAMENTO') %}6{% else %}12{% endif %}">
+                    <div class="box box-primary">
+                        <div class="box-header">
+                            <h3 class="box-title">Meu perfil</h3>
+                        </div>
+
+                        <div class="box-body">
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td class="dash-button">
+                                        <a class="btn btn-link btn-flat dash-icon"
+                                           href="{{ path('mostra_departamento_ldap') }}">
+                                            <i class="material-icons md-56">account_circle</i>
+                                            <br/>Minha conta</a>
+                                        <a class="btn btn-link btn-flat dash-icon"
+                                           href="{{ path('alterar_senha_departamento') }}">
+                                            <i class="material-icons md-56">vpn_key</i>
+                                            <br/>Alterar Senha</a>
+{#                                        {% if suspenso %}#}
+{#                                            <a class="btn btn-link btn-flat dash-icon"#}
+{#                                               href="{{ path('alterar_senha_departamento') }}">#}
+{#                                                <i class="material-icons  md-56">sync_problem</i>#}
+{#                                                <br/>Reativar E-mail</a>#}
+{#                                        {% endif %}#}
+                                    </td>
+
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            {% else %}
+                {% if is_granted('ROLE_GERENTE_DEPARTAMENTO') %}
+                    <div class="col-md-6">
+                        <div class="box box-primary">
+
+                            <div class="box-header">
+                                <h3 class="box-title">Gerenciamento de Usuários</h3>
+                            </div>
+
+                            <div class="box-body">
+                                <table class="table ">
+                                    <tbody>
+                                    <tr>
+                                        {% if is_granted('ROLE_SUPER_ADMINISTRADOR_SLU') %}
+                                            <td class="sonata-ba-list-label" colspan="2">
+                                                Contas de Usuários
+                                            </td>
+                                        {% endif %}
+                                    </tr>
+                                    <tr>
+                                        {% if is_granted('ROLE_SLU_USUARIO_CRIAR') %}
+                                            <td class="dash-button">
+                                                <a class="btn btn-link btn-flat dash-icon"
+                                                   href="{{ path('pessoaLdap_prenova') }}">
+                                                    <i class="material-icons md-56 ">person_add</i>
+                                                    <br/>Nova Conta </a>
+                                            </td>
+                                        {% endif %}
+                                        {% if is_granted('ROLE_SLU_USUARIO_MOSTRAR') %}
+                                            <td class="dash-button">
+                                                <a class="btn btn-link btn-flat dash-icon"
+                                                   href="{{ path('lista_pessoas') }}">
+                                                    <i class="material-icons md-56">search</i>
+                                                    <br/>Consultar Contas</a>
+                                            </td>
+                                        {% endif %}
+                                    </tr>
+
+
+                                    {% if is_granted('ROLE_SLU_GRUPO_MOSTRAR') %}
+                                        <td class="sonata-ba-list-label" colspan="2">
+                                            Grupos de Usuários
+                                        </td>
+                                        <tr>
+                                            {% if is_granted('ROLE_SLU_GRUPO_CRIAR') %}
+                                                <td class="dash-button">
+                                                    <a class="btn btn-link btn-flat dash-icon"
+                                                       href="{{ path('grupoLdap_nova') }}">
+                                                        <i class="material-icons md-56 ">group_add</i>
+                                                        <br/>Novo Grupo </a>
+                                                </td>
+                                            {% endif %}
+                                            {% if is_granted('ROLE_SLU_GRUPO_MOSTRAR') %}
+                                                <td class="dash-button">
+                                                    <a class="btn btn-link btn-flat dash-icon"
+                                                       href="{{ path('lista_grupos') }}">
+                                                        <i class="material-icons md-56">format_list_bulleted</i>
+                                                        <br/>Listar Grupos</a>
+                                                </td>
+                                            {% endif %}
+                                        </tr>
+                                    {% endif %}
+                                    {% if is_granted('ROLE_RELATORIO') %}
+                                        <td class="sonata-ba-list-label" colspan="2">
+                                            Relatórios
+                                        </td>
+                                        <tr>
+                                            <td class="dash-button">
+                                                <a class="btn btn-link btn-flat dash-icon"
+                                                   href="{{ path('novo_relatorio') }}">
+                                                    <i class="material-icons md-56 ">people</i>
+                                                    <br/>Lista de Usuários </a>
+                                            </td>
+                                                <td class="dash-button">
+                                                    <a class="btn btn-link btn-flat dash-icon"
+                                                       href="{{ path('exibir_relatorio_alunos') }}">
+                                                        <i class="material-icons md-56 ">school</i>
+                                                        <br/>Lista de Alunos </a>
+                                                </td>
+
+                                        </tr>
+
+                                    {% endif %}
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                {% endif %}
+                {% if not is_granted('ROLE_SUPER_ADMINISTRADOR_SLU') %}
+                    <div class="col-md-{% if is_granted('ROLE_GERENTE_DEPARTAMENTO') %}6{% else %}12{% endif %}">
+                        <div class="box box-primary">
+                            <div class="box-header">
+                                <h3 class="box-title">Meu perfil</h3>
+                            </div>
+
+                            <div class="box-body">
+                                <table class="table">
+                                    <tbody>
+                                    <tr>
+                                        <td class="dash-button">
+                                            <a class="btn btn-link btn-flat dash-icon"
+                                               href="{{ path('mostra_usuario') }}">
+                                                <i class="material-icons md-56">account_circle</i>
+                                                <br/>Minha conta</a>
+                                        </td>
+                                        <td class="dash-button">
+                                            {% if suspenso %}
+{#                                            <a class="btn btn-link btn-flat dash-icon"#}
+{#                                               href="{{ path('alterar_senha_usuario') }}">#}
+{#                                                <i class="material-icons  md-56">sync_problem</i>#}
+{#                                                <br/>Reativar E-mail</a>#}
+                                            {% else %}
+                                            <a class="btn btn-link btn-flat dash-icon"
+                                               href="{{ path('alterar_senha_usuario') }}">
+                                                <i class="material-icons md-56">vpn_key</i>
+                                                <br/>Alterar Senha</a>
+                                            {% endif %}
+                                        </td>
+                                        <td class="dash-button">
+                                            {% if emailCriado == false %}
+                                                <a class="btn btn-link btn-flat dash-icon"
+                                                   href="{{ path('criar_email_manual') }}">
+                                                    <i class="material-icons  md-56">sync_problem</i>
+                                                    <br/>Ativar E-mail</a>
+                                            {% endif %}
+                                        </td>
+
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                {% endif %}
+                {% if is_granted('ROLE_ADMINISTRADOR_GRUPO') %}
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box box-primary">
+                                <div class="box-header">
+                                    <h3 class="box-title">Administração</h3>
+                                </div>
+
+                                <div class="box-body">
+                                    <table class="table">
+                                        <tbody>
+                                        <td class="sonata-ba-list-label" colspan="2">
+                                            Grupos de Acesso ao SLU
+                                        </td>
+                                        <tr>
+                                            {% if is_granted('ROLE_GRUPO_CRIAR') %}
+                                                <td class="dash-button">
+                                                    <a class="btn btn-link btn-flat dash-icon"
+                                                       href="{{ path('novo_usergrupo') }}">
+                                                        <i class="material-icons md-56">supervisor_account</i>
+                                                        <br/>Novo Grupo <br/>de Gerenciamento</a>
+                                                </td>
+                                            {% endif %}
+                                            {% if is_granted('ROLE_GRUPO_MOSTRAR') %}
+                                                <td class="dash-button">
+                                                    <a class="btn btn-link btn-flat dash-icon"
+                                                       href="{{ path('lista_usergrupo') }}">
+                                                        <i class="material-icons md-56">format_list_bulleted</i>
+                                                        <br/>Listar Grupos <br/>de Gerenciamento</a>
+                                                </td>
+                                            {% endif %}
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endif %}
+        </div>
+    {% else %}
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-header">
+                    <h3 class="box-title">Meu perfil</h3>
+                </div>
+
+                <div class="box-body">
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <td class="dash-button">
+                                {% if is_granted('ROLE_INSTITUCIONAL') %}
+                                <a class="btn btn-link btn-flat dash-icon"
+                                   href="{{ path('departamentoLdap_recadastrar') }}">
+                                    <i class="material-icons  md-56">sync_problem</i>
+                                    <br/>Recadastramento</a>
+                                {% else  %}
+                                <a class="btn btn-link btn-flat dash-icon"
+                                   href="{{ path('pessoaLdap_recadastrar') }}">
+                                    <i class="material-icons  md-56">sync_problem</i>
+                                    <br/>Recadastramento</a>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    {% endif %}
+
+
+{% endblock %}

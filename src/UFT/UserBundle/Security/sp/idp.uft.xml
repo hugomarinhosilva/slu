@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="https://idp.uft.edu.br/simplesaml/saml2/idp/metadata.php">
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIDxTCCAq2gAwIBAgIJAIMi2ByLVGzeMA0GCSqGSIb3DQEBCwUAMHkxCzAJBgNVBAYTAkJSMQswCQYDVQQIDAJUTzEPMA0GA1UEBwwGUGFsbWFzMQwwCgYDVQQKDANVRlQxDDAKBgNVBAsMA0RUSTEMMAoGA1UEAwwDRFRJMSIwIAYJKoZIhvcNAQkBFhNpbnRlcm5ldEB1ZnQuZWR1LmJyMB4XDTE3MDIyMTE2NDUwNFoXDTI3MDIyMTE2NDUwNFoweTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlRPMQ8wDQYDVQQHDAZQYWxtYXMxDDAKBgNVBAoMA1VGVDEMMAoGA1UECwwDRFRJMQwwCgYDVQQDDANEVEkxIjAgBgkqhkiG9w0BCQEWE2ludGVybmV0QHVmdC5lZHUuYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC3RGSq79VXfzkAT5S+5/ofPVqkmTRi6u5JkmZ5YcqcuRkXH6ae9wcce2cbAb4aABVpaQ3L+7sEizJ1xPsG5psiQKlPjAuUkcvb829/DM8vzuiRp/Cw8hT5PD4771x6Zr8QUzRuMvaXvGTHp5h3nNfLkVTNogXQYWbiHMelt12lgKbTONgRD+3IuYk8DO6oBDHwTi11Ln7BVivBkr5kZe7SgO8/c3JI+d/9FFGxbjIKoPFEY6927LSao2Bc57c71Zwtm/xs+29VprCRO91CrOe3mfNGe/rSfF4Z9Y03tYGLblAscmix7Wc4IwUyewVCB8RtlmepYvfn1bxk0WMA6tkBAgMBAAGjUDBOMB0GA1UdDgQWBBT+nZMUNfx6gqHcIXSL35xjsqKgxzAfBgNVHSMEGDAWgBT+nZMUNfx6gqHcIXSL35xjsqKgxzAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBg2lwQhijzISjv5RpfqUKXhftATGvU4D8iV75frUlcf0bUmOSepecASv8aOzjEv88yS9TSbMiKKC58ChxEX4stMZJstCFlChLliGXjON7Mjge51IwsuBabmw30MkEDbcXbqW0I2VROm41peShgMIiv4I3A/VRJybv1weB5NnSQpCjr2PJw0PT9YBQJdJw3tSigWPkwTCBrfM47Ims8J4bJwiaeA4mkU7QIU+cRalm3/oITh0p6R6GdvRqMgPPwXBKYUxDXTmVdXODAUfg/5DRrUgmf+S9M+oBWJkRWZ4AdyJjb9xeIkCr1UhYF5ZAG3E7njgKhbEkgh7AOcGmJ0Iyq</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:KeyDescriptor use="encryption">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIDxTCCAq2gAwIBAgIJAIMi2ByLVGzeMA0GCSqGSIb3DQEBCwUAMHkxCzAJBgNVBAYTAkJSMQswCQYDVQQIDAJUTzEPMA0GA1UEBwwGUGFsbWFzMQwwCgYDVQQKDANVRlQxDDAKBgNVBAsMA0RUSTEMMAoGA1UEAwwDRFRJMSIwIAYJKoZIhvcNAQkBFhNpbnRlcm5ldEB1ZnQuZWR1LmJyMB4XDTE3MDIyMTE2NDUwNFoXDTI3MDIyMTE2NDUwNFoweTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlRPMQ8wDQYDVQQHDAZQYWxtYXMxDDAKBgNVBAoMA1VGVDEMMAoGA1UECwwDRFRJMQwwCgYDVQQDDANEVEkxIjAgBgkqhkiG9w0BCQEWE2ludGVybmV0QHVmdC5lZHUuYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC3RGSq79VXfzkAT5S+5/ofPVqkmTRi6u5JkmZ5YcqcuRkXH6ae9wcce2cbAb4aABVpaQ3L+7sEizJ1xPsG5psiQKlPjAuUkcvb829/DM8vzuiRp/Cw8hT5PD4771x6Zr8QUzRuMvaXvGTHp5h3nNfLkVTNogXQYWbiHMelt12lgKbTONgRD+3IuYk8DO6oBDHwTi11Ln7BVivBkr5kZe7SgO8/c3JI+d/9FFGxbjIKoPFEY6927LSao2Bc57c71Zwtm/xs+29VprCRO91CrOe3mfNGe/rSfF4Z9Y03tYGLblAscmix7Wc4IwUyewVCB8RtlmepYvfn1bxk0WMA6tkBAgMBAAGjUDBOMB0GA1UdDgQWBBT+nZMUNfx6gqHcIXSL35xjsqKgxzAfBgNVHSMEGDAWgBT+nZMUNfx6gqHcIXSL35xjsqKgxzAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBg2lwQhijzISjv5RpfqUKXhftATGvU4D8iV75frUlcf0bUmOSepecASv8aOzjEv88yS9TSbMiKKC58ChxEX4stMZJstCFlChLliGXjON7Mjge51IwsuBabmw30MkEDbcXbqW0I2VROm41peShgMIiv4I3A/VRJybv1weB5NnSQpCjr2PJw0PT9YBQJdJw3tSigWPkwTCBrfM47Ims8J4bJwiaeA4mkU7QIU+cRalm3/oITh0p6R6GdvRqMgPPwXBKYUxDXTmVdXODAUfg/5DRrUgmf+S9M+oBWJkRWZ4AdyJjb9xeIkCr1UhYF5ZAG3E7njgKhbEkgh7AOcGmJ0Iyq</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.uft.edu.br/simplesaml/saml2/idp/SingleLogoutService.php"/>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.uft.edu.br/simplesaml/saml2/idp/SSOService.php"/>
+    </md:IDPSSODescriptor>
+    <md:ContactPerson contactType="technical">
+        <md:SurName>Redes</md:SurName>
+        <md:EmailAddress>internet@uft.edu.br</md:EmailAddress>
+    </md:ContactPerson>
+</md:EntityDescriptor>

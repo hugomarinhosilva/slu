@@ -1,0 +1,356 @@
+{#Criar novo formulario com template padrao#}
+{% macro new_form(form,titulo,rota_cancelar="homepage",options,class='') %}
+    {% import _self as forms %}
+    <!-- Horizontal Form -->
+    <div class="box box-info">
+        <div class="box-header with-border">
+            <h3 class="box-title">{{ titulo }}</h3>
+        </div><!-- /.box-header -->
+        <!-- form start -->
+        {% if class != '' %}
+            {{ form_start(form,{'attr':{'class':'form-horizontal',"role":"form"}}) }}
+        {% else %}
+            {{ form_start(form,{'attr':{"role":"form"}}) }}
+        {% endif %}
+        {{ form_errors(form) }}
+        <div class="box-body">
+            {% for field in form %}
+                {% if field.vars.block_prefixes[0] != 'button' %}
+                    {{ forms.form_row(field,class) }}
+                {% endif %}
+            {% endfor %}
+            {% if options.recaptcha is defined %}
+               {{ forms.recaptcha() }}
+            {% endif %}
+            {% if options.obrigatorio is defined %}
+                <div>
+                    <span style="margin-left: 20px; color: red;">* Campos com preenchimento obrigatório.</span>
+                </div>
+            {% endif %}
+        </div><!-- /.box-body -->
+        <div class="box-footer">
+            {% if options.terceiroBotao is defined %}
+                <a class="btn btn-success pull-left btn-flat" href="{{ path(options.terceiroBotao.rota) }}">
+                    {{ options.terceiroBotao.nome }}
+                </a>
+                <button type="submit" id="btn_submit" class="btn btn-primary pull-right btn-flat"
+                        style="margin-left: 10px">
+                    {% if options.nomeEnviar is defined %}{{ options.nomeEnviar }}{% else %}Enviar{% endif %}
+                </button>
+                <a href="{{ path(rota_cancelar) }}" class="btn btn-warning pull-right btn-flat">
+                    {% if options.nomeCancelar is not defined %}<i class="fa fa-times"></i> {% endif %}
+                    {% if options.nomeCancelar is defined %}{{ options.nomeCancelar }}{% else %}Cancelar{% endif %}</a>
+            {% else %}
+                <a href="{{ path(rota_cancelar) }}" class="btn btn-warning pull-left btn-flat">
+                    {% if options.nomeCancelar is not defined %}<i class="fa fa-times"></i> {% endif %}
+                    {% if options.nomeCancelar is defined %}{{ options.nomeCancelar }}{% else %}Cancelar{% endif %}</a>
+                <button type="submit" id="btn_submit" class="btn btn-primary pull-right btn-flat"><i
+                            class="fa fa-check-square"></i> {% if options.nomeEnviar is defined %}{{ options.nomeEnviar }}{% else %}Enviar{% endif %}
+                </button>
+            {% endif %}
+        </div><!-- /.box-footer -->
+        {{ form_rest(form) }}
+        {{ form_end(form) }}
+    </div><!-- /.box -->
+{% endmacro %}
+{#Criar novo formulario com template padrao#}
+{% macro new_form_horizontal(form,titulo,rota_cancelar="homepage",options,class='horizontal') %}
+    {% import _self as forms %}
+    {{ forms.new_form(form,titulo,rota_cancelar,options,class) }}
+{% endmacro %}
+
+{% macro form_row(field,class) %}
+    {% if field.vars.block_prefixes[1] == 'collection' %}
+        {% if field.vars.prototype is defined %}
+            <label for="{{ field.vars.name|lower }}" class="col-sm-2 control-label"> {{ form_label(field) }}</label>
+            <div class="form-group{% if (not field.vars.compound or force_error|default(false)) and not field.vars.valid %} has-error{% endif %}">
+                <ul class="{{ field.vars.name|lower }} none col-xs-12 col-md-6"
+                    style="list-style-type: none;"
+                    data-prototype="{{ form_widget(field.vars.prototype)|e }}">
+                    {% if field is empty %}
+                        <li class="col-md-12">{{ form_widget(field) }}</li>
+
+                    {% else %}
+                        {% for position in field %}
+                            {% if 'mail_1' in position.vars.id  %}
+                            <label class=" control-label">Entre com um e-mail secundário:</label>
+                            {% endif %}
+                            <li class="col-md-12">{{ form_widget(position) }}</li>
+                        {% endfor %}
+                    {% endif %}
+                </ul>
+            </div>
+        {% else %}
+            {{ form_widget(field) }}
+
+        {% endif %}
+
+        {% if field.vars.attr['resultado'] is defined %}
+            <div id="resultado_{{ field.vars.name|lower }}" class="col-md-offset-2"></div></br>
+        {% endif %}
+    {% elseif field.vars.block_prefixes[1] == 'repeated' %}
+
+        {% for position in field %}
+            <div class="form-group{% if (not field.vars.compound or force_error|default(false)) and not field.vars.valid %} has-error{% endif %}">
+                <label for="{{ field.vars.name }}"
+                       class="{% if class != '' %}col-sm-2{% endif %} control-label"> {{ form_label(position) }}</label>
+                <div class="{% if class != '' %}col-sm-10{% endif %}">
+                    {{ form_widget(position) }}
+                </div>
+            </div>
+        {% endfor %}
+        {% if field.vars.attr['resultado'] is defined %}
+            <div id="resultado_{{ field.vars.name|lower }}" {% if class !='' %}class="col-md-offset-2"{% endif %}></div></br>
+        {% endif %}
+    {% elseif field.vars.block_prefixes[1] == 'checkbox' %}
+        <div class="form-group">
+            <label for="{{ field.vars.name|lower }}"
+                   class="{% if class != '' %}col-sm-2{% endif %} control-label">  {{ field.vars.name }}:</label>
+
+            <div class="{% if class != '' %}col-sm-10{% endif %}">
+                {{ form_widget(field) }}
+            </div>
+        </div>
+        {% if field.vars.attr['resultado'] is defined %}
+            <div id="resultado_{{ field.vars.name|lower }}" class="col-md-offset-2"></div></br>
+        {% endif %}
+    {% elseif field.vars.block_prefixes[1] != 'hidden' %}
+        <div class="form-group{% if (not field.vars.compound or force_error|default(false)) and not field.vars.valid %} has-error{% endif %}">
+            <label for="{{ field.vars.name }}"
+                   class="{% if class != '' %}col-sm-2{% endif %} control-label"> {{ form_label(field) }}</label>
+            <div class="{% if class != '' %}col-sm-10{% endif %}">
+                {{ form_widget(field) }}
+            </div>
+            {% if field.vars.attr['resultado'] is defined %}
+                <div id="resultado_{{ field.vars.name|lower }}" class="col-md-offset-2"></div></br>
+            {% endif %}
+        </div>
+    {% else %}
+        {% if field.vars.attr['resultado'] is defined %}
+            {{ form_row(field) }}
+            <div id="resultado_{{ field.vars.name|lower }}" class="col-md-offset-2"></div></br>
+        {% else %}
+            {{ form_row(field) }}
+        {% endif %}
+    {% endif %}
+{% endmacro %}
+{#Adicionar select2 ao formulario, os selects tem que conter o atributo multiselect=true#}
+{% macro select2() %}
+    <link href="{{ asset('bundles/slu/select2/select2-bootstrap.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('bundles/slu/select2/select2.css') }}" rel="stylesheet"/>
+    <style>
+        .select2 {
+            width: 100% !important;
+        }
+    </style>
+    <script src="{{ asset('bundles/slu/select2/select2.min.js') }}"></script>
+    <script src="{{ asset('bundles/slu/select2/i18n/pt-BR.js') }}"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            jQuery("select").attr("multiselect", function () {
+                var valorAtributo = jQuery(this).attr('multiselect');
+                if (valorAtributo == 'true') {
+                    $(this).select2({
+                        "placeholder": "Selecione um valor",
+                        "width": "off",
+                        "allowClear": false,
+                        "minimumInputLength": 0
+                    });
+                }
+            });
+        });
+    </script>
+{% endmacro %}
+
+{#Adiciona mascaras, para utilizar passe como parâmetro um array com quais mascaras deseja aplicar ao formulario
+@params array() formato json
+Ex: ['cpf','telefone']
+#}
+{% macro mascaras(options) %}
+    {% import _self as forms %}
+    <script src="{{ asset('bundles/tema/vendor/inputmask/dist/inputmask/jquery.inputmask.js') }}"></script>
+    {% for val in options %}
+        {% if val =='cpf' %}
+            {{ forms.mascara_cpf() }}
+        {% endif %}
+        {% if val =='telefone' %}
+            {{ forms.mascara_telefone() }}
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
+
+{#Adiciona mascara aos campos com a classe .telefone#}
+{% macro mascara_telefone() %}
+    <script src="{{ asset('bundles/avanzuadmintheme/vendor/adminlte/plugins/input-mask/jquery.inputmask.phone.extensions.js') }}"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            //Mascara de telefone
+            $('.telefone').inputmask("+55 (99) 9999-9999[9]").keyup(function () {
+                var valor = $(this).val();
+                if (valor[9] == '9') {
+                    $(this).inputmask("+55 (99) 99999-9999");
+                } else {
+                    $(this).inputmask("+55 (99) 9999-9999");
+                }
+            }).focusout(function () {
+                var valor = $(this).val();
+                if (valor.replace(/\D/g, '').length == '12') {
+                    $(this).inputmask("+55 (99) 9999-9999");
+                }
+            }).focusin(function () {
+                $(this).inputmask("+55 (99) 99999-9999");
+            });
+        });
+    </script>
+{% endmacro %}
+
+{#Adiciona mascara aos campos com a classe .cpf#}
+{% macro mascara_cpf() %}
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            //Mascara de telefone
+            $('.cpf').inputmask("999.999.999-99")
+        });
+    </script>
+{% endmacro %}
+
+
+
+{#Adiciona o datepicker do jquery aos campos com a classe .datepicker#}
+{% macro date_picker() %}
+    <link rel="stylesheet" href="{{ asset('bundles/avanzuadmintheme/vendor/jquery-ui/themes/base/theme.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('bundles/tema/vendor/jquery.ui/core.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('bundles/tema/vendor/jquery.ui/datepicker.css') }}"/>
+    <script>
+        $('.datepicker').datepicker({
+            dateFormat: 'dd/mm/yy',
+            dayNames: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
+            dayNamesMin: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S', 'D'],
+            dayNamesShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'],
+            monthNames: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+            monthNamesShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+            nextText: 'Próximo',
+            prevText: 'Anterior'
+        });
+
+    </script>
+{% endmacro %}
+
+{#Adiciona as mensagens flas ao formulario#}
+{% macro flash() %}
+    {% block flash %}
+        {% for key,flashMessage in app.session.flashbag.all %}
+            <div class="flash-notice alert alert-{{ key }}" style="text-align: center">
+                {{ flashMessage[0]|raw }}
+            </div>
+        {% endfor %}
+    {% endblock %}
+{% endmacro %}
+
+{#Possibilita a adição de novos campos às coleções existentes no fomrulario.
+Para utilizar passe um array com as chaves 'name' => indica qual o nome do atributo collection do formulario e
+'link'=> que representa o texto que será exibido no link de adicionar um novo input à coleção
+Ex: [{name:'matricula',link:'Adicionar Matrícula'}]
+@params array(array()) formato json
+#}
+{% macro add_colecao(options) %}
+    <script type="text/javascript">
+        {% for val in options %}
+        var $collectionHolder{{ val.name }};
+        var $add{{ val.name }} = $('<a href="#" class="add_{{ val.name }}">{{ val.link }}</a>');
+        var $lista{{ val.name }}  = $('<li></li>').append($add{{ val.name }});
+        jQuery(document).ready(function () {
+            $collectionHolder{{ val.name }} = $('ul.{{ val.name }}');
+            $collectionHolder{{ val.name }}.append($lista{{ val.name }} );
+            $collectionHolder{{ val.name }}.data('index', $collectionHolder{{ val.name }}.find(':input').length);
+            $add{{ val.name }}.on('click', function (e) {
+                e.preventDefault();
+                addForm($collectionHolder{{ val.name }}, $lista{{ val.name }} );
+            });
+            $(window).load(function () {
+                $('#pessoa_ldap_mail_0').prop('readonly', true);
+            });
+        });
+        {% endfor %}
+
+        function addForm($collectionHolder, $lista) {
+            var prototype = $collectionHolder.data('prototype');
+            var index = $collectionHolder.data('index');
+            var newForm = prototype.replace(/__name__/g, index);
+            $collectionHolder.data('index', index + 1);
+            var $newFormLi = $('<li class="col-md-12" > </li>').append(newForm);
+            $newFormLi.append('<a href="#" class="remove-tag" style="padding: 10px 10px 10px 10px"><i  class="glyphicon glyphicon-remove" style="top: 10px;"></i></a>');
+            $($newFormLi).children("input").removeClass('form-control');
+            $($newFormLi).children("input").addClass('col-md-11');
+            $($newFormLi).children("input").css("border", "1px solid #ccc");
+            $($newFormLi).children("input").css("padding", "6px 12px");
+            $($newFormLi).children("input").css("margin", "6px 0px");
+            $lista.before($newFormLi);
+            $('.remove-tag').click(function (e) {
+                e.preventDefault();
+
+                $(this).parent().remove();
+
+                return false;
+            });
+        }
+    </script>
+{% endmacro %}
+
+{% macro menu_item_acess(item) %}
+    {% if item.route or item.hasChildren %}
+        <li id="{{ item.identifier }}"
+            class=" {{ item.isActive ? 'active' : '' }} {{ item.hasChildren? 'treeview' : '' }}">
+            <a href="{{ item.hasChildren ? '#': '/' in item.route ? item.route : path(item.route, item.routeArgs) }}">
+                {% if item.icon %} <i class="{{ item.icon }}"></i> {% endif %}
+                <span>{{ item.label }}</span>
+                {% if item.badge %}
+                    <small class="label pull-right bg-{{ item.badgeColor }}">{{ item.badge }}</small>
+                {% endif %}
+                {% if item.hasChildren %}<i class="fa fa-angle-left pull-right"></i>{% endif %}
+            </a>
+            {% if item.hasChildren %}
+                <ul class="treeview-menu">
+                    {% for child in item.children %}
+                        {% if(is_granted(child.routeAcess) ) %}
+                            <li class="{{ child.isActive ? 'active':'' }}" id="{{ child.identifier }}">
+                                <a href="{{ '/' in child.route ? child.route : path(child.route, child.routeArgs) }}">
+                                    <i class="{{ child.icon|default('fa fa-circle-o') }}"></i>
+                                    {{ child.label }}
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </li>
+    {% else %}
+        <li class="header">
+            {{ item.label }}
+            {% if item.badge %}
+                <small class="label pull-right bg-{{ item.badgeColor }}">{{ item.badge }}</small>
+            {% endif %}
+        </li>
+    {% endif %}
+{% endmacro %}
+
+{#Adiciona reCAPTCHA#}
+{% macro recaptcha() %}
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <div class="g-recaptcha" data-sitekey="6Lf5dhQUAAAAAOffHOz2sApZ4nTMW4BrTH_iQan-"></div>
+{% endmacro %}
+
+{% macro status_mostrar(entity) %}
+    {% if 'Desativados' in entity.dn  %}
+        {{ path('mostra_pessoa',  { 'uid': entity.uid,'status': 'inativo' }) }}
+    {% else %}
+        {{ path('mostra_pessoa',  { 'uid': entity.uid }) }}
+    {% endif %}
+{% endmacro %}
+{% macro status_deletar(entity) %}
+    {% if 'Desativados' in entity.dn  %}
+        {{ path('remover_pessoa', { 'uid': entity.uid, 'status': 'inativo' }) }}
+    {% else %}
+        {{ path('remover_pessoa', { 'uid': entity.uid }) }}
+    {% endif %}
+{% endmacro %}

@@ -1,0 +1,44 @@
+{% extends "::base.html.twig" %}
+
+{% block page_content %}
+{{ macro_uft.flash() }}
+{{ macro_uft.new_form_horizontal(form,titulo,rota_cancelar) }}
+{% endblock page_content %}
+
+
+{% block javascripts_inline %}
+    {{ macro_uft.select2() }}
+
+    <script>
+        $('#tipo_relatorio_departmentNumber').select2({
+            language: 'pt-BR',
+            ajax: {
+                url: '{{ path("ajax_busca_filtro_grupo") }}',
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        q: params.term, // search term
+                        page: params.page
+                    };
+                },
+                processResults: function (data, params) {
+                    console.log(data);
+                    params.page = 1;
+                    return {
+                        results: data,
+                        pagination: {
+                            more: (params.page * 50) < data.total_count
+                        }
+                    };
+                },
+                cache: true
+            },
+            escapeMarkup: function (markup) {
+                return markup;
+            }, // let our custom formatter work
+            minimumInputLength: 5
+        });
+    </script>
+
+{% endblock %}

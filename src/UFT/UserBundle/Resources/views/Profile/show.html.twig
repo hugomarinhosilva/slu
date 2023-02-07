@@ -1,0 +1,7 @@
+{% extends "::base.html.twig" %}
+
+{% block page_content %}
+    {{ macro_uft.flash() }}
+
+    {% include "UserBundle:Profile:show_content.html.twig" %}
+{% endblock page_content %}

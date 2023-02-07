@@ -1,0 +1,51 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+#    parameter_name: value
+  slu_admin_theme.navbar_user_listener.class: Avanzu\AdminThemeBundle\EventListener\NavbarShowUserDemoListener
+  slu_admin_theme.setup_menu_listener.class: UFT\TemaBundle\EventListener\MenuListener
+
+
+  some_ldap_server:
+      connection:
+          uri: "%ldap_host%"
+          use_tls: false
+          bind_dn: "%ldap_username%"
+          password: "%ldap_password%"
+          password_type: plaintext
+services:
+#    service_name:
+#        class: AppBundle\Directory\ClassName
+#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+    ldap_entity_manager:
+        class: UFT\LdapOrmBundle\Ldap\LdapEntityManager
+        arguments: ["@logger", "@annotation_reader", "%some_ldap_server%","@doctrine.orm.default_entity_manager","@security.token_storage"]
+
+    uft.authentication.ldap_manager:
+        class: UFT\UserBundle\Util\Ldap\LdapAuthenticationManager
+        arguments: ["@fr3d_ldap.ldap_driver", "@fr3d_ldap.user_manager", "%fr3d_ldap.ldap_manager.parameters%","@ldap_entity_manager"]
+
+    slu_admin_theme.navbar_user_listener:
+        class: "%slu_admin_theme.navbar_user_listener.class%"
+        tags:
+          - {name: kernel.event_listener,event: theme.navbar_user,method: onShowUser}
+    app_bundle.setup_menu_listener:
+        class: "%slu_admin_theme.setup_menu_listener.class%"
+        tags:
+          - { name: kernel.event_listener, event: theme.sidebar_setup_menu, method: onSetupMenu }
+
+    app_entity_descriptor:
+      class: UFT\UserBundle\Security\Service\AppEntityDescriptor
+      arguments:
+        - "%idp_entry%"
+        - ["%idp_login_check%"]
+        - "https://idp.uft.edu.br/simplesaml/saml2/idp/SSOService.php"
+        - "%kernel.root_dir%/../vendor/lightsaml/lightsaml/web/sp/saml.crt"
+
+    manutencao_listener:
+        class: UFT\SluBundle\Event\ManutencaoListener
+        arguments:
+          - "@service_container"
+          - "@twig"
+        tags:
+          - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }

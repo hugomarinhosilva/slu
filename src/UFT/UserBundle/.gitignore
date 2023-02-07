@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+composer.lock
+phpunit.xml
+Tests/autoload.php
+/nbproject/*
+/vendor/*
+/.idea/*
+
+

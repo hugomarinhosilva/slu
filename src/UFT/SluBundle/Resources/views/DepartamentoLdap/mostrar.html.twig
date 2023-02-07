@@ -1,0 +1,108 @@
+{% extends '::base.html.twig' %}
+
+{% block page_content -%}
+{{ macro_uft.flash() }}
+<div class="row">
+    <div class="col-md-12 col-centered">
+        <div class="box box-primary">
+            <div class="box-header">
+                <h3 class="box-title">Conta: {{ entity.uid }}
+                    {% if 'Desativados' in entity.dn %}
+                        <span class="label label-danger" style="margin-left: 1em;">Inativo</span>
+                    {% else %}
+                        <span class="label label-success" style="margin-left: 1em;">Ativo</span>
+                    {% endif %}
+                </h3>
+            </div>
+
+            <div class="box-body">
+                <legend class="col-md-12 control-label">Identificação</legend>
+                <div class="row">
+                    <label class="col-md-12 control-label required" style="padding-top: 1em;"></label>
+                    <div class="col-md-12">
+                    </div>
+                </div>
+                <div class="row" style="padding-left: 1em">
+                    <dl class="dl-horizontal">
+                        <dt>Nome:</dt>
+                        {% if entity.cn  is iterable %}
+                            {% for cn in entity.cn %}
+                                <dd>{{ cn }}</dd>
+                            {% endfor %}
+                        {% else %}
+                            <dd>{{ entity.cn }}</dd>
+                        {% endif %}
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Login:</dt>
+                        <dd>{{ entity.uid }}</dd>
+                    </dl>
+
+                <legend class="col-md-12">Contato</legend>
+
+                <div class="row" style="padding-left: 1em">
+                    <dl class="dl-horizontal">
+                        <dt>E-mail:</dt>
+                        {% if entity.mail  is iterable %}
+                            {% for mail in entity.mail %}
+                                <dd>{{ mail }}</dd>
+                            {% endfor %}
+                        {% else %}
+                            <dd>{{ entity.mail }}</dd>
+                        {% endif %}
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Responsável:</dt>
+                        {% if entity.manager  is iterable %}
+                            {% for manager in entity.manager %}
+                                <dd>{{ manager.gecos }}</dd>
+                            {% endfor %}
+                        {% else %}
+                            <dd>{{ entity.manager.gecos }}</dd>
+                        {% endif %}
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box-footer clearfix">
+            <a href="javascript: history.go(-1)" class="btn btn-primary pull-left btn-flat"><i class="fa fa-arrow-left"></i>
+                Voltar</a>
+
+            {% if is_granted("ROLE_SUPER_ADMINISTRADOR_SLU") %}
+
+            {% if 'Desativados' in entity.dn %}
+                    <a href="{{ path('ativar_pessoa', { 'uid': entity.uid }) }}" class="btn btn-success pull-left btn-flat"
+                       style="margin-left: 0.5em;"><i class="fa fa-check"></i> Ativar</a>
+            {% else %}
+                    <a href="{{ path('edita_departamento_ldap', { 'uid': entity.uid }) }}" class="btn btn-success pull-left btn-flat"
+                       style="margin-left: 0.5em;"><i class="fa fa-pencil-square-o"></i> Alterar</a>
+                {#TODO: VER COM RODOLFO SE FICA OU SE SAI#}
+                {#{% if is_granted("ROLE_SLU_USUARIO_SITUACAO") %}#}
+                    {#<a href="{{ path('suspender_pessoa', { 'uid': entity.uid }) }}" class="btn btn-warning pull-left btn-flat"#}
+                       {#style="margin-left: 0.5em;"><i class="fa fa-power-off"></i> Suspender</a>#}
+                {#{% endif %}#}
+            {% endif %}
+                <a href="{{ path('remover_departamento', { 'uid': entity.uid }) }}" class="btn btn-danger pull-left btn-flat"
+                   style="margin-left: 0.5em;"><i class="fa fa-times"></i> Excluir</a>
+            {% endif %}
+            {% if emailCriado == false %}
+
+                <a href="{{ path('criar_email_departamento_manual', { 'username': entity.uid }) }}" class="btn btn-default pull-left btn-flat"
+                   style="margin-left: 0.5em;"><i class="fa fa-refresh"></i> Ativar E-mail</a>
+            {% endif %}
+
+        </div>
+        {#<a href="{{ path('conta') }}">#}
+        {#Back to the list#}
+        {#</a>#}
+        {#</li>#}
+        {#<li>#}
+        {#<a href="{{ path('conta_edit', { 'id': entity.id }) }}">#}
+        {#Edit#}
+        {#</a>#}
+        {#</li>#}
+        {#<li>{{ form(delete_form) }}</li>#}
+        {#</ul>#}
+        {% endblock %}

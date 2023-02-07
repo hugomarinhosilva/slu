@@ -1,0 +1,139 @@
+{% extends '::base.html.twig' %}
+
+{% block page_content -%}
+    {{ macro_uft.flash() }}
+    {{ macro_uft.new_form_horizontal(form,'Novo','lista_departamentos', {obrigatorio: 'obrigatorio'}) }}
+{% endblock %}
+
+{% block javascripts_inline %}
+    {#{{ macro_uft.select2(form) }}#}
+    {#verifica se já existe login no LDAP#}
+
+    <link href="{{ asset('bundles/slu/select2/select2-bootstrap.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('bundles/slu/select2/select2.css') }}" rel="stylesheet"/>
+    <script src="{{ asset('bundles/slu/select2/select2.min.js') }}"></script>
+    <script src="{{ asset('bundles/slu/select2/i18n/pt-BR.js') }}"></script>
+    <script>
+        $('#departamento_ldap_Campus').select2();
+        $('#departamento_ldap_manager').select2({
+            language: 'pt-BR',
+            ajax: {
+                url: '{{ path("ajax_busca_membros") }}',
+                dataType: 'json',
+                delay: 250,
+                data: function (params) {
+                    return {
+                        q: params.term, // search term
+                        page: params.page
+                    };
+                },
+                processResults: function (data, params) {
+                    params.page = 1;
+                    return {
+                        results: data,
+                        pagination: {
+                            more: (params.page * 30) < data.total_count
+                        }
+                    };
+                },
+                cache: true
+            },
+            escapeMarkup: function (markup) {
+                return markup;
+            }, // let our custom formatter work
+            minimumInputLength: 5
+        }).on("select2:select", function(e) {
+            $('#departamento_ldap_postalAddress').val(e.params.data.id.concat('@uft.edu.br'));
+        }).on("select2:unselect", function(e) {
+            if($('#departamento_ldap_postalAddress').val() == e.params.data.id.concat('@uft.edu.br')){
+                $('#departamento_ldap_postalAddress').val('');
+                var manager = $('#departamento_ldap_manager').val();
+                if(manager.length>0){
+                    $('#departamento_ldap_postalAddress').val(manager[manager.length - 1].concat('@uft.edu.br'));
+                }
+            }
+        });
+    </script>
+
+
+    <script>// Verifica a 'força' da senha digitada...
+        $('#departamento_ldap_userPassword_first').keyup(function (e) {
+            var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
+            var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+            var enoughRegex = new RegExp("(?=.{8,}).*", "g");
+            if ($(this).val() == '') {
+                $('#resultado_userpassword').html('');
+                $('#btn_submit').removeAttr('disabled');
+            }
+            else if (false == enoughRegex.test($(this).val())) {
+                $('#resultado_userpassword').html('Senha muito Curta, tamanho mínimo 8 caracteres.');
+                $('#resultado_userpassword').css('color','red');
+                $('#btn_submit').attr('disabled', 'disabled');
+            } else if (strongRegex.test($(this).val())) {
+                $('#resultado_userpassword').className = 'ok';
+                $('#resultado_userpassword').html('Forte!');
+                $('#resultado_userpassword').css('color','lime');
+                $('#btn_submit').removeAttr('disabled');
+            } else if (mediumRegex.test($(this).val())) {
+                $('#resultado_userpassword').className = 'alert';
+                $('#resultado_userpassword').html('Mediana!');
+                $('#resultado_userpassword').css('color','#b4d100');
+                $('#btn_submit').removeAttr('disabled');
+            } else {
+                $('#resultado_userpassword').className = 'error';
+                $('#resultado_userpassword').html('Fraca!');
+                $('#resultado_userpassword').css('color','red');
+                $('#btn_submit').removeAttr('disabled');
+            }
+            return true;
+        });
+    </script>
+
+
+
+    <script type="text/javascript">
+        $(function () { // declaro o início do jquery
+            $("#departamento_ldap_uid").on('blur', function () {
+                var nomeUsuario = $(this).val().toLowerCase();
+                $(this).val(nomeUsuario);
+                $.ajax({
+                    type: "POST",
+                    data: {login: nomeUsuario},
+                    url: "{{ path('ajax_verifica_login_departamento') }}",
+                    success: function (data) {
+                        if (!$("#departamento_ldap_uid").attr('readonly')) {
+                            $('#resultado_uid').html(data);
+                            if (data == 'Login disponivel!') {
+                                $('#resultado_uid').attr('style', 'color:green');
+                                $('#btn_submit').removeAttr('disabled');
+                            } else {
+                                $('#resultado_uid').attr('style', 'color:red');
+                                $('#btn_submit').attr('disabled', 'disabled');
+                            }
+                        }
+                        if (nomeUsuario == "") {
+                            $('#departamento_ldap_mail_0').val("");
+                        } else {
+                            $('#departamento_ldap_mail_0').val(nomeUsuario.concat('@uft.edu.br'));
+                        }
+                    }
+                });
+            });
+
+//
+////            verificando pefil da pessoaLDAP
+//            $("#pessoa_ldap_Aluno").on('change', function () {
+//                var nomeUsuario = $(this).val().toLowerCase();
+//                $(this).val(nomeUsuario);
+//
+//                var id = $("input[id*='Aluno']:checked").val()
+//
+//                $("#pessoa_ldap_grupo").append("<option value='Alunos' selected>Alunos</option>");
+//                $('#pessoa_ldap_grupo').trigger('change');
+//            });
+
+        });// fim do jquery
+    </script>
+
+    {#{{ macro_uft.add_colecao([{name:'telephonenumber',link:'Adicionar Telefone'}]) }}#}
+{% endblock %}

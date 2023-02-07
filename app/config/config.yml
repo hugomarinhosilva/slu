@@ -1,0 +1,337 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: security.yml }
+    - { resource: services.yml }
+    - { resource: "@SluBundle/Resources/config/services.yml" }
+    - { resource: "@UserBundle/Resources/config/services.yml" }
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+parameters:
+    locale: pt_BR
+
+framework:
+    #esi:             ~
+    translator:      ~
+    secret:          "%secret%"
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    #serializer:      { enable_annotations: true }
+    templating:
+        engines: ['twig']
+    default_locale:  "%locale%"
+    trusted_hosts:   ~
+    trusted_proxies: ~
+    session:
+        # handler_id set to null will use default session handler from php.ini
+        handler_id: session.handler.native_file
+        save_path: '%kernel.root_dir%/sessions'
+    fragments:       ~
+    http_method_override: true
+
+# Twig Configuration
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
+    globals:
+      admin_skin: "%admin_skin%"
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        default_connection:      default
+        connections:
+            default:
+                server_version: 10.2.8
+                driver:   "%database_driver%"
+                host:     "%database_host%"
+                port:     "%database_port%"
+                dbname:   "%database_name%"
+                user:     "%database_user%"
+                password: "%database_password%"
+                charset:  UTF8
+            db2:
+                driver:   "%db2_driver%"
+                host:     "%db2_host%"
+                port:     "%db2_port%"
+                dbname:   "%db2_name%"
+                user:     "%db2_user%"
+                password: "%db2_password%"
+                charset:  UTF8
+            acesso:
+                driver:   "%acesso_driver%"
+                host:     "%acesso_host%"
+                port:     "%acesso_port%"
+                dbname:   "%acesso_name%"
+                user:     "%acesso_user%"
+                password: "%acesso_password%"
+                charset:  UTF8
+            moodle:
+                driver:   "%moodle_driver%"
+                host:     "%moodle_host%"
+                port:     "%moodle_port%"
+                dbname:   "%moodle_name%"
+                user:     "%moodle_user%"
+                password: "%moodle_password%"
+                charset:  UTF8
+            intranet:
+                driver:   "%intranet_driver%"
+                host:     "%intranet_host%"
+                port:     "%intranet_port%"
+                dbname:   "%intranet_name%"
+                user:     "%intranet_user%"
+                password: "%intranet_password%"
+                charset:  UTF8
+            sip:
+                driver: "%sip_driver%"
+                host: "%sip_host%"
+                port: "%sip_port%"
+                dbname: "%sip_name%"
+                user: "%sip_user%"
+                password: "%sip_password%"
+                charset: UTF8
+
+        # if using pdo_sqlite as your database driver:
+        #   1. add the path in parameters.yml
+        #     e.g. database_path: "%kernel.root_dir%/data/data.db3"
+        #   2. Uncomment database_path in parameters.yml.dist
+        #   3. Uncomment next line:
+        #     path:     "%database_path%"
+
+    orm:
+        auto_generate_proxy_classes: "%kernel.debug%"
+        # auto_mapping: true
+        default_entity_manager:   default
+        entity_managers:
+            default:
+                connection:       default
+                mappings:
+                    SluBundle: ~
+                    UserBundle: ~
+                    LdapOrmBundle:
+                        type: annotation
+                        prefix: UFT\LdapOrmBundle\Entity\
+                        dir: "%kernel.root_dir%/../vendor/uft/ldaporm-bundle/UFT/LdapOrmBundle/Entity/"
+                        is_bundle: false
+                metadata_cache_driver:
+                    type: memcached
+                    host: 127.0.0.1
+                    port: 11211
+                    instance_class: memcached
+                query_cache_driver:
+                    type: memcached
+                    host: 127.0.0.1
+                    port: 11211
+                    instance_class: memcached
+                result_cache_driver:
+                    type: memcached
+                    host: 127.0.0.1
+                    port: 11211
+                    instance_class: memcached
+            db2:
+                connection:       db2
+                mappings:
+                    SluBundle: ~
+                dql:
+                    string_functions:
+                        tiraAcento: UFT\SluBundle\DoctrineExtensions\Query\Db2\TiraAcento
+                metadata_cache_driver:
+                    type: memcached
+                    host: 127.0.0.1
+                    port: 11211
+                    instance_class: memcached
+                query_cache_driver:
+                    type: memcached
+                    host: 127.0.0.1
+                    port: 11211
+                    instance_class: memcached
+                result_cache_driver:
+                    type: memcached
+                    host: 127.0.0.1
+                    port: 11211
+                    instance_class: memcached
+            acesso:
+                connection:       acesso
+            moodle:
+                connection:       moodle
+            intranet:
+                connection:       intranet
+            sip:
+                connection:       sip
+                mappings:
+                    SluBundle: ~
+
+# Swiftmailer Configuration
+swiftmailer:
+    transport: "%mailer_transport%"
+    host:      "%mailer_host%"
+    username:  "%mailer_user%"
+    password:  "%mailer_password%"
+    spool:     { type: memory }
+
+
+
+#user
+fos_user:
+    db_driver: orm
+    firewall_name: main # nombre anterior
+    user_class: UFT\UserBundle\Entity\Usuario
+    group:
+        group_class: UFT\UserBundle\Entity\Grupo
+    from_email:
+        address:        naoresponder@dti.uft.edu.br
+        sender_name:    SLU/UFT - Sistema de Login Unificado
+
+
+services:
+    fos_user.doctrine_registry:
+        alias: doctrine
+
+
+fr3d_ldap:
+    driver:
+        host: "%ldap_host%"
+        username: "%ldap_username%"
+        password: "%ldap_password%"
+        baseDn: "%people_basedn%"
+#       port:                389    # Optional
+#       username:            foo    # Optional
+#       password:            bar    # Optional
+        bindRequiresDn:      true   # Optional
+#       baseDn:              ou=users, dc=host, dc=foo   # Optional
+        accountFilterFormat: '%ldap_filter%'
+#        accountFilterFormat: (&(uid=%s)(memberOf=cn=Teste2,ou=Group,o=uft,dc=edu,dc=br))
+#       optReferrals:        false  # Optional
+#       useSsl:              true   # Enable SSL negotiation. Optional
+#       useStartTls:         true   # Enable TLS negotiation. Optional
+#        accountCanonicalForm: 2
+       # ACCTNAME_FORM_BACKSLASH this is only needed if your users have to login with something like HOST\User
+#       accountDomainName: HOST
+#       accountDomainNameShort: HOST # if you use the Backslash form set both to Hostname than the Username will be converted to HOST\User
+    user:
+        baseDn: "%ldap_basedn%"
+#        filter: '(memberOf=cn=Sistema - SLU,ou=Group,dc=uft,dc=edu,dc=br)'
+        attributes:
+            - { ldap_attr: uid,  user_method: setUsername }
+            - { ldap_attr: mail, user_method: setEmail }
+            - { ldap_attr: departmentnumber, user_method: setDepartmentNumber }
+            - { ldap_attr: institucional, user_method: setInstitucional }
+        # Specify ldap attributes mapping [ldap attribute, user object method]
+#           - { ldap_attr: uid,  user_method: setUsername } # Default
+#           - { ldap_attr: cn,   user_method: setName }     # Optional
+
+#           - { ldap_attr: ...,  user_method: ... }         # Optional
+    service:
+#       user_manager: fos_user.user_manager          # Overrides default user manager
+        ldap_manager: 'uft.authentication.ldap_manager' # Overrides default ldap manager
+
+doctrine_cache:
+    providers:
+        gearman_cache:
+            type: file_system
+            namespace: doctrine_cache.ns.gearman
+
+gearman:
+  bundles:
+    SluBundle:
+      name: SluBundle
+      # Bundle search can be enabled or disabled
+      active: true
+
+      # If any include is defined, Only these namespaces will be parsed
+      # Otherwise, full Bundle will be parsed
+      include:
+         - Services
+
+  # default values
+  # All these values will be used if are not overwritten in Workers or jobs
+  defaults:
+
+    # Default method related with all jobs
+    # do // deprecated as of pecl/gearman 1.0.0. Use doNormal
+    # doNormal
+    # doBackground
+    # doHigh
+    # doHighBackground
+    # doLow
+    # doLowBackground
+    method: doBackground
+
+    # Default number of executions before job dies.
+    # If annotations defined, will be overwritten
+    # If empty, 0 is defined by default
+    iterations: 0
+
+    # Default amount of time in seconds required for the execution to run.
+    # This is useful if using a tool such as supervisor which may expect a command to run for a
+    # minimum period of time to be considered successful and avoid fatal termination.
+    # If empty, no minimum time is required
+    minimum_execution_time: 0
+
+    # Default maximum amount of time in seconds for a worker to remain idle before terminating.
+    # If empty, the worker will never timeout
+    timeout: 0
+
+    # execute callbacks after operations using Kernel events
+    callbacks: true
+
+    # Prefix in all jobs
+    # If empty name will not be modified
+    # Useful for rename jobs in different environments
+    job_prefix: null
+
+    # Autogenerate unique key in jobs/tasks if not set
+    # This key is unique given a Job name and a payload serialized
+    generate_unique_key: true
+
+    # Prepend namespace when callableName is built
+    # By default this variable is set as true
+    workers_name_prepend_namespace: true
+
+  # Server list where workers and clients will connect to
+  # Each server must contain host and port
+  # If annotations defined, will be full overwritten
+  #
+  # If servers empty, simple localhost server is defined by default
+  # If port empty, 4730 is defined by default
+  servers:
+    localhost:
+      host: 127.0.0.1
+      port: 4730
+
+light_saml_symfony_bridge:
+    own:
+        entity_id: "%idp_entry%"
+        credentials:
+            -
+                certificate: "%kernel.root_dir%/../vendor/lightsaml/lightsaml/web/sp/saml.crt"
+                key:         "%kernel.root_dir%/../vendor/lightsaml/lightsaml/web/sp/saml.key"
+                password:    ~
+    party:
+        idp:
+            files:
+                - "%kernel.root_dir%/../src/UFT/UserBundle/Security/sp/idp.uft.xml"
+    store:
+        id_state: id_store  # name of id store service created in step 6
+
+fos_rest:
+    param_fetcher_listener: true
+    body_listener: true
+    format_listener: true
+    view:
+        view_response_listener: 'force'
+        formats:
+            xml: true
+            json : true
+        templating_formats:
+            html: true
+        force_redirects:
+            html: true
+        failed_validation: HTTP_BAD_REQUEST
+        default_engine: twig
+    routing_loader:
+        default_format: json

@@ -1,0 +1,110 @@
+{% extends '::base.html.twig' %}
+
+{% block page_content -%}
+    {{ macro_uft.flash() }}
+    {{ macro_uft.new_form_horizontal(form,'Editar dados de Contato','mostra_usuario', {obrigatorio: 'obrigatorio'}) }}
+{% endblock %}
+
+{% block javascripts_inline %}
+    {{ macro_uft.mascara_telefone() }}
+    {{ macro_uft.mascara_cpf() }}
+    {{ macro_uft.date_picker() }}
+
+    <link href="{{ asset('bundles/slu/select2/select2-bootstrap.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('bundles/slu/select2/select2.css') }}" rel="stylesheet"/>
+    <script src="{{ asset('bundles/slu/select2/select2.min.js') }}"></script>
+    <script src="{{ asset('bundles/slu/select2/i18n/pt-BR.js') }}"></script>
+    <script>
+        $("li input[id^='altera_dados_usuario_telephoneNumber_']").each( function () {
+            $(this).inputmask("+55 (99) 9999-9999[9]").keyup(function () {
+                var valor = $(this).val();
+                if (valor[9] == '9') {
+                    $(this).inputmask("+55 (99) 99999-9999");
+                } else {
+                    $(this).inputmask("+55 (99) 9999-9999");
+                }
+            }).focusout(function () {
+                var valor = $(this).val();
+                if (valor.replace(/\D/g, '').length == '12') {
+                    $(this).inputmask("+55 (99) 9999-9999");
+                }
+            }).focusin(function () {
+                $(this).inputmask("+55 (99) 99999-9999");
+            });
+        });
+        $(document).delegate("li input[id^='altera_dados_usuario_telephoneNumber_']", "focus", function () {
+            $(this).inputmask("+55 (99) 9999-9999[9]").keyup(function () {
+                var valor = $(this).val();
+                if (valor[9] == '9') {
+                    $(this).inputmask("+55 (99) 99999-9999");
+                } else {
+                    $(this).inputmask("+55 (99) 9999-9999");
+                }
+            }).focusout(function () {
+                var valor = $(this).val();
+                if (valor.replace(/\D/g, '').length == '12') {
+                    $(this).inputmask("+55 (99) 9999-9999");
+                }
+            }).focusin(function () {
+                $(this).inputmask("+55 (99) 99999-9999");
+            });
+        });
+
+    </script>
+
+
+    <script>
+
+        var $collectionHolderEmail;
+        var $addEmail = $('');//<a href="#" class="add_emails">Adicionar E-mail</a>
+        var $listaEmail = $('<li></li>').append($addEmail);
+        jQuery(document).ready(function () {
+            $collectionHolderEmail = $('ul.mail');
+            $collectionHolderEmail.append($listaEmail);
+            $collectionHolderEmail.data('index', $collectionHolderEmail.find(':input').length);
+            $addEmail.on('click', function (e) {
+                e.preventDefault();
+                addMatriculaForm($collectionHolderEmail, $listaEmail);
+            });
+            $(window).load(function (e) {
+                e.preventDefault();
+//                addMatriculaForm($collectionHolderEmail, $listaEmail);
+                $('#altera_dados_usuario_mail_0').prop('readonly', true);
+                $('#altera_dados_usuario_mail_0').hide();
+            });
+        });
+
+        function addMatriculaForm($collectionHolder, $lista) {
+            var prototype = $collectionHolder.data('prototype');
+            var index = $collectionHolder.data('index');
+            var newForm = prototype.replace(/__name__/g, index);
+            $collectionHolder.data('index', index + 1);
+            var $newFormLi = $('<li class="col-md-12" > </li>').append(newForm);
+            if ($($newFormLi).children("input").attr("id") == "altera_dados_usuario_mail_0") {
+                $($newFormLi).children("input").removeClass('form-control');
+                $($newFormLi).children("input").addClass('col-md-11');
+                $($newFormLi).children("input").css("border", "1px solid #ccc");
+                $($newFormLi).children("input").css("padding", "6px 12px");
+                $($newFormLi).children("input").css("margin", "6px 0px");
+                $lista.before($newFormLi);
+            } else {
+//                $newFormLi.append('<a href="#" class="remove-tag" style="padding: 10px 10px 10px 10px"><i  class="glyphicon glyphicon-remove" style="top: 10px;"></i></a>');
+                $($newFormLi).children("input").removeClass('form-control');
+                $($newFormLi).children("input").addClass('col-md-11');
+                $($newFormLi).children("input").css("border", "1px solid #ccc");
+                $($newFormLi).children("input").css("padding", "6px 12px");
+                $($newFormLi).children("input").css("margin", "6px 0px");
+                $lista.before($newFormLi);
+//                $('.remove-tag').click(function (e) {
+//                    e.preventDefault();
+//
+//                    $(this).parent().remove();
+//
+//                    return false;
+//                });
+            }
+        }
+
+    </script>
+    {#{{ macro_uft.add_colecao([{name:'telephonenumber',link:'Adicionar Telefone'}]) }}#}
+{% endblock %}

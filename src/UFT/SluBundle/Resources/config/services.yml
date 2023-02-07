@@ -1,0 +1,70 @@
+parameters:
+    fos_user.resetting.email.template: 'SluBundle:Reset:email.txt.twig'
+    fos_user.registration.confirmation.template: 'SluBundle:Registration:email.txt.twig'
+    fos_user.resetting.email_new_account.template: 'SluBundle:Reset:email_new_account.txt.twig'
+    google_api.credential_file: "%kernel.root_dir%/../src/UFT/SluBundle/Util/GSuit/slu2015-02f3a0242161.json"
+    google_api.application_name: "slu2015"
+services:
+#    slu.example:
+#        class: UFT\SluBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
+    uft.email.manager:
+        class: UFT\SluBundle\Util\GSuit\EmailManager
+        arguments: ["%email_manager%","@google_api.google_client"]
+    uft.grupo_email.manager:
+        class: UFT\SluBundle\Util\GSuit\GrupoManager
+        arguments: [ "@uft.convertores", "%email_manager%","@doctrine.orm.db2_entity_manager", "@google_api.google_client"]
+    uft.convertores:
+        class: UFT\SluBundle\Util\Convertores
+    uft.ldap.manager:
+        class: UFT\SluBundle\Util\LdapManeger
+        arguments: ["%ldap_host%","%ldap_username%","%ldap_password%","%ldap_basedn%"]
+    uft.moodle.manager:
+        class: UFT\SluBundle\Util\MoodleManeger
+        arguments: [ "@doctrine.orm.moodle_entity_manager", "%email_manager%"]
+    uft.intranet.manager:
+        class: UFT\SluBundle\Util\IntranetManager
+        arguments: [ "@doctrine.orm.intranet_entity_manager", "%email_manager%"]
+    uft.form.nova_conta_ldap_type:
+        class: UFT\SluBundle\Form\NovaContaLdapType
+        arguments: ['@ldap_entity_manager']
+        tags:
+            - { name: form.type, alias: uft.form.nova_conta_ldap_type }
+    uft.form.pessoa_ldap_type:
+        class: UFT\SluBundle\Form\PessoaLdapType
+        arguments: ["@security.authorization_checker"]
+        tags:
+            - { name: form.type, alias: uft.form.pessoa_ldap_type }
+    uft.sincronizacao.manager:
+        class: UFT\SluBundle\Util\Sincronizacao
+        arguments: [ "@doctrine.orm.db2_entity_manager" ,'@service_container' , '@uft.convertores' ]
+
+    fos_user.mailer.default:
+        class: UFT\UserBundle\Mailer\Mailer
+        public: false
+        arguments: ['@mailer', '@router', '@templating', { create_password.template: '%fos_user.resetting.email_new_account.template%', confirmation.template: '%fos_user.registration.confirmation.template%', resetting.template: '%fos_user.resetting.email.template%', from_email: { confirmation: '%fos_user.registration.confirmation.from_email%', resetting: '%fos_user.resetting.email.from_email%' } }]
+
+    app_roles_helper:
+       class: UFT\SluBundle\Util\RolesHelper
+       arguments: ['%security.role_hierarchy.roles%','@security.context']
+
+    app_user.registration.form.type:
+       class: UFT\SluBundle\Form\RolesType
+       arguments: ['@app_roles_helper']
+       tags:
+         - { name: form.type, alias: user_registration }
+
+    gsuitworkerservice:
+      class: UFT\SluBundle\Services\GSuitWorkerService
+      arguments: ['@uft.grupo_email.manager', '@ldap_entity_manager','@doctrine.orm.default_entity_manager']
+
+    google_api.config:
+        class: UFT\SluBundle\Util\GSuit\Config
+        calls:
+            - [setCredentialFile,   [%google_api.credential_file%]]
+            - [setApplicationName,  [%google_api.application_name%]]
+
+    google_api.google_client:
+        class: UFT\SluBundle\Util\GSuit\GoogleClient
+        arguments:
+            - '@google_api.config'

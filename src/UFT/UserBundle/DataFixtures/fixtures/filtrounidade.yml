@@ -1,0 +1,3796 @@
+FiltroUnidade:
+  filtro_unidade_1:
+      codEstruturado: 1.00.00.00.00.00.00.00
+      nomeUnidade: 'Universidade Federal do Tocantins'
+  filtro_unidade_2:
+      codEstruturado: 1.01.00.00.00.00.00.00
+      nomeUnidade: Reitoria
+  filtro_unidade_3:
+      codEstruturado: 1.01.00.01.00.00.00.00
+      nomeUnidade: 'Procuradoria Jurídica'
+  filtro_unidade_4:
+      codEstruturado: 1.01.00.01.00.01.00.00
+      nomeUnidade: 'Secretaria - Procuradoria Jurídica'
+  filtro_unidade_5:
+      codEstruturado: 1.01.00.01.01.00.00.00
+      nomeUnidade: 'Assistência Jurídica - Procuradoria Jurídica'
+  filtro_unidade_6:
+      codEstruturado: 1.01.00.01.02.00.00.00
+      nomeUnidade: 'Setor de Documentação - Procuradoria Jurídica'
+  filtro_unidade_7:
+      codEstruturado: 1.01.00.02.00.00.00.00
+      nomeUnidade: 'Secretaria Executiva da Reitoria (Reitor)'
+  filtro_unidade_8:
+      codEstruturado: 1.01.00.03.00.00.00.00
+      nomeUnidade: 'Vice-Reitor(a)'
+  filtro_unidade_9:
+      codEstruturado: 1.01.00.03.00.01.00.00
+      nomeUnidade: 'Secretaria Executiva - Vice-Reitor(a)'
+  filtro_unidade_10:
+      codEstruturado: 1.01.00.03.00.02.00.00
+      nomeUnidade: 'Secretaria Administrativa - Vice-Reitor(a)'
+  filtro_unidade_11:
+      codEstruturado: 1.01.00.03.00.03.00.00
+      nomeUnidade: 'Assessoria - Vice-Reitor(a)'
+  filtro_unidade_12:
+      codEstruturado: 1.01.00.03.01.00.00.00
+      nomeUnidade: 'Rede de Educação - REDEDU'
+  filtro_unidade_13:
+      codEstruturado: 1.01.00.03.01.01.00.00
+      nomeUnidade: 'Secretaria - REDEDU'
+  filtro_unidade_14:
+      codEstruturado: 1.01.00.03.02.00.00.00
+      nomeUnidade: 'Secretaria Especial de Ensino a Distância - Vice-Reitor(a)'
+  filtro_unidade_15:
+      codEstruturado: 1.01.00.03.03.00.00.00
+      nomeUnidade: 'Comissão  Própria de Avaliação - CPA'
+  filtro_unidade_16:
+      codEstruturado: 1.01.00.03.03.01.00.00
+      nomeUnidade: 'Secretaria CPA - Comissão Própria de Avaliação'
+  filtro_unidade_17:
+      codEstruturado: 1.01.00.03.05.00.00.00
+      nomeUnidade: 'Editora Universitária - Vice-Reitor(a)'
+  filtro_unidade_18:
+      codEstruturado: 1.01.00.04.00.00.00.00
+      nomeUnidade: 'Chefia de Gabinete'
+  filtro_unidade_19:
+      codEstruturado: 1.01.00.04.00.01.00.00
+      nomeUnidade: 'Secretaria Executiva do Reitor(a)'
+  filtro_unidade_20:
+      codEstruturado: 1.01.00.04.00.02.00.00
+      nomeUnidade: 'Secretaria Executiva da Chefia do Gabinete'
+  filtro_unidade_21:
+      codEstruturado: 1.01.00.04.00.03.00.00
+      nomeUnidade: 'Secretaria Administrativa - Acessoria DF - Chefia de Gabinete'
+  filtro_unidade_22:
+      codEstruturado: 1.01.00.04.01.00.00.00
+      nomeUnidade: 'Núcleo de Apoio ao Expediente - Chefia de Gabinete'
+  filtro_unidade_23:
+      codEstruturado: 1.01.00.04.02.00.00.00
+      nomeUnidade: 'Núcleo de Documentação - Chefia de Gabinete'
+  filtro_unidade_24:
+      codEstruturado: 1.01.00.04.03.00.00.00
+      nomeUnidade: 'Secretaria de Orgãos Colegiados Superiores - Chefia de Gabinete'
+  filtro_unidade_25:
+      codEstruturado: 1.01.00.04.03.01.00.00
+      nomeUnidade: 'Setor de Apoio Técnico'
+  filtro_unidade_26:
+      codEstruturado: 1.01.00.04.04.00.00.00
+      nomeUnidade: 'Cerimonial - Chefia de Gabiente'
+  filtro_unidade_27:
+      codEstruturado: 1.01.00.04.05.00.00.00
+      nomeUnidade: 'Auditoria Interna - Chefia de Gabinete'
+  filtro_unidade_28:
+      codEstruturado: 1.01.00.04.05.01.00.00
+      nomeUnidade: 'Núcleo de Legislação - Auditoria Interna'
+  filtro_unidade_29:
+      codEstruturado: 1.01.00.04.05.02.00.00
+      nomeUnidade: 'Assistência Auditoria Interna - Auditoria Interna'
+  filtro_unidade_30:
+      codEstruturado: 1.01.00.04.05.03.00.00
+      nomeUnidade: 'Sub- Coordenadoria Administrativa e de Pessoal da Auditoria Interna - SAPAI'
+  filtro_unidade_31:
+      codEstruturado: 1.01.00.04.05.04.00.00
+      nomeUnidade: 'Sub-Coordenadoria Contábil e Financeira da Auditoria Interna - SCPAI'
+  filtro_unidade_32:
+      codEstruturado: 1.01.00.04.06.00.00.00
+      nomeUnidade: 'Núcleo de Estudo de Saúde do Tocantins - Chefia de Gabinete'
+  filtro_unidade_33:
+      codEstruturado: 1.01.00.04.09.00.00.00
+      nomeUnidade: 'Ouvidoria Geral'
+  filtro_unidade_34:
+      codEstruturado: 1.01.00.04.10.00.00.00
+      nomeUnidade: 'Núcleo de Apoio ao Gabinete'
+  filtro_unidade_35:
+      codEstruturado: 1.01.00.05.00.00.00.00
+      nomeUnidade: 'Assessoria  Especial'
+  filtro_unidade_36:
+      codEstruturado: 1.01.00.06.00.00.00.00
+      nomeUnidade: 'Assessoria para Relações Institucionais'
+  filtro_unidade_37:
+      codEstruturado: 1.01.00.07.00.00.00.00
+      nomeUnidade: 'Assessoria para Assuntos Estratégicos'
+  filtro_unidade_38:
+      codEstruturado: 1.01.00.08.00.00.00.00
+      nomeUnidade: 'Assessoria de Gabinete'
+  filtro_unidade_39:
+      codEstruturado: 1.01.00.09.00.00.00.00
+      nomeUnidade: 'Diretoria de Assuntos Internacionais - DAI'
+  filtro_unidade_40:
+      codEstruturado: 1.01.00.09.00.01.00.00
+      nomeUnidade: 'Secretaria Administrativa - DAI'
+  filtro_unidade_41:
+      codEstruturado: 1.01.00.09.01.00.00.00
+      nomeUnidade: 'Núcleo   de Apoio Técnico - DAI'
+  filtro_unidade_42:
+      codEstruturado: 1.01.00.09.02.00.00.00
+      nomeUnidade: 'Coordenação de Intercâbio - DAI'
+  filtro_unidade_43:
+      codEstruturado: 1.01.00.09.03.00.00.00
+      nomeUnidade: 'Coordenação de Projetos Especiais - DAI'
+  filtro_unidade_44:
+      codEstruturado: 1.01.00.09.04.00.00.00
+      nomeUnidade: 'Coordenação do Centro de Idiomas - DAI'
+  filtro_unidade_45:
+      codEstruturado: 1.01.00.09.04.01.00.00
+      nomeUnidade: 'Curso de Linguas -  Alemão - DAI'
+  filtro_unidade_46:
+      codEstruturado: 1.01.00.09.04.02.00.00
+      nomeUnidade: 'Curso de Línguas - Espanhol - DAI'
+  filtro_unidade_47:
+      codEstruturado: 1.01.00.09.04.03.00.00
+      nomeUnidade: 'Curso de Línguas - Francês - DAI'
+  filtro_unidade_48:
+      codEstruturado: 1.01.00.09.04.04.00.00
+      nomeUnidade: 'Curso de Línguas - Inglês - DAI'
+  filtro_unidade_49:
+      codEstruturado: 1.01.00.09.04.05.00.00
+      nomeUnidade: 'Curso de Línguas - Italiano - DAI'
+  filtro_unidade_50:
+      codEstruturado: 1.01.00.11.00.00.00.00
+      nomeUnidade: 'Diretoria de Tecnologia da Informação -  DTI'
+  filtro_unidade_51:
+      codEstruturado: 1.01.00.11.00.01.00.00
+      nomeUnidade: 'Central de Serviços - DTI'
+  filtro_unidade_52:
+      codEstruturado: 1.01.00.11.01.00.00.00
+      nomeUnidade: 'Núcleo de Gestor do Sistema de Informações para o Ensino - SIE -  DTI'
+  filtro_unidade_53:
+      codEstruturado: 1.01.00.11.02.00.00.00
+      nomeUnidade: 'Coordenação de Suporte e Manutenção -  DTI'
+  filtro_unidade_54:
+      codEstruturado: 1.01.00.11.02.01.00.00
+      nomeUnidade: 'Setor de Manutenção de Equipamentos'
+  filtro_unidade_55:
+      codEstruturado: 1.01.00.11.02.01.01.00
+      nomeUnidade: 'Oficina de Informática'
+  filtro_unidade_56:
+      codEstruturado: 1.01.00.11.02.01.01.01
+      nomeUnidade: 'Divisão de Informática'
+  filtro_unidade_57:
+      codEstruturado: 1.01.00.11.02.02.00.00
+      nomeUnidade: 'Suporte de TI'
+  filtro_unidade_58:
+      codEstruturado: 1.01.00.11.02.03.00.00
+      nomeUnidade: '#Oficina de Hardware - Diretoria de Informática'
+  filtro_unidade_59:
+      codEstruturado: 1.01.00.11.03.00.00.00
+      nomeUnidade: 'Coordenação de Infraestrutura de TI -  DTI'
+  filtro_unidade_60:
+      codEstruturado: 1.01.00.11.03.01.00.00
+      nomeUnidade: 'Setor de Telecomunicações - DTI'
+  filtro_unidade_61:
+      codEstruturado: 1.01.00.11.04.00.00.00
+      nomeUnidade: 'Coordenação de Desenvolvimento de Software - DTI'
+  filtro_unidade_62:
+      codEstruturado: 1.01.00.11.06.00.00.00
+      nomeUnidade: 'Núcleo Administrativo de TI- NATI - DTI'
+  filtro_unidade_63:
+      codEstruturado: 1.01.00.11.07.00.00.00
+      nomeUnidade: 'Núcleo de Manutenção e Planejamento Estratégico - NUMPE'
+  filtro_unidade_64:
+      codEstruturado: 1.01.00.11.07.01.00.00
+      nomeUnidade: 'Laboratório de Òtica -  NUMPE'
+  filtro_unidade_65:
+      codEstruturado: 1.01.00.12.00.00.00.00
+      nomeUnidade: 'Diretoria de Comunicação - DICOM'
+  filtro_unidade_66:
+      codEstruturado: 1.01.00.12.00.01.00.00
+      nomeUnidade: 'Secretaria - Diretoria de Comunicação'
+  filtro_unidade_67:
+      codEstruturado: 1.01.00.12.01.00.00.00
+      nomeUnidade: 'Coordenação Administrativa - DICOM'
+  filtro_unidade_68:
+      codEstruturado: 1.01.00.12.02.00.00.00
+      nomeUnidade: 'Assessoria de Imprensa - DICOM'
+  filtro_unidade_69:
+      codEstruturado: 1.01.00.12.02.01.00.00
+      nomeUnidade: 'Repórter / Redação - DICOM'
+  filtro_unidade_70:
+      codEstruturado: 1.01.00.12.02.02.00.00
+      nomeUnidade: 'Repórter Fotográfico - DICOM'
+  filtro_unidade_71:
+      codEstruturado: 1.01.00.12.02.03.00.00
+      nomeUnidade: 'Repórter Cinematográfico - DICOM'
+  filtro_unidade_72:
+      codEstruturado: 1.01.00.12.03.00.00.00
+      nomeUnidade: 'Assessoria de Relações Públicas - DICOM'
+  filtro_unidade_73:
+      codEstruturado: 1.01.00.12.04.00.00.00
+      nomeUnidade: 'Assessoria de Publicidade e Marketing - DICOM'
+  filtro_unidade_74:
+      codEstruturado: 1.01.00.12.04.01.00.00
+      nomeUnidade: 'Designer Gráfico - DICOM'
+  filtro_unidade_75:
+      codEstruturado: 1.01.00.12.05.00.00.00
+      nomeUnidade: 'Núcleo de Apoio Estratégico - DICOM'
+  filtro_unidade_76:
+      codEstruturado: 1.01.00.12.06.00.00.00
+      nomeUnidade: 'Núcleo de Gestão do Portal Eletrônico Institucional - DICOM'
+  filtro_unidade_77:
+      codEstruturado: 1.01.00.13.00.00.00.00
+      nomeUnidade: 'Comissão Permanente de Seleção - COPESE'
+  filtro_unidade_78:
+      codEstruturado: 1.01.00.13.00.01.00.00
+      nomeUnidade: 'Secretaria Administrativa - COPESE'
+  filtro_unidade_79:
+      codEstruturado: 1.01.00.13.01.00.00.00
+      nomeUnidade: 'Coordenadoria - COPESE'
+  filtro_unidade_80:
+      codEstruturado: 1.01.00.13.01.01.00.00
+      nomeUnidade: 'Divisão Pedagógica - COPESE'
+  filtro_unidade_81:
+      codEstruturado: 1.01.00.13.01.01.01.00
+      nomeUnidade: 'Setor de Processamentos de Dados - COPESE'
+  filtro_unidade_82:
+      codEstruturado: 1.01.00.13.01.02.00.00
+      nomeUnidade: 'Divisão Logística - COPESE'
+  filtro_unidade_83:
+      codEstruturado: 1.01.00.13.01.02.01.00
+      nomeUnidade: 'Setor de Segurança e Aplicação - COPESE'
+  filtro_unidade_84:
+      codEstruturado: 1.01.00.13.01.03.00.00
+      nomeUnidade: 'Divisão Operacional - COPESE'
+  filtro_unidade_85:
+      codEstruturado: 1.01.00.13.01.03.01.00
+      nomeUnidade: 'Setor de Arquivos e Procedimentos - COPESE'
+  filtro_unidade_86:
+      codEstruturado: 1.01.00.25.00.00.00.00
+      nomeUnidade: 'Diretoria de Tecnologias Educacionais'
+  filtro_unidade_87:
+      codEstruturado: 1.01.00.26.00.00.00.00
+      nomeUnidade: 'Diretoria de Acessibilidade e Educação Inclusiva - DAEI'
+  filtro_unidade_88:
+      codEstruturado: 1.01.01.00.00.00.00.00
+      nomeUnidade: 'Pró-Reitoria de Administração e Finanças  - PROAD'
+  filtro_unidade_89:
+      codEstruturado: 1.01.01.00.01.00.00.00
+      nomeUnidade: 'Secretaria  - PROAD'
+  filtro_unidade_90:
+      codEstruturado: 1.01.01.00.02.00.00.00
+      nomeUnidade: 'Setor de Análise e Estatística - PROAD'
+  filtro_unidade_91:
+      codEstruturado: 1.01.01.00.03.00.00.00
+      nomeUnidade: 'Comissão Permanente de Licitação - CPL'
+  filtro_unidade_92:
+      codEstruturado: 1.01.01.01.00.00.00.00
+      nomeUnidade: 'Diretoria Administrativa - PROAD'
+  filtro_unidade_93:
+      codEstruturado: 1.01.01.01.00.01.00.00
+      nomeUnidade: 'Secretaria - Diretoria Administrativa - PROAD'
+  filtro_unidade_94:
+      codEstruturado: 1.01.01.01.01.00.00.00
+      nomeUnidade: 'Coordenação de Recursos Materiais - PROAD'
+  filtro_unidade_95:
+      codEstruturado: 1.01.01.01.01.00.01.00
+      nomeUnidade: 'Secretaria - CRM - PROAD'
+  filtro_unidade_96:
+      codEstruturado: 1.01.01.01.01.01.00.00
+      nomeUnidade: 'Setor de Patrimônio - PROAD'
+  filtro_unidade_97:
+      codEstruturado: 1.01.01.01.01.01.01.00
+      nomeUnidade: 'Divisão de Tombamento - PROAD'
+  filtro_unidade_98:
+      codEstruturado: 1.01.01.01.01.01.02.00
+      nomeUnidade: 'Comissão de Avaliação e Alienação de Bens Móveis - PROAD'
+  filtro_unidade_99:
+      codEstruturado: 1.01.01.01.01.01.03.00
+      nomeUnidade: 'Divisão de Cadastro e Transferência - PROAD'
+  filtro_unidade_100:
+      codEstruturado: 1.01.01.01.01.01.04.00
+      nomeUnidade: 'Comissão de Desfazimento de Bens Inservíveis'
+  filtro_unidade_101:
+      codEstruturado: 1.01.01.01.01.02.00.00
+      nomeUnidade: 'Setor de Almoxarifado - PROAD'
+  filtro_unidade_102:
+      codEstruturado: 1.01.01.01.01.03.00.00
+      nomeUnidade: 'Setor de Compras - PROAD'
+  filtro_unidade_103:
+      codEstruturado: 1.01.01.01.01.03.01.00
+      nomeUnidade: 'Divisão de Cotação - PROAD'
+  filtro_unidade_104:
+      codEstruturado: 1.01.01.01.01.03.02.00
+      nomeUnidade: 'Divisão de Operacionalização SIDEC - PROAD'
+  filtro_unidade_105:
+      codEstruturado: 1.01.01.01.01.03.03.00
+      nomeUnidade: 'Divisão de Classificação e Controle de Processo - PROAD'
+  filtro_unidade_106:
+      codEstruturado: 1.01.01.01.01.03.04.00
+      nomeUnidade: 'Licitações - PROAD'
+  filtro_unidade_107:
+      codEstruturado: 1.01.01.01.02.00.00.00
+      nomeUnidade: 'Coordenação Operacional - PROAD'
+  filtro_unidade_108:
+      codEstruturado: 1.01.01.01.02.00.01.00
+      nomeUnidade: 'Secretaria - Coordenadoria Operacional - PROAD'
+  filtro_unidade_109:
+      codEstruturado: 1.01.01.01.02.01.00.00
+      nomeUnidade: 'Setor de Transporte - PROAD'
+  filtro_unidade_110:
+      codEstruturado: 1.01.01.01.02.01.01.00
+      nomeUnidade: 'Divisão de Manutenção de Veículos - PROAD'
+  filtro_unidade_111:
+      codEstruturado: 1.01.01.01.02.01.02.00
+      nomeUnidade: 'Divisão de Agendamento - PROAD'
+  filtro_unidade_112:
+      codEstruturado: 1.01.01.01.02.01.03.00
+      nomeUnidade: 'Divisão de Controle de Combustível - PROAD'
+  filtro_unidade_113:
+      codEstruturado: 1.01.01.01.02.02.00.00
+      nomeUnidade: 'Setor de Protocolo - Reitoria - PROAD'
+  filtro_unidade_114:
+      codEstruturado: 1.01.01.01.02.04.00.00
+      nomeUnidade: 'Setor de Reprografia - PROAD'
+  filtro_unidade_115:
+      codEstruturado: 1.01.01.01.03.00.00.00
+      nomeUnidade: 'Núcleo de Gestão de Espaço Físico - PROAD'
+  filtro_unidade_116:
+      codEstruturado: 1.01.01.01.04.00.00.00
+      nomeUnidade: 'Coordenação de Contratos - PROAD'
+  filtro_unidade_117:
+      codEstruturado: 1.01.01.01.05.00.00.00
+      nomeUnidade: 'Núcleo de Gestão de Suprimentos Laboratoriais - NGLAB'
+  filtro_unidade_118:
+      codEstruturado: 1.01.01.02.00.00.00.00
+      nomeUnidade: 'Diretoria de Orçamentos | Contabilidade e  Finanças - PROAD'
+  filtro_unidade_119:
+      codEstruturado: 1.01.01.02.00.01.00.00
+      nomeUnidade: 'Secretaria - Diretoria de Finanças e Orçamento - PROAD'
+  filtro_unidade_120:
+      codEstruturado: 1.01.01.02.01.00.00.00
+      nomeUnidade: 'Coordenação de Contabilidade e Finanças  - PROAD'
+  filtro_unidade_121:
+      codEstruturado: 1.01.01.02.01.01.00.00
+      nomeUnidade: 'Setor de Empenho/DCF - PROAD'
+  filtro_unidade_122:
+      codEstruturado: 1.01.01.02.01.02.00.00
+      nomeUnidade: 'Setor de Pagamento  - PROAD'
+  filtro_unidade_123:
+      codEstruturado: 1.01.01.02.01.03.00.00
+      nomeUnidade: 'Setor de Concessão de Diárias - PROAD'
+  filtro_unidade_124:
+      codEstruturado: 1.01.01.02.02.00.00.00
+      nomeUnidade: 'Coordenação de Convênios | Concessão de Passagens e Suprimentos de Fundos  -  PROAD'
+  filtro_unidade_125:
+      codEstruturado: 1.01.01.02.02.01.00.00
+      nomeUnidade: 'Setor de Execução e Prestação de Contas - PROAD'
+  filtro_unidade_126:
+      codEstruturado: 1.01.01.02.02.02.00.00
+      nomeUnidade: 'Setor de  Concessão de Suprimento de Fundos - PROAD'
+  filtro_unidade_127:
+      codEstruturado: 1.01.01.02.02.03.00.00
+      nomeUnidade: 'Setor de Concessão de Passangens - PROAD'
+  filtro_unidade_128:
+      codEstruturado: 1.01.01.02.03.00.00.00
+      nomeUnidade: 'Núcleo de Controle Orçamentário - PROAD'
+  filtro_unidade_129:
+      codEstruturado: 1.01.01.04.00.00.00.00
+      nomeUnidade: 'Núcleo de Estatística e Planejamento  - NEP'
+  filtro_unidade_130:
+      codEstruturado: 1.01.01.04.01.00.00.00
+      nomeUnidade: 'Setor de Informação - NEP'
+  filtro_unidade_131:
+      codEstruturado: 1.01.01.04.01.01.00.00
+      nomeUnidade: 'Divisão de Estatística - NEP'
+  filtro_unidade_132:
+      codEstruturado: 1.01.01.04.01.02.00.00
+      nomeUnidade: 'Divisão de Informática - NEP'
+  filtro_unidade_133:
+      codEstruturado: 1.01.01.04.01.03.00.00
+      nomeUnidade: 'Divisão Administrativa - NEP'
+  filtro_unidade_134:
+      codEstruturado: 1.01.01.04.02.00.00.00
+      nomeUnidade: 'Setor de Planejamento Institucional - NEP'
+  filtro_unidade_135:
+      codEstruturado: 1.01.01.04.02.01.00.00
+      nomeUnidade: 'Divisão de Apoio a Programas e Projetos - NEP'
+  filtro_unidade_136:
+      codEstruturado: 1.01.01.04.02.02.00.00
+      nomeUnidade: 'Divisão de Acompanhamento e Avaliação - NEP'
+  filtro_unidade_137:
+      codEstruturado: 1.01.02.00.00.00.00.00
+      nomeUnidade: 'Pró-Reitoria de Graduação - PROGRAD'
+  filtro_unidade_138:
+      codEstruturado: 1.01.02.00.01.00.00.00
+      nomeUnidade: 'Secretaria Administrativa - PROGRAD'
+  filtro_unidade_139:
+      codEstruturado: 1.01.02.00.02.00.00.00
+      nomeUnidade: 'Assessoria Técnica de Ensino - PROGRAD'
+  filtro_unidade_140:
+      codEstruturado: 1.01.02.01.00.00.00.00
+      nomeUnidade: 'Diretoria de Ensino - PROGRAD'
+  filtro_unidade_141:
+      codEstruturado: 1.01.02.01.01.00.00.00
+      nomeUnidade: 'Coordenação de Curriculos  - PROGRAD'
+  filtro_unidade_142:
+      codEstruturado: 1.01.02.01.01.01.00.00
+      nomeUnidade: 'Setor de Projetos Pedagógicos e Assuntos Educacionais - PROGRAD'
+  filtro_unidade_143:
+      codEstruturado: 1.01.02.01.02.00.00.00
+      nomeUnidade: 'Coordenação de Assuntos Acadêmicos - Diretoria de Ensino - PROGRAD'
+  filtro_unidade_144:
+      codEstruturado: 1.01.02.01.02.01.00.00
+      nomeUnidade: 'Setor de Controle Acadêmico - PROGRAD'
+  filtro_unidade_145:
+      codEstruturado: 1.01.02.01.02.02.00.00
+      nomeUnidade: 'Setor de Expedição e Registro de Diploma - PROGRAD'
+  filtro_unidade_146:
+      codEstruturado: 1.01.02.02.00.00.00.00
+      nomeUnidade: 'Diretoria de Tecnologia e Informação no Ensino'
+  filtro_unidade_147:
+      codEstruturado: 1.01.02.02.00.01.00.00
+      nomeUnidade: 'Secretaria - Diretoria de Tecnologia e Informação no Ensino'
+  filtro_unidade_148:
+      codEstruturado: 1.01.02.02.01.00.00.00
+      nomeUnidade: 'Coordenação do Sistema de Informação - SISBIB'
+  filtro_unidade_149:
+      codEstruturado: 1.01.02.02.01.01.00.00
+      nomeUnidade: 'Setor de Sistema de Informação de Ensino - SISBIB'
+  filtro_unidade_150:
+      codEstruturado: 1.01.02.02.02.00.00.00
+      nomeUnidade: 'Coordenação de Tecnologia'
+  filtro_unidade_151:
+      codEstruturado: 1.01.02.02.02.01.00.00
+      nomeUnidade: 'Setor de Tecnologia no Ensino'
+  filtro_unidade_152:
+      codEstruturado: 1.01.02.03.00.00.00.00
+      nomeUnidade: 'Diretoria de Programas Especiais de Educação - DPEE'
+  filtro_unidade_153:
+      codEstruturado: 1.01.02.03.01.00.00.00
+      nomeUnidade: 'Coordenação de Aperfeiçoamento Discente - PROGRAD'
+  filtro_unidade_154:
+      codEstruturado: 1.01.02.03.01.01.00.00
+      nomeUnidade: 'Setor de Monitoria - PROGRAD'
+  filtro_unidade_155:
+      codEstruturado: 1.01.02.03.01.02.00.00
+      nomeUnidade: 'Setor de Treinamento - PROGRAD'
+  filtro_unidade_156:
+      codEstruturado: 1.01.02.03.01.03.00.00
+      nomeUnidade: 'Setor Mobilidade Acadêmica  - PROGRAD'
+  filtro_unidade_157:
+      codEstruturado: 1.01.02.03.02.00.00.00
+      nomeUnidade: 'Coordenação de Aperfeçoamento Doscente - PROGRAD'
+  filtro_unidade_158:
+      codEstruturado: 1.01.02.03.02.01.00.00
+      nomeUnidade: 'Setor de Desenvolvimento da Graduação -  PROGRAD'
+  filtro_unidade_159:
+      codEstruturado: 1.01.02.03.02.02.00.00
+      nomeUnidade: 'Setor de Aperfeiçoamento Docente - PROGRAD'
+  filtro_unidade_160:
+      codEstruturado: 1.01.02.03.03.00.00.00
+      nomeUnidade: 'Coordenação do Sistema de Bibliotecas -  PROGRAD'
+  filtro_unidade_161:
+      codEstruturado: 1.01.02.03.04.00.00.00
+      nomeUnidade: Monitorias
+  filtro_unidade_162:
+      codEstruturado: 1.01.02.03.05.00.00.00
+      nomeUnidade: PROFOR
+  filtro_unidade_163:
+      codEstruturado: 1.01.02.03.06.00.00.00
+      nomeUnidade: 'Mobilidade Acadêmica e Pet'
+  filtro_unidade_164:
+      codEstruturado: 1.01.02.04.00.00.00.00
+      nomeUnidade: PARFOR
+  filtro_unidade_165:
+      codEstruturado: 1.01.02.05.00.00.00.00
+      nomeUnidade: PACTO
+  filtro_unidade_166:
+      codEstruturado: 1.01.02.06.00.00.00.00
+      nomeUnidade: PIBID
+  filtro_unidade_167:
+      codEstruturado: 1.01.02.07.00.00.00.00
+      nomeUnidade: 'Coordenação de Recursos Financeiros Prograd - CRFPrograd'
+  filtro_unidade_168:
+      codEstruturado: 1.01.02.08.00.00.00.00
+      nomeUnidade: 'Diretoria de Registro e Controle Acadêmico - DIRCA'
+  filtro_unidade_169:
+      codEstruturado: 1.01.02.08.01.00.00.00
+      nomeUnidade: 'Coordenação de Controle Acadêmico - CCA'
+  filtro_unidade_170:
+      codEstruturado: 1.01.02.08.02.00.00.00
+      nomeUnidade: 'Cancelamento de Matrícula'
+  filtro_unidade_171:
+      codEstruturado: 1.01.02.08.03.00.00.00
+      nomeUnidade: 'Coordenação de Registro e Expedição de Diplomas - CERD'
+  filtro_unidade_172:
+      codEstruturado: 1.01.02.08.04.00.00.00
+      nomeUnidade: 'CDISA - Coordenação | Desenvolvimento | Informação e Suporte Acadêmico'
+  filtro_unidade_173:
+      codEstruturado: 1.01.02.09.00.00.00.00
+      nomeUnidade: 'Diretoria de Desenvolvimento e Regulação da Graduação - DDRG'
+  filtro_unidade_174:
+      codEstruturado: 1.01.02.09.01.00.00.00
+      nomeUnidade: Estágios
+  filtro_unidade_175:
+      codEstruturado: 1.01.02.99.00.00.00.00
+      nomeUnidade: 'Escolas Acadêmicas'
+  filtro_unidade_176:
+      codEstruturado: 1.01.02.99.01.00.00.00
+      nomeUnidade: 'Escola das Exatas e da Terra'
+  filtro_unidade_177:
+      codEstruturado: 1.01.02.99.02.00.00.00
+      nomeUnidade: 'Escola de Ciências Biológicas'
+  filtro_unidade_178:
+      codEstruturado: 1.01.02.99.03.00.00.00
+      nomeUnidade: 'Escola de Engenharia'
+  filtro_unidade_179:
+      codEstruturado: 1.01.02.99.04.00.00.00
+      nomeUnidade: 'Escola de Ciências da Saúde'
+  filtro_unidade_180:
+      codEstruturado: 1.01.02.99.05.00.00.00
+      nomeUnidade: 'Escola de Ciências Agrárias'
+  filtro_unidade_181:
+      codEstruturado: 1.01.02.99.06.00.00.00
+      nomeUnidade: 'Escola de Ciências Sociais Aplicadas'
+  filtro_unidade_182:
+      codEstruturado: 1.01.02.99.07.00.00.00
+      nomeUnidade: 'Escola de Ciências Humanas'
+  filtro_unidade_183:
+      codEstruturado: 1.01.02.99.08.00.00.00
+      nomeUnidade: 'Escola de Lingüística | Letras e Artes'
+  filtro_unidade_184:
+      codEstruturado: 1.01.02.99.09.00.00.00
+      nomeUnidade: 'Escola Geral'
+  filtro_unidade_185:
+      codEstruturado: 1.01.03.00.00.00.00.00
+      nomeUnidade: 'Pró-Reitoria de Pesquisa e Pós Graduação - PROPESQ'
+  filtro_unidade_186:
+      codEstruturado: 1.01.03.00.02.00.00.00
+      nomeUnidade: 'Assessoria - PROPESQ'
+  filtro_unidade_187:
+      codEstruturado: 1.01.03.00.02.01.00.00
+      nomeUnidade: 'Recepção/Secretaria Administrativa- PROPESQ'
+  filtro_unidade_188:
+      codEstruturado: 1.01.03.01.00.00.00.00
+      nomeUnidade: 'Diretoria de Pós Graduação - PROPESQ'
+  filtro_unidade_189:
+      codEstruturado: 1.01.03.01.01.00.00.00
+      nomeUnidade: 'Secretaria de Registros Acadêmicos - PROPESQ'
+  filtro_unidade_190:
+      codEstruturado: 1.01.03.01.02.00.00.00
+      nomeUnidade: 'Coordenação de Pós-Graduação Stricto Senso - PROPESQ'
+  filtro_unidade_191:
+      codEstruturado: 1.01.03.01.02.01.00.00
+      nomeUnidade: 'Assessoria - Coordenação de Pós-Graduação Stricto Senso - PROPESQ'
+  filtro_unidade_192:
+      codEstruturado: 1.01.03.01.03.00.00.00
+      nomeUnidade: 'Coordenação de Pós-Graduação Lato Senso - PROPESQ'
+  filtro_unidade_193:
+      codEstruturado: 1.01.03.01.03.01.00.00
+      nomeUnidade: 'Assessoria - Coordenação de Pós-Graduação Lato Senso - PROPESQ'
+  filtro_unidade_194:
+      codEstruturado: 1.01.03.01.04.00.00.00
+      nomeUnidade: 'Coordenação de Ações Estratégicas da Pós-graduação'
+  filtro_unidade_195:
+      codEstruturado: 1.01.03.02.00.00.00.00
+      nomeUnidade: 'Diretoria de Pesquisa - PROPESQ'
+  filtro_unidade_196:
+      codEstruturado: 1.01.03.02.00.01.00.00
+      nomeUnidade: 'Assessoria da Diretoria de Pesquisa - PROPESQ'
+  filtro_unidade_197:
+      codEstruturado: 1.01.03.02.01.00.00.00
+      nomeUnidade: 'Coordenação de Cadastro e Acompanhamento de Projetos de Pesquisa - PROPESQ'
+  filtro_unidade_198:
+      codEstruturado: 1.01.03.02.01.01.00.00
+      nomeUnidade: 'Centro de Madeiras e Movés do Tocantins - PROPESQ'
+  filtro_unidade_199:
+      codEstruturado: 1.01.03.02.01.02.00.00
+      nomeUnidade: 'Centro de Tecnologia Agroindustrial e Ambiental da UFT - PROPESQ'
+  filtro_unidade_200:
+      codEstruturado: 1.01.03.02.01.03.00.00
+      nomeUnidade: 'Centro de Pesquisa Canguçu - PROPESQ'
+  filtro_unidade_201:
+      codEstruturado: 1.01.03.02.02.00.00.00
+      nomeUnidade: 'Coordenação de Projetos Especiais - PROPESQ'
+  filtro_unidade_202:
+      codEstruturado: 1.01.03.02.02.01.00.00
+      nomeUnidade: 'Assessoria - Coordenação de Projetos  Especiais - PROPESQ'
+  filtro_unidade_203:
+      codEstruturado: 1.01.03.03.00.00.00.00
+      nomeUnidade: 'Diretoria de Divulgação e Iniciação Cinetífica'
+  filtro_unidade_204:
+      codEstruturado: 1.01.03.03.01.00.00.00
+      nomeUnidade: 'Coordenação de Iniciação Cientifíca - PROPESQ'
+  filtro_unidade_205:
+      codEstruturado: 1.01.03.03.01.01.00.00
+      nomeUnidade: 'Assessoria de Iniciação Científica - PROPESQ'
+  filtro_unidade_206:
+      codEstruturado: 1.01.03.03.02.00.00.00
+      nomeUnidade: 'Coordenação de Divulgação Científica'
+  filtro_unidade_207:
+      codEstruturado: 1.01.03.03.02.01.00.00
+      nomeUnidade: 'Assessoria da Divulgação Científica'
+  filtro_unidade_208:
+      codEstruturado: 1.01.03.03.03.00.00.00
+      nomeUnidade: 'Editora - PROPESQ'
+  filtro_unidade_209:
+      codEstruturado: 1.01.03.03.03.01.00.00
+      nomeUnidade: 'Assessoria de Editora'
+  filtro_unidade_210:
+      codEstruturado: 1.01.03.04.00.00.00.00
+      nomeUnidade: 'Núcleo de Inovação Tecnológica - NIT'
+  filtro_unidade_211:
+      codEstruturado: 1.01.04.00.00.00.00.00
+      nomeUnidade: 'Pró-Reitoria de Extensão e Cultura - PROEX'
+  filtro_unidade_212:
+      codEstruturado: 1.01.04.00.00.00.00.01
+      nomeUnidade: 'Programa de Acesso Democrático à Universidade - PADU'
+  filtro_unidade_213:
+      codEstruturado: 1.01.04.00.01.00.00.00
+      nomeUnidade: 'Secretaria Executiva - PROEX'
+  filtro_unidade_214:
+      codEstruturado: 1.01.04.00.02.00.00.00
+      nomeUnidade: 'Assessoria - PROEX'
+  filtro_unidade_215:
+      codEstruturado: 1.01.04.01.00.00.00.00
+      nomeUnidade: 'Diretoria de Projetos Estratégicos - PROEX'
+  filtro_unidade_216:
+      codEstruturado: 1.01.04.01.01.00.00.00
+      nomeUnidade: 'Setor de Cadastramento e Avaliação de Projetos - PROEX'
+  filtro_unidade_217:
+      codEstruturado: 1.01.04.01.02.00.00.00
+      nomeUnidade: 'Setor de Certificação de Projetos -  PROEX'
+  filtro_unidade_218:
+      codEstruturado: 1.01.04.02.00.00.00.00
+      nomeUnidade: 'Diretoria de Extensão - PROEX'
+  filtro_unidade_219:
+      codEstruturado: 1.01.04.02.01.00.00.00
+      nomeUnidade: 'Universidade da Maturidade - UMA - PROEX'
+  filtro_unidade_220:
+      codEstruturado: 1.01.04.03.00.00.00.00
+      nomeUnidade: 'Diretoria de Cultura - PROEX'
+  filtro_unidade_221:
+      codEstruturado: 1.01.04.03.00.01.00.00
+      nomeUnidade: 'Secretaria da Diretoria  de Cultura -  PROEX'
+  filtro_unidade_222:
+      codEstruturado: 1.01.04.03.01.00.00.00
+      nomeUnidade: 'Coordenação de Ações Culturais e Artísticas - PROEX'
+  filtro_unidade_223:
+      codEstruturado: 1.01.04.03.01.01.00.00
+      nomeUnidade: 'Setor de Organização de Eventos - PROEX'
+  filtro_unidade_224:
+      codEstruturado: 1.01.04.03.01.02.00.00
+      nomeUnidade: 'Setor de Programação Cultural - PROEX'
+  filtro_unidade_225:
+      codEstruturado: 1.01.04.07.00.00.00.00
+      nomeUnidade: 'Núcleo Administrativo - PROEX'
+  filtro_unidade_226:
+      codEstruturado: 1.01.04.07.01.00.00.00
+      nomeUnidade: 'Setor de Gerenciamento Financeiro de Projetos -  PROEX'
+  filtro_unidade_227:
+      codEstruturado: 1.01.05.00.00.00.00.00
+      nomeUnidade: 'Pró-Reitoria de Assuntos Estudantis e Comunitários - PROEST'
+  filtro_unidade_228:
+      codEstruturado: 1.01.05.01.00.00.00.00
+      nomeUnidade: 'Diretoria de Assuntos Estudantis'
+  filtro_unidade_229:
+      codEstruturado: 1.01.05.01.00.01.00.00
+      nomeUnidade: 'Secretaria - Diretoria de Assuntos Estudantis'
+  filtro_unidade_230:
+      codEstruturado: 1.01.05.01.01.00.00.00
+      nomeUnidade: 'Coordenação de Projetos'
+  filtro_unidade_231:
+      codEstruturado: 1.01.05.01.02.00.00.00
+      nomeUnidade: 'Serviço Integrado Multidisciplinar de Assitência Estudantil'
+  filtro_unidade_232:
+      codEstruturado: 1.01.05.02.00.00.00.00
+      nomeUnidade: 'Diretoria de Assuntos Comunitários'
+  filtro_unidade_233:
+      codEstruturado: 1.01.05.02.01.00.00.00
+      nomeUnidade: 'Coordenação de Assuntos Políticos Estudantis'
+  filtro_unidade_234:
+      codEstruturado: 1.01.05.03.00.00.00.00
+      nomeUnidade: 'Diretoria de Esportes'
+  filtro_unidade_235:
+      codEstruturado: 1.01.05.04.00.00.00.00
+      nomeUnidade: 'Coordenação de RU'
+  filtro_unidade_236:
+      codEstruturado: 1.01.05.05.00.00.00.00
+      nomeUnidade: 'Secretaria Executiva'
+  filtro_unidade_237:
+      codEstruturado: 1.01.05.06.00.00.00.00
+      nomeUnidade: 'Coordenação Administrativa'
+  filtro_unidade_238:
+      codEstruturado: 1.01.06.00.00.00.00.00
+      nomeUnidade: 'Pró-Reitoria de Avaliação e Planejamento - PROAP'
+  filtro_unidade_239:
+      codEstruturado: 1.01.06.00.01.00.00.00
+      nomeUnidade: 'Secretaria Executiva - PROAP'
+  filtro_unidade_240:
+      codEstruturado: 1.01.06.01.00.00.00.00
+      nomeUnidade: 'Diretoria de Planejamento'
+  filtro_unidade_241:
+      codEstruturado: 1.01.06.02.00.00.00.00
+      nomeUnidade: 'Diretoria de Avaliação'
+  filtro_unidade_242:
+      codEstruturado: 1.01.06.03.00.00.00.00
+      nomeUnidade: 'Diretoria de Obras Civis'
+  filtro_unidade_243:
+      codEstruturado: 1.01.06.03.00.01.00.00
+      nomeUnidade: 'Secretaria - Diretoria de Obras - DOC'
+  filtro_unidade_244:
+      codEstruturado: 1.01.06.03.01.00.00.00
+      nomeUnidade: 'Coordenação Administrativa - DOC'
+  filtro_unidade_245:
+      codEstruturado: 1.01.06.03.01.01.00.00
+      nomeUnidade: 'Setor de Planejamento e Controle - DO'
+  filtro_unidade_246:
+      codEstruturado: 1.01.06.03.02.00.00.00
+      nomeUnidade: 'Coordenação de Projetos - DOC'
+  filtro_unidade_247:
+      codEstruturado: 1.01.06.03.02.01.00.00
+      nomeUnidade: 'Setor de Arquitetura -  DOC'
+  filtro_unidade_248:
+      codEstruturado: 1.01.06.03.02.01.01.00
+      nomeUnidade: 'Divisão de Desenho Técnico - DO'
+  filtro_unidade_249:
+      codEstruturado: 1.01.06.03.02.02.00.00
+      nomeUnidade: 'Setor de Engenharia - DOC'
+  filtro_unidade_250:
+      codEstruturado: 1.01.06.03.02.02.01.00
+      nomeUnidade: 'Divisão de Apoio Técnico - DO'
+  filtro_unidade_251:
+      codEstruturado: 1.01.06.03.02.03.00.00
+      nomeUnidade: 'Setor de Orçamento - DOC'
+  filtro_unidade_252:
+      codEstruturado: 1.01.06.03.02.04.00.00
+      nomeUnidade: 'Setor de Levantamento e Fiscalização - DOC'
+  filtro_unidade_253:
+      codEstruturado: 1.01.06.03.03.00.00.00
+      nomeUnidade: 'Coordenação de Manutenção - DOC'
+  filtro_unidade_254:
+      codEstruturado: 1.01.06.04.00.00.00.00
+      nomeUnidade: 'Comissão de Avaliação e Validação - CAV'
+  filtro_unidade_255:
+      codEstruturado: 1.01.06.05.00.00.00.00
+      nomeUnidade: 'Grupo de Trabalho de Informação e Estatística'
+  filtro_unidade_256:
+      codEstruturado: 1.01.06.06.00.00.00.00
+      nomeUnidade: 'Diretoria de Gestão Orçamentária'
+  filtro_unidade_257:
+      codEstruturado: 1.01.07.00.00.00.00.00
+      nomeUnidade: 'Prefeitura Universitária'
+  filtro_unidade_258:
+      codEstruturado: 1.01.07.00.01.00.00.00
+      nomeUnidade: 'Superintendência Geral - SPG'
+  filtro_unidade_259:
+      codEstruturado: 1.01.07.00.02.00.00.00
+      nomeUnidade: 'Secretaria Executiva'
+  filtro_unidade_260:
+      codEstruturado: 1.01.07.00.03.00.00.00
+      nomeUnidade: 'Equipe de TI e Comunicação'
+  filtro_unidade_261:
+      codEstruturado: 1.01.07.00.04.00.00.00
+      nomeUnidade: 'Assessoria Técnica de Planejamento e Administração - ATP'
+  filtro_unidade_262:
+      codEstruturado: 1.01.07.01.00.00.00.00
+      nomeUnidade: 'Diretoria de Serviços Essenciais - DSE'
+  filtro_unidade_263:
+      codEstruturado: 1.01.07.01.01.00.00.00
+      nomeUnidade: 'Coordenação de Serviços Essenciais - CSE'
+  filtro_unidade_264:
+      codEstruturado: 1.01.07.01.02.00.00.00
+      nomeUnidade: 'Coordenação de Vigilância Universitária - COVI'
+  filtro_unidade_265:
+      codEstruturado: 1.01.07.02.00.00.00.00
+      nomeUnidade: 'Diretoria de Engenharia e Infraestrutura - DEINFRA'
+  filtro_unidade_266:
+      codEstruturado: 1.01.07.02.01.00.00.00
+      nomeUnidade: 'Coordenação de Projetos de Engenharia e Sustentabilidade - CPES'
+  filtro_unidade_267:
+      codEstruturado: 1.01.07.02.02.00.00.00
+      nomeUnidade: 'Coordenação de Engenharia Elétrica e Eficiência Energética - CENERG'
+  filtro_unidade_268:
+      codEstruturado: 1.01.07.03.00.00.00.00
+      nomeUnidade: 'Diretoria de Arquitetura | Urbanismo e Meio Ambiente - DIURB'
+  filtro_unidade_269:
+      codEstruturado: 1.01.07.03.01.00.00.00
+      nomeUnidade: 'Coordenação de Arquitetura e Urbanismo - CAU'
+  filtro_unidade_270:
+      codEstruturado: 1.01.07.03.02.00.00.00
+      nomeUnidade: 'Coordenação de Paisagismo e Meio Ambiente - COPAM'
+  filtro_unidade_271:
+      codEstruturado: 1.01.07.04.00.00.00.00
+      nomeUnidade: 'Diretoria de Manutenção - DIMAN'
+  filtro_unidade_272:
+      codEstruturado: 1.01.07.04.01.00.00.00
+      nomeUnidade: 'Coordenação de Manutenção Predial - CMP'
+  filtro_unidade_273:
+      codEstruturado: 1.01.07.04.02.00.00.00
+      nomeUnidade: 'Coordenação de Manutenção de Equipamentos Prediais - CMEP'
+  filtro_unidade_274:
+      codEstruturado: 1.01.08.00.00.00.00.00
+      nomeUnidade: 'Hospital Universitário de Medicina Tropical'
+  filtro_unidade_275:
+      codEstruturado: 1.01.09.00.00.00.00.00
+      nomeUnidade: 'Pró-Reitoria de Desenvolvimento de Pessoas - PROGEDEP'
+  filtro_unidade_276:
+      codEstruturado: 1.01.09.01.00.00.00.00
+      nomeUnidade: 'Gabinete da Pró-Reitoria'
+  filtro_unidade_277:
+      codEstruturado: 1.01.09.02.00.00.00.00
+      nomeUnidade: 'Secretaria Executiva'
+  filtro_unidade_278:
+      codEstruturado: 1.01.09.03.00.00.00.00
+      nomeUnidade: 'Assessoria e Auditoria Técnica Administrativa - AATA - PROGEDEP'
+  filtro_unidade_279:
+      codEstruturado: 1.01.09.04.00.00.00.00
+      nomeUnidade: 'Assessoria de Gestão da Informação e Assentamento Funcional - AG - INFO'
+  filtro_unidade_280:
+      codEstruturado: 1.01.09.04.01.00.00.00
+      nomeUnidade: 'Divisão de Publicação de Portaria Pessoal'
+  filtro_unidade_281:
+      codEstruturado: 1.01.09.05.00.00.00.00
+      nomeUnidade: 'Diretoria de Gestão de Pessoas - DGP'
+  filtro_unidade_282:
+      codEstruturado: 1.01.09.05.01.00.00.00
+      nomeUnidade: 'Núcleo Aposentadoria e Pensão'
+  filtro_unidade_283:
+      codEstruturado: 1.01.09.05.02.00.00.00
+      nomeUnidade: 'Coordenação de Pessoal - COP'
+  filtro_unidade_284:
+      codEstruturado: 1.01.09.05.03.00.00.00
+      nomeUnidade: 'Coordenação Financeira de Pessoal'
+  filtro_unidade_285:
+      codEstruturado: 1.01.09.06.00.00.00.00
+      nomeUnidade: 'Diretoria de Desenvolvimento de Pessoas e Organizacional - DDP'
+  filtro_unidade_286:
+      codEstruturado: 1.01.09.06.01.00.00.00
+      nomeUnidade: 'Núcleo de Gestão de Competências'
+  filtro_unidade_287:
+      codEstruturado: 1.01.09.06.02.00.00.00
+      nomeUnidade: 'Coordenação de Desenvolvimento de Carreiras - CODESC'
+  filtro_unidade_288:
+      codEstruturado: 1.01.09.06.02.01.00.00
+      nomeUnidade: 'Divisão de Seleção | Movimentação e Lotação'
+  filtro_unidade_289:
+      codEstruturado: 1.01.09.06.02.02.00.00
+      nomeUnidade: 'Divisão da Análise e Orientação do Desenvolvimento na Carreira'
+  filtro_unidade_290:
+      codEstruturado: 1.01.09.06.02.03.00.00
+      nomeUnidade: 'Divisão de Avaliação e Desempenho'
+  filtro_unidade_291:
+      codEstruturado: 1.01.09.06.03.00.00.00
+      nomeUnidade: 'Coordenação de Formação e Aperfeiçoamento - CFORMA'
+  filtro_unidade_292:
+      codEstruturado: 1.01.09.06.03.01.00.00
+      nomeUnidade: 'Divisão de Convênio e Integração'
+  filtro_unidade_293:
+      codEstruturado: 1.01.09.06.03.02.00.00
+      nomeUnidade: 'Escola de Formação'
+  filtro_unidade_294:
+      codEstruturado: 1.01.09.07.00.00.00.00
+      nomeUnidade: 'Diretoria de Qualidade de Vida e Saúde - DQVT'
+  filtro_unidade_295:
+      codEstruturado: 1.01.09.07.01.00.00.00
+      nomeUnidade: 'Subsistema Integrado de Atenção à Saúde do Servidor - SIASS'
+  filtro_unidade_296:
+      codEstruturado: 1.01.09.07.02.00.00.00
+      nomeUnidade: 'Coordenação de Qualidade de Vida no Trabalho'
+  filtro_unidade_297:
+      codEstruturado: 1.01.09.07.02.01.00.00
+      nomeUnidade: 'Divisão Qualidade de Vida e Ação Social'
+  filtro_unidade_298:
+      codEstruturado: 1.01.09.07.02.02.00.00
+      nomeUnidade: 'Divisão Saúde e Segurança no Trabalho'
+  filtro_unidade_299:
+      codEstruturado: 1.01.09.08.00.00.00.00
+      nomeUnidade: 'Comitê de Gestão e Desenvolvimento de Pessoas'
+  filtro_unidade_300:
+      codEstruturado: 1.01.09.60.00.00.00.00
+      nomeUnidade: 'Diretoria de Desenvolvimento de Pessoas - DDP - PROGEDEP'
+  filtro_unidade_301:
+      codEstruturado: 1.01.09.60.01.00.00.00
+      nomeUnidade: 'Secretaria da Diretoria de Desenvolvimento de Pessoas - SECDDP - PROGEDEP'
+  filtro_unidade_302:
+      codEstruturado: 1.01.09.60.01.01.00.00
+      nomeUnidade: 'Setor de Formação - SF - DDP - PROGEDEP'
+  filtro_unidade_303:
+      codEstruturado: 1.01.09.60.01.01.01.00
+      nomeUnidade: 'Divisão de Capacitação - PROAD'
+  filtro_unidade_304:
+      codEstruturado: 1.01.09.60.01.02.00.00
+      nomeUnidade: 'Setor de Desenvolvimento - SD - DDP - PROGEDEP'
+  filtro_unidade_305:
+      codEstruturado: 1.01.09.60.01.02.01.00
+      nomeUnidade: 'Divisão de Cadastro e Controle - DCC - SD - DDP - PROGEDEP'
+  filtro_unidade_306:
+      codEstruturado: 1.01.09.60.01.02.02.00
+      nomeUnidade: 'Divisão de Análise de Processos - DAP - SD - DDP - PROGEDEP'
+  filtro_unidade_307:
+      codEstruturado: 1.01.09.70.00.00.00.00
+      nomeUnidade: 'Diretoria de Desenvolvimento Humano - DDH- PROGEDEP'
+  filtro_unidade_308:
+      codEstruturado: 1.01.09.70.00.01.00.00
+      nomeUnidade: 'Secretaria - Diretoria de Desenvolvimento Humano - PROGEDEP'
+  filtro_unidade_309:
+      codEstruturado: 1.01.09.70.00.02.00.00
+      nomeUnidade: 'Setor de Legislação Funcional'
+  filtro_unidade_310:
+      codEstruturado: 1.01.09.70.01.00.00.00
+      nomeUnidade: 'Coordenação de Pessoal - COP - PROGEDEP'
+  filtro_unidade_311:
+      codEstruturado: 1.01.09.70.01.01.00.00
+      nomeUnidade: 'Setor Financeiro e Pessoal Docente - PROAD'
+  filtro_unidade_312:
+      codEstruturado: 1.01.09.70.01.02.00.00
+      nomeUnidade: 'Setor Financeiro e Pessoal Técnico Administrativo - PROAD'
+  filtro_unidade_313:
+      codEstruturado: 1.01.09.70.01.03.00.00
+      nomeUnidade: 'Setor de Apreciação e Registro dos Atos de Admissões e Concessões'
+  filtro_unidade_314:
+      codEstruturado: 1.01.09.70.01.04.00.00
+      nomeUnidade: 'Setor Financeiro e Pessoal de Professor Substituto - PROAD'
+  filtro_unidade_315:
+      codEstruturado: 1.01.09.70.01.05.00.00
+      nomeUnidade: 'Setor do Sistema de Informações para o Ensino - DDH - PROAD'
+  filtro_unidade_316:
+      codEstruturado: 1.01.09.70.01.06.00.00
+      nomeUnidade: 'Divisão de Cadastro - DC - PROGEDEP'
+  filtro_unidade_317:
+      codEstruturado: 1.01.09.70.01.07.00.00
+      nomeUnidade: 'Divisão de Pagamento - DP - PROGEDEP'
+  filtro_unidade_318:
+      codEstruturado: 1.01.09.70.01.08.00.00
+      nomeUnidade: 'Divisão de Aposentadoria e Pensão - DAP - PROGEDEP'
+  filtro_unidade_319:
+      codEstruturado: 1.01.09.70.01.09.00.00
+      nomeUnidade: 'Divisão de Informação e Registro - DIR - PROGEDEP'
+  filtro_unidade_320:
+      codEstruturado: 1.01.09.70.02.00.00.00
+      nomeUnidade: 'Coordenação de Saúde - SIASS - PROGEDEP'
+  filtro_unidade_321:
+      codEstruturado: 1.01.09.70.02.01.00.00
+      nomeUnidade: 'Setor de Segurança do Trabalho - PROAD'
+  filtro_unidade_322:
+      codEstruturado: 1.01.09.70.02.02.00.00
+      nomeUnidade: 'Setor de Medicina do Trabalho - PROAD'
+  filtro_unidade_323:
+      codEstruturado: 1.01.09.70.02.03.00.00
+      nomeUnidade: 'Divisão de Perícia Oficial - DPO - PROGEDEP'
+  filtro_unidade_324:
+      codEstruturado: 1.01.09.70.02.04.00.00
+      nomeUnidade: 'Divisão de Promoção e Vigilância em Saúde - DPVS - DDH - PROAD'
+  filtro_unidade_325:
+      codEstruturado: 1.01.12.00.00.00.00.00
+      nomeUnidade: 'Cursos de Educação à Distância - EAD'
+  filtro_unidade_326:
+      codEstruturado: 1.01.12.01.00.00.00.00
+      nomeUnidade: 'Pólos EAD'
+  filtro_unidade_327:
+      codEstruturado: 1.01.12.01.01.00.00.00
+      nomeUnidade: 'Araguaína EAD'
+  filtro_unidade_328:
+      codEstruturado: 1.01.12.01.01.01.00.00
+      nomeUnidade: 'Ananás EAD - Curso de Licenciatura de Biologia à Distância - Araguaína'
+  filtro_unidade_329:
+      codEstruturado: 1.01.12.01.01.02.00.00
+      nomeUnidade: 'Nova Olinda EAD - Curso de Licenciatura de Biologia à Distância - Araguaína'
+  filtro_unidade_330:
+      codEstruturado: 1.01.12.01.01.03.00.00
+      nomeUnidade: 'Wanderlândia EAD - Curso de Licenciatura de Biologia à Distância - Araguaína'
+  filtro_unidade_331:
+      codEstruturado: 1.01.12.01.01.04.00.00
+      nomeUnidade: 'Araguaína EAD - Curso de Licenciatura de Biologia à Distância - Araguaína'
+  filtro_unidade_332:
+      codEstruturado: 1.01.12.01.01.05.00.00
+      nomeUnidade: 'Araguatins EAD - Curso de Química - Licenciatura - Araguaína'
+  filtro_unidade_333:
+      codEstruturado: 1.01.12.01.01.06.00.00
+      nomeUnidade: 'Araguatins EAD - Curso de Física - Licenciatura - Araguaína'
+  filtro_unidade_334:
+      codEstruturado: 1.01.12.01.01.07.00.00
+      nomeUnidade: 'Araguaína- EAD- Curso de Licenciatura de Biologia à Distância - PARFOR- Araguaína'
+  filtro_unidade_335:
+      codEstruturado: 1.01.12.01.01.08.00.00
+      nomeUnidade: 'Ananás EAD- Curso de Física- Licenciatura - Araguaína'
+  filtro_unidade_336:
+      codEstruturado: 1.01.12.01.01.09.00.00
+      nomeUnidade: 'Ananás EAD - Curso de Administração Pública - Araguaína'
+  filtro_unidade_337:
+      codEstruturado: 1.01.12.01.01.10.00.00
+      nomeUnidade: 'Araguaína EAD - Curso de Administração Pública - Araguaína'
+  filtro_unidade_338:
+      codEstruturado: 1.01.12.01.01.11.00.00
+      nomeUnidade: 'Nova Olinda EAD - Curso de Administração Pública - Araguaína'
+  filtro_unidade_339:
+      codEstruturado: 1.01.12.01.01.12.00.00
+      nomeUnidade: 'Araguatins EAD - Curso de Licenciatura de Biologia à Distância - Araguaína'
+  filtro_unidade_340:
+      codEstruturado: 1.01.12.01.02.00.00.00
+      nomeUnidade: 'Arraias EAD'
+  filtro_unidade_341:
+      codEstruturado: 1.01.12.01.02.01.00.00
+      nomeUnidade: 'Arraias EAD - Curso de Licenciatura de Biologia à Distância'
+  filtro_unidade_342:
+      codEstruturado: 1.01.12.01.02.02.00.00
+      nomeUnidade: 'Dianópolis EAD - Curso de Física - Licenciatura - Arraias'
+  filtro_unidade_343:
+      codEstruturado: 1.01.12.01.02.03.00.00
+      nomeUnidade: 'Dianópolis EAD- Curso de Licenciatura de Biologia- PARFOR- Arraias'
+  filtro_unidade_344:
+      codEstruturado: 1.01.12.01.02.04.00.00
+      nomeUnidade: 'Arraias EAD - Curso de Administração Pública - Arraias'
+  filtro_unidade_345:
+      codEstruturado: 1.01.12.01.02.05.00.00
+      nomeUnidade: 'Dianópolis EAD - Curso de Administração Pública - Arraias'
+  filtro_unidade_346:
+      codEstruturado: 1.01.12.01.02.06.00.00
+      nomeUnidade: 'Taguatinga EAD'
+  filtro_unidade_347:
+      codEstruturado: 1.01.12.01.02.06.01.00
+      nomeUnidade: 'Taguatinga EAD - Curso de Administração Pública - Arraias'
+  filtro_unidade_348:
+      codEstruturado: 1.01.12.01.02.07.00.00
+      nomeUnidade: 'Alvorada EAD - Curso de Matemática - Licenciatura'
+  filtro_unidade_349:
+      codEstruturado: 1.01.12.01.02.08.00.00
+      nomeUnidade: 'Ananás EAD - Curso de Matemática - Licenciatura'
+  filtro_unidade_350:
+      codEstruturado: 1.01.12.01.02.09.00.00
+      nomeUnidade: 'Arraias EAD - Curso de Matemática - Licenciatura'
+  filtro_unidade_351:
+      codEstruturado: 1.01.12.01.02.10.00.00
+      nomeUnidade: 'Dianópolis EAD - Curso de Matemática - Licenciatura'
+  filtro_unidade_352:
+      codEstruturado: 1.01.12.01.02.11.00.00
+      nomeUnidade: 'Guaraí EAD - Curso de Matemática - Licenciatura'
+  filtro_unidade_353:
+      codEstruturado: 1.01.12.01.02.12.00.00
+      nomeUnidade: 'Gurupi EAD - Curso de Matemática - Licenciatura'
+  filtro_unidade_354:
+      codEstruturado: 1.01.12.01.02.13.00.00
+      nomeUnidade: 'Mateiros EAD - Curso de Matemática - Licenciatura'
+  filtro_unidade_355:
+      codEstruturado: 1.01.12.01.02.14.00.00
+      nomeUnidade: 'Nova Olinda EAD - Curso de Matemática - Licenciatura'
+  filtro_unidade_356:
+      codEstruturado: 1.01.12.01.02.15.00.00
+      nomeUnidade: 'Taguatinga EAD - Curso de Matemática - Licenciatura'
+  filtro_unidade_357:
+      codEstruturado: 1.01.12.01.02.16.00.00
+      nomeUnidade: 'Dianópolis EAD - Curso de Química - Licenciatura - Arraias'
+  filtro_unidade_358:
+      codEstruturado: 1.01.12.01.03.00.00.00
+      nomeUnidade: 'Gurupi EAD'
+  filtro_unidade_359:
+      codEstruturado: 1.01.12.01.03.01.00.00
+      nomeUnidade: 'Gurupi EAD - Curso de Licenciatura de Biologia à Distância'
+  filtro_unidade_360:
+      codEstruturado: 1.01.12.01.03.02.00.00
+      nomeUnidade: 'Gurupi EAD - Curso de Química - Licenciatura - Gurupi'
+  filtro_unidade_361:
+      codEstruturado: 1.01.12.01.03.03.00.00
+      nomeUnidade: 'Gurupi- EAD- Curso de Licenciatura de Biologia- PARFOR- Gurupi'
+  filtro_unidade_362:
+      codEstruturado: 1.01.12.01.03.04.00.00
+      nomeUnidade: 'Gurupi EAD - Curso de Física - Licenciatura - Gurupi'
+  filtro_unidade_363:
+      codEstruturado: 1.01.12.01.03.05.00.00
+      nomeUnidade: 'Gurupi EAD - Curso de Administração Pública - Gurupi'
+  filtro_unidade_364:
+      codEstruturado: 1.01.12.01.04.00.00.00
+      nomeUnidade: 'Miracema EAD'
+  filtro_unidade_365:
+      codEstruturado: 1.01.12.01.06.00.00.00
+      nomeUnidade: 'Porto Nacional EAD'
+  filtro_unidade_366:
+      codEstruturado: 1.01.12.01.06.01.00.00
+      nomeUnidade: 'Porto Nacional EAD - Curso de Licenciatura de Biologia à Distância'
+  filtro_unidade_367:
+      codEstruturado: 1.01.12.01.06.02.00.00
+      nomeUnidade: 'Porto Nacional EAD - Curso de Química - Licenciatura - Porto Nacional'
+  filtro_unidade_368:
+      codEstruturado: 1.01.12.01.07.00.00.00
+      nomeUnidade: 'Tocantinópolis EAD'
+  filtro_unidade_369:
+      codEstruturado: 1.01.12.01.08.00.00.00
+      nomeUnidade: 'Palmas EAD'
+  filtro_unidade_370:
+      codEstruturado: 1.01.12.01.08.01.00.00
+      nomeUnidade: 'Cristalândia EAD - Curso de Física - Licenciatura - Palmas'
+  filtro_unidade_371:
+      codEstruturado: 1.01.12.01.08.02.00.00
+      nomeUnidade: 'Palmas EAD - Curso de Física - Licenciatura - Palmas'
+  filtro_unidade_372:
+      codEstruturado: 1.01.12.01.08.03.00.00
+      nomeUnidade: 'Cristalândia -EAD- Curso de Química - Licenciatura - Palmas'
+  filtro_unidade_373:
+      codEstruturado: 1.01.12.01.08.04.00.00
+      nomeUnidade: 'Cristalândia -EAD- Curso de Licenciatura em Biologia - Palmas'
+  filtro_unidade_374:
+      codEstruturado: 1.01.12.01.08.06.00.00
+      nomeUnidade: 'Palmas EAD - Curso de Química - Licenciatura - Palmas'
+  filtro_unidade_375:
+      codEstruturado: 1.01.12.01.08.07.00.00
+      nomeUnidade: 'Araguacema EAD - Curso de Administração Pública - Palmas'
+  filtro_unidade_376:
+      codEstruturado: 1.01.12.01.08.08.00.00
+      nomeUnidade: 'Guaraí EAD - Curso de Administração Pública - Palmas'
+  filtro_unidade_377:
+      codEstruturado: 1.01.12.01.08.09.00.00
+      nomeUnidade: 'Pedro Afonso EAD - Curso de Administração Pública - Palmas'
+  filtro_unidade_378:
+      codEstruturado: 1.01.13.00.00.00.00.00
+      nomeUnidade: 'Estrutura PingIFES'
+  filtro_unidade_379:
+      codEstruturado: 1.01.13.01.00.00.00.00
+      nomeUnidade: 'Programas de Pós Graduação'
+  filtro_unidade_380:
+      codEstruturado: 1.01.13.01.01.00.00.00
+      nomeUnidade: 'Programa de Agroenergia'
+  filtro_unidade_381:
+      codEstruturado: 1.01.13.01.02.00.00.00
+      nomeUnidade: 'Programa de Ciência Animal Tropical'
+  filtro_unidade_382:
+      codEstruturado: 1.01.13.01.03.00.00.00
+      nomeUnidade: 'Programa de Ciências da Saúde'
+  filtro_unidade_383:
+      codEstruturado: 1.01.13.01.04.00.00.00
+      nomeUnidade: 'Programa de Ciências do Ambiente'
+  filtro_unidade_384:
+      codEstruturado: 1.01.13.01.05.00.00.00
+      nomeUnidade: 'Programa de Desenvolvimento Regional e Agronegócio'
+  filtro_unidade_385:
+      codEstruturado: 1.01.13.01.06.00.00.00
+      nomeUnidade: 'Programa de Ecologia de Ecótonos'
+  filtro_unidade_386:
+      codEstruturado: 1.01.13.01.07.00.00.00
+      nomeUnidade: 'Programa de Produção Vegetal'
+  filtro_unidade_387:
+      codEstruturado: 1.01.13.01.08.00.00.00
+      nomeUnidade: 'Programa de Modelagem Computacional de Conhecimento'
+  filtro_unidade_388:
+      codEstruturado: 1.01.13.01.09.00.00.00
+      nomeUnidade: 'Programa de Geografia'
+  filtro_unidade_389:
+      codEstruturado: 1.01.13.01.10.00.00.00
+      nomeUnidade: 'Programa de Língua e Literaturas'
+  filtro_unidade_390:
+      codEstruturado: 1.01.13.01.11.00.00.00
+      nomeUnidade: 'Programa de Engenharia Ambiental'
+  filtro_unidade_391:
+      codEstruturado: 1.01.13.01.12.00.00.00
+      nomeUnidade: 'Programa de Biotecnologia'
+  filtro_unidade_392:
+      codEstruturado: 1.01.13.01.13.00.00.00
+      nomeUnidade: 'Programa de Ciência e Tecnologia de Alimentos'
+  filtro_unidade_393:
+      codEstruturado: 1.01.13.01.14.00.00.00
+      nomeUnidade: 'Programa de Educação'
+  filtro_unidade_394:
+      codEstruturado: 1.01.13.01.15.00.00.00
+      nomeUnidade: 'Programa de Prestação Jurisdicional e Direitos Humanos'
+  filtro_unidade_395:
+      codEstruturado: 1.01.13.01.16.00.00.00
+      nomeUnidade: 'Programa de Ciências Florestais e Ambientais'
+  filtro_unidade_396:
+      codEstruturado: 1.01.13.01.17.00.00.00
+      nomeUnidade: 'Programa de Gestão de Políticas Públicas'
+  filtro_unidade_397:
+      codEstruturado: 1.01.13.01.18.00.00.00
+      nomeUnidade: 'Programa de Biodiversidade e Biotecnologia'
+  filtro_unidade_398:
+      codEstruturado: 1.01.13.01.19.00.00.00
+      nomeUnidade: 'Programa de Ensino de Ciências da Saúde'
+  filtro_unidade_399:
+      codEstruturado: 1.01.13.01.20.00.00.00
+      nomeUnidade: 'Programa de Letras'
+  filtro_unidade_400:
+      codEstruturado: 1.01.13.01.21.00.00.00
+      nomeUnidade: 'Programa de Sanidade Animal e Saúde Pública nos Trópicos'
+  filtro_unidade_401:
+      codEstruturado: 1.01.13.01.22.00.00.00
+      nomeUnidade: 'Programa de Comunicação e Sociedade'
+  filtro_unidade_402:
+      codEstruturado: 1.01.13.01.23.00.00.00
+      nomeUnidade: 'Programa de Biodiversidade | Ecologia e Conservação'
+  filtro_unidade_403:
+      codEstruturado: 1.01.13.01.24.00.00.00
+      nomeUnidade: 'Programa de Modelagem Computacional de Sistemas'
+  filtro_unidade_404:
+      codEstruturado: 1.01.14.00.00.00.00.00
+      nomeUnidade: 'Centro de Idiomas'
+  filtro_unidade_405:
+      codEstruturado: 1.02.00.00.00.00.00.00
+      nomeUnidade: 'Campus Universitário de Araguaína'
+  filtro_unidade_406:
+      codEstruturado: 1.02.00.01.00.00.00.00
+      nomeUnidade: 'Conselho do Campus - Araguaína'
+  filtro_unidade_407:
+      codEstruturado: 1.02.01.00.00.00.00.00
+      nomeUnidade: 'Direção do Campus de Araguaína'
+  filtro_unidade_408:
+      codEstruturado: 1.02.01.00.01.00.00.00
+      nomeUnidade: 'Assessoria da Direção - EMVZ - Araguaína'
+  filtro_unidade_409:
+      codEstruturado: 1.02.01.00.02.00.00.00
+      nomeUnidade: 'Grupo de Trabalho de Pesquisa | Pós-graduação e Extensão - Araguaína'
+  filtro_unidade_410:
+      codEstruturado: 1.02.01.00.03.00.00.00
+      nomeUnidade: 'Comissão e Avaliação do Campus - Araguaína'
+  filtro_unidade_411:
+      codEstruturado: 1.02.01.00.04.00.00.00
+      nomeUnidade: 'Central de Estágios - Araguaína'
+  filtro_unidade_412:
+      codEstruturado: 1.02.01.00.05.00.00.00
+      nomeUnidade: 'Niad - Araguaína'
+  filtro_unidade_413:
+      codEstruturado: 1.02.01.01.00.00.00.00
+      nomeUnidade: 'Secretaria Acadêmica (PROGRAD) - Araguaína'
+  filtro_unidade_414:
+      codEstruturado: 1.02.01.01.01.00.00.00
+      nomeUnidade: 'Secretaria - Secretaria Acadêmica (PROGRAD) - Araguaína'
+  filtro_unidade_415:
+      codEstruturado: 1.02.01.02.00.00.00.00
+      nomeUnidade: 'Coordenadoria Administrativa - Araguaína'
+  filtro_unidade_416:
+      codEstruturado: 1.02.01.02.00.01.00.00
+      nomeUnidade: 'Secretaria - Coordenadoria Administrativa - Araguaína'
+  filtro_unidade_417:
+      codEstruturado: 1.02.01.02.01.00.00.00
+      nomeUnidade: 'Setor de Compras - Araguaína'
+  filtro_unidade_418:
+      codEstruturado: 1.02.01.02.02.00.00.00
+      nomeUnidade: 'Setor Logístico e Operacional - Araguaína'
+  filtro_unidade_419:
+      codEstruturado: 1.02.01.02.03.00.00.00
+      nomeUnidade: 'Setor de Almoxarifado - Araguaína'
+  filtro_unidade_420:
+      codEstruturado: 1.02.01.02.04.00.00.00
+      nomeUnidade: 'Setor de Contratos - Araguaína'
+  filtro_unidade_421:
+      codEstruturado: 1.02.01.02.05.00.00.00
+      nomeUnidade: 'Setor de Patrimonio - Araguaína'
+  filtro_unidade_422:
+      codEstruturado: 1.02.01.02.06.00.00.00
+      nomeUnidade: 'Setor de Protocolo - Araguaína'
+  filtro_unidade_423:
+      codEstruturado: 1.02.01.02.07.00.00.00
+      nomeUnidade: 'Área Experimental - Araguaína'
+  filtro_unidade_424:
+      codEstruturado: 1.02.01.02.07.01.00.00
+      nomeUnidade: 'Setor de Campo - Araguaína'
+  filtro_unidade_425:
+      codEstruturado: 1.02.01.02.20.00.00.00
+      nomeUnidade: 'EMVZ - Unidade (Compras e Entregas) - Araguaina'
+  filtro_unidade_426:
+      codEstruturado: 1.02.01.03.00.00.00.00
+      nomeUnidade: 'Cursos - Araguaína'
+  filtro_unidade_427:
+      codEstruturado: 1.02.01.03.00.01.00.00
+      nomeUnidade: 'Secretaria - Cursos - Araguaína'
+  filtro_unidade_428:
+      codEstruturado: 1.02.01.03.00.02.00.00
+      nomeUnidade: 'Cursos Residentes - Araguaína'
+  filtro_unidade_429:
+      codEstruturado: 1.02.01.03.00.02.01.00
+      nomeUnidade: 'Programa de Residência em Medicina Veterinária - Clínica | Cirurgia e Anestesiologia de Pequenos Anim'
+  filtro_unidade_430:
+      codEstruturado: 1.02.01.03.00.02.02.00
+      nomeUnidade: 'Residência Médica em Medicina de Família e Comunidade'
+  filtro_unidade_431:
+      codEstruturado: 1.02.01.03.01.00.00.00
+      nomeUnidade: 'Curso de Ciências - Matemática - Matutino - Araguaína'
+  filtro_unidade_432:
+      codEstruturado: 1.02.01.03.02.00.00.00
+      nomeUnidade: 'Curso de Ciências - Matemática - Noturno - Araguaína'
+  filtro_unidade_433:
+      codEstruturado: 1.02.01.03.03.00.00.00
+      nomeUnidade: 'Curso de Geografia (Licenciatura) - Matutino - Araguaína'
+  filtro_unidade_434:
+      codEstruturado: 1.02.01.03.04.00.00.00
+      nomeUnidade: 'Curso de Geografia (Licenciatura) - Noturno - Araguaína'
+  filtro_unidade_435:
+      codEstruturado: 1.02.01.03.05.00.00.00
+      nomeUnidade: 'Curso de Geografia (Licenciatura) - Vespertino - Araguaína'
+  filtro_unidade_436:
+      codEstruturado: 1.02.01.03.06.00.00.00
+      nomeUnidade: 'Curso de Letras (Língua Portuguesa e Língua Inglesa) Matutino - Araguaína'
+  filtro_unidade_437:
+      codEstruturado: 1.02.01.03.07.00.00.00
+      nomeUnidade: 'Curso de Letras (Língua Portuguesa e Língua Inglesa) Noturno - Araguaína'
+  filtro_unidade_438:
+      codEstruturado: 1.02.01.03.08.00.00.00
+      nomeUnidade: 'Curso de Letras (Língua Portuguesa e Língua Inglesa) Vespertino-Araguaína'
+  filtro_unidade_439:
+      codEstruturado: 1.02.01.03.09.00.00.00
+      nomeUnidade: 'Curso de Medicina Veterinária - Araguaína'
+  filtro_unidade_440:
+      codEstruturado: 1.02.01.03.10.00.00.00
+      nomeUnidade: 'Curso de Zootecnia - Araguaína'
+  filtro_unidade_441:
+      codEstruturado: 1.02.01.03.11.00.00.00
+      nomeUnidade: 'Curso de História (Licenciatura) - Matutino - Araguaína'
+  filtro_unidade_442:
+      codEstruturado: 1.02.01.03.12.00.00.00
+      nomeUnidade: 'Curso de História (Licenciatura) - Noturno - Araguaína'
+  filtro_unidade_443:
+      codEstruturado: 1.02.01.03.13.00.00.00
+      nomeUnidade: 'Curso de História (Licenciatura) - Vespertino - Araguaína'
+  filtro_unidade_444:
+      codEstruturado: 1.02.01.03.14.00.00.00
+      nomeUnidade: 'Curso de Ciências - Matemática - Vespertino - Araguaína'
+  filtro_unidade_445:
+      codEstruturado: 1.02.01.03.15.00.00.00
+      nomeUnidade: 'Curso Especial da Graduação - Araguaína'
+  filtro_unidade_446:
+      codEstruturado: 1.02.01.03.16.00.00.00
+      nomeUnidade: 'Curso de Especialização em História e Sociedade: Tradições e Inovações'
+  filtro_unidade_447:
+      codEstruturado: 1.02.01.03.17.00.00.00
+      nomeUnidade: 'Curso de Mestrado Ciência Animal Tropical - Araguaina'
+  filtro_unidade_448:
+      codEstruturado: 1.02.01.03.19.00.00.00
+      nomeUnidade: 'Curso Especial de Pós-Graduação - Araguaína'
+  filtro_unidade_449:
+      codEstruturado: 1.02.01.03.20.00.00.00
+      nomeUnidade: 'Curso de Biologia - Licenciatura - Noturno - Araguaína'
+  filtro_unidade_450:
+      codEstruturado: 1.02.01.03.21.00.00.00
+      nomeUnidade: 'Curso de Física - Licenciatura - Noturno - Araguaína'
+  filtro_unidade_451:
+      codEstruturado: 1.02.01.03.22.00.00.00
+      nomeUnidade: 'Curso de Química - Licenciatura - Noturno - Araguaína'
+  filtro_unidade_452:
+      codEstruturado: 1.02.01.03.23.00.00.00
+      nomeUnidade: 'Curso de Tecnologia em Gestão de Cooperativas - Noturno - Araguaína'
+  filtro_unidade_453:
+      codEstruturado: 1.02.01.03.24.00.00.00
+      nomeUnidade: 'Curso de Tecnologia em Logística - Noturno - Araguaína'
+  filtro_unidade_454:
+      codEstruturado: 1.02.01.03.25.00.00.00
+      nomeUnidade: 'Curso de Tecnologia em Gestão de Turismo - Noturno - Araguaína'
+  filtro_unidade_455:
+      codEstruturado: 1.02.01.03.26.00.00.00
+      nomeUnidade: 'Curso de Doutorado em Ciência Animal Tropical - Araguaína'
+  filtro_unidade_456:
+      codEstruturado: 1.02.01.03.27.00.00.00
+      nomeUnidade: 'Curso de Matemática - Licenciatura - Matutino - Araguaína'
+  filtro_unidade_457:
+      codEstruturado: 1.02.01.03.28.00.00.00
+      nomeUnidade: 'Curso de Matemática - Licenciatura - Noturno - Araguaína'
+  filtro_unidade_458:
+      codEstruturado: 1.02.01.03.29.00.00.00
+      nomeUnidade: 'Curso de Biologia - Licenciatura - Matutino - Araguaína'
+  filtro_unidade_459:
+      codEstruturado: 1.02.01.03.30.00.00.00
+      nomeUnidade: 'Curso de Física - Licenciatura - Matutino - Araguaína'
+  filtro_unidade_460:
+      codEstruturado: 1.02.01.03.31.00.00.00
+      nomeUnidade: 'Curso de Química - Licenciatura - Matutino - Araguaína'
+  filtro_unidade_461:
+      codEstruturado: 1.02.01.03.32.00.00.00
+      nomeUnidade: 'Curso de Tecnologia em Gestão de Cooperativas - Matutino - Araguaína'
+  filtro_unidade_462:
+      codEstruturado: 1.02.01.03.33.00.00.00
+      nomeUnidade: 'Curso de Tecnologia em Gestão de Turismo - Matutino - Araguaína'
+  filtro_unidade_463:
+      codEstruturado: 1.02.01.03.34.00.00.00
+      nomeUnidade: 'Curso de Tecnologia em Logística - Matutino - Araguaína'
+  filtro_unidade_464:
+      codEstruturado: 1.02.01.03.35.00.00.00
+      nomeUnidade: 'Curso de Letras - Matutino - Araguaína (Núcleo Comum)'
+  filtro_unidade_465:
+      codEstruturado: 1.02.01.03.35.01.00.00
+      nomeUnidade: 'Curso de Letras - Língua Portuguesa e Literaturas - Matutino - Araguaína'
+  filtro_unidade_466:
+      codEstruturado: 1.02.01.03.35.02.00.00
+      nomeUnidade: 'Curso de Letras - Língua Inglesa e Literaturas - Matutino - Araguaína'
+  filtro_unidade_467:
+      codEstruturado: 1.02.01.03.36.00.00.00
+      nomeUnidade: 'Curso de Letras - Noturno - Araguaína (Núcleo Comum)'
+  filtro_unidade_468:
+      codEstruturado: 1.02.01.03.36.01.00.00
+      nomeUnidade: 'Curso de Letras - Língua Portuguesa e Literaturas - Noturno - Araguaína'
+  filtro_unidade_469:
+      codEstruturado: 1.02.01.03.36.02.00.00
+      nomeUnidade: 'Curso de Letras - Língua Inglesa e Literaturas - Noturno - Araguaína'
+  filtro_unidade_470:
+      codEstruturado: 1.02.01.03.37.00.00.00
+      nomeUnidade: 'Curso de História (Licenciatura) - PARFOR - Araguaína'
+  filtro_unidade_471:
+      codEstruturado: 1.02.01.03.38.00.00.00
+      nomeUnidade: 'Curso de Geografia (Licenciatura) - PARFOR - Araguaína'
+  filtro_unidade_472:
+      codEstruturado: 1.02.01.03.39.00.00.00
+      nomeUnidade: 'Curso de Letras (Núcleo Comum) - PARFOR - Araguaína'
+  filtro_unidade_473:
+      codEstruturado: 1.02.01.03.39.01.00.00
+      nomeUnidade: 'Curso de Letras - Língua Portuguesa e Literaturas (Licenciatura) - PARFOR - Araguaína'
+  filtro_unidade_474:
+      codEstruturado: 1.02.01.03.39.02.00.00
+      nomeUnidade: 'Curso de Letras - Língua Inglesa e Literaturas (Licenciatura) - PARFOR - Araguaína'
+  filtro_unidade_475:
+      codEstruturado: 1.02.01.03.40.00.00.00
+      nomeUnidade: 'Curso de Mestrado em Letras: Ensino de Língua e Literatura - Araguaína'
+  filtro_unidade_476:
+      codEstruturado: 1.02.01.03.41.00.00.00
+      nomeUnidade: 'Curso de Matemática (Licenciatura) - PARFOR - Araguaína'
+  filtro_unidade_477:
+      codEstruturado: 1.02.01.03.42.00.00.00
+      nomeUnidade: 'Curso de História - Bacharelado - Matutino - Araguaína'
+  filtro_unidade_478:
+      codEstruturado: 1.02.01.03.43.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Licenciatura) - PARFOR - Araguaína'
+  filtro_unidade_479:
+      codEstruturado: 1.02.01.03.44.00.00.00
+      nomeUnidade: 'Curso de Matemática (Segunda Licenciatura) - PARFOR - Araguaína'
+  filtro_unidade_480:
+      codEstruturado: 1.02.01.03.45.00.00.00
+      nomeUnidade: 'Curso de Doutorado em Letras: Ensino de Língua e Literatura - Araguaína'
+  filtro_unidade_481:
+      codEstruturado: 1.02.01.03.46.00.00.00
+      nomeUnidade: 'Curso de Mestrado Profissional em Letras em Rede Nacional/PROFLETRAS - Araguaína'
+  filtro_unidade_482:
+      codEstruturado: 1.02.01.03.47.00.00.00
+      nomeUnidade: 'Curso de Mestrado Profissional em História em Rede Nacional - Araguaína'
+  filtro_unidade_483:
+      codEstruturado: 1.02.01.03.48.00.00.00
+      nomeUnidade: 'Curso de Mestrado em Sanidade Animal e Saúde Pública nos Trópicos - Araguaína'
+  filtro_unidade_484:
+      codEstruturado: 1.02.01.03.49.00.00.00
+      nomeUnidade: 'Curso de Mestrado em Estudos de Cultura e Território - Araguaína'
+  filtro_unidade_485:
+      codEstruturado: 1.02.01.03.50.00.00.00
+      nomeUnidade: 'Curso de Mestrado Nacional Profissional em Ensino de Física - Araguaína'
+  filtro_unidade_486:
+      codEstruturado: 1.02.01.04.00.00.00.00
+      nomeUnidade: 'Biblioteca - Araguaína'
+  filtro_unidade_487:
+      codEstruturado: 1.02.01.04.01.00.00.00
+      nomeUnidade: 'Biblioteca CIMBA'
+  filtro_unidade_488:
+      codEstruturado: 1.02.01.04.02.00.00.00
+      nomeUnidade: 'Biblioteca - EMVZ'
+  filtro_unidade_489:
+      codEstruturado: 1.02.01.05.00.00.00.00
+      nomeUnidade: 'Coordenações de Cursos - Araguaína'
+  filtro_unidade_490:
+      codEstruturado: 1.02.01.05.01.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Biologia - Araguaína'
+  filtro_unidade_491:
+      codEstruturado: 1.02.01.05.01.01.00.00
+      nomeUnidade: 'Laboratório de Biologia - Curso de Biologia - Araguaína'
+  filtro_unidade_492:
+      codEstruturado: 1.02.01.05.02.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Física - Araguaína'
+  filtro_unidade_493:
+      codEstruturado: 1.02.01.05.02.01.00.00
+      nomeUnidade: 'Laboratório de Física - Curso de Física - Araguaína'
+  filtro_unidade_494:
+      codEstruturado: 1.02.01.05.02.02.00.00
+      nomeUnidade: 'Laboratório de Pesquisa em Materiais para Aplicações em Dispositivos Eletrônicos - LABMADE'
+  filtro_unidade_495:
+      codEstruturado: 1.02.01.05.03.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Química - Araguaína'
+  filtro_unidade_496:
+      codEstruturado: 1.02.01.05.03.01.00.00
+      nomeUnidade: 'Laboratório de Química - Curso de Química - Araguaína'
+  filtro_unidade_497:
+      codEstruturado: 1.02.01.05.04.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Tecnologia em Gestão de Cooperativas - Araguaína'
+  filtro_unidade_498:
+      codEstruturado: 1.02.01.05.05.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Tecnologia em Logística - Araguaína'
+  filtro_unidade_499:
+      codEstruturado: 1.02.01.05.06.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Tecnologia em Gestão de Turismo - Araguaína'
+  filtro_unidade_500:
+      codEstruturado: 1.02.01.05.07.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Geografia - Araguaína'
+  filtro_unidade_501:
+      codEstruturado: 1.02.01.05.08.00.00.00
+      nomeUnidade: 'Coordenação do Curso de História - Araguaína'
+  filtro_unidade_502:
+      codEstruturado: 1.02.01.05.09.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Letras - Araguaína'
+  filtro_unidade_503:
+      codEstruturado: 1.02.01.05.10.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Matemática - Araguaína'
+  filtro_unidade_504:
+      codEstruturado: 1.02.01.05.11.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Medicina Veterinária - Araguaína'
+  filtro_unidade_505:
+      codEstruturado: 1.02.01.05.11.01.00.00
+      nomeUnidade: 'Laboratório de Anatomia - Medicina Veterinária - Araguaína'
+  filtro_unidade_506:
+      codEstruturado: 1.02.01.05.11.02.00.00
+      nomeUnidade: 'Laboratório de Patologia Clínica - Medicina Veterinária - Araguaína'
+  filtro_unidade_507:
+      codEstruturado: 1.02.01.05.11.03.00.00
+      nomeUnidade: 'Laboratório de Bioquímica - Medicina Veterinária - Araguaína'
+  filtro_unidade_508:
+      codEstruturado: 1.02.01.05.11.04.00.00
+      nomeUnidade: 'Laboratório de Microbiologia de Alimentos - Medicina Veterinária - Araguaína'
+  filtro_unidade_509:
+      codEstruturado: 1.02.01.05.11.05.00.00
+      nomeUnidade: 'Laboratório de Parasitologia - Medicina Veterinária - Araguaína'
+  filtro_unidade_510:
+      codEstruturado: 1.02.01.05.11.06.00.00
+      nomeUnidade: 'Laboratório de Reprodução Animal - Medicina Veterinária - Araguaína'
+  filtro_unidade_511:
+      codEstruturado: 1.02.01.05.11.07.00.00
+      nomeUnidade: 'Laboratório de Lactologia - Medicina Veterinária - Araguaína'
+  filtro_unidade_512:
+      codEstruturado: 1.02.01.05.11.08.00.00
+      nomeUnidade: 'Laboratório de Microbiologia e Imunologia - Medicina Veterinária - Araguaína'
+  filtro_unidade_513:
+      codEstruturado: 1.02.01.05.11.09.00.00
+      nomeUnidade: 'Laboratório de Microscopia - Medicina Veterinária - Araguaína'
+  filtro_unidade_514:
+      codEstruturado: 1.02.01.05.11.10.00.00
+      nomeUnidade: 'Laboratório de Farmacologia - Medicina Veterinária - Araguaína'
+  filtro_unidade_515:
+      codEstruturado: 1.02.01.05.11.11.00.00
+      nomeUnidade: 'Laboratório de Morfologia e Bioquimica - Medicina Veterinária - Araguaína'
+  filtro_unidade_516:
+      codEstruturado: 1.02.01.05.12.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Zootecnia - Araguaína'
+  filtro_unidade_517:
+      codEstruturado: 1.02.01.05.12.01.00.00
+      nomeUnidade: 'Laboratório de Solos - Zootecnia - Araguaína'
+  filtro_unidade_518:
+      codEstruturado: 1.02.01.05.12.02.00.00
+      nomeUnidade: 'Laboratório de Zoologia - Zootecnia - Araguaína'
+  filtro_unidade_519:
+      codEstruturado: 1.02.01.05.13.00.00.00
+      nomeUnidade: 'Programa de Pós-graduação em Ciência Animal Tropical'
+  filtro_unidade_520:
+      codEstruturado: 1.02.01.05.13.01.00.00
+      nomeUnidade: 'Laboratório de Nutrição Animal - PPGCAT - Araguaína'
+  filtro_unidade_521:
+      codEstruturado: 1.02.01.05.13.02.00.00
+      nomeUnidade: 'Laboratório Multidisciplinar de Patologia - PPGCAT - Araguaína'
+  filtro_unidade_522:
+      codEstruturado: 1.02.01.05.13.03.00.00
+      nomeUnidade: 'Laboratório Biotério - PPGCAT - Araguaína'
+  filtro_unidade_523:
+      codEstruturado: 1.02.01.05.13.04.00.00
+      nomeUnidade: 'Laboratório de Bioquímica da Ciência Animal - PPGCAT - Araguaína'
+  filtro_unidade_524:
+      codEstruturado: 1.02.01.05.14.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Biologia EAD - Araguaína'
+  filtro_unidade_525:
+      codEstruturado: 1.02.01.05.14.01.00.00
+      nomeUnidade: 'Laboratório de Biologia - Biologia EAD - Araguaína'
+  filtro_unidade_526:
+      codEstruturado: 1.02.01.05.15.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Turismo - Araguaína'
+  filtro_unidade_527:
+      codEstruturado: 1.02.01.05.15.01.00.00
+      nomeUnidade: 'Laboratório de Turismo - Curso de Turismo - Araguaína'
+  filtro_unidade_528:
+      codEstruturado: 1.02.01.05.16.00.00.00
+      nomeUnidade: 'Coordenação do Mestrado Profissional em Letras em Rede Nacional/PROFLETRAS - Araguaína'
+  filtro_unidade_529:
+      codEstruturado: 1.02.01.05.17.00.00.00
+      nomeUnidade: 'Programa de Pós-Graduação em Sanidade Animal e Saúde Pública nos Trópicos'
+  filtro_unidade_530:
+      codEstruturado: 1.02.01.05.18.00.00.00
+      nomeUnidade: 'Programa de pós-graduação em Estudos de Cultura e Território'
+  filtro_unidade_531:
+      codEstruturado: 1.02.01.05.19.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Medicina - Araguaína'
+  filtro_unidade_532:
+      codEstruturado: 1.02.01.05.20.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Mestrado Nacional Profissional em Ensino de Física'
+  filtro_unidade_533:
+      codEstruturado: 1.02.01.05.21.00.00.00
+      nomeUnidade: 'Programa de Pós-Graduação em Ensino de Física'
+  filtro_unidade_534:
+      codEstruturado: 1.02.01.06.00.00.00.00
+      nomeUnidade: 'Gerência de Desenvolvimento Humano - Araguaína'
+  filtro_unidade_535:
+      codEstruturado: 1.02.01.06.01.00.00.00
+      nomeUnidade: 'Setor de Formação e Qualificação - GDH - Araguaína'
+  filtro_unidade_536:
+      codEstruturado: 1.02.01.06.02.00.00.00
+      nomeUnidade: 'Setor de Processamento - GDH - Araguaína'
+  filtro_unidade_537:
+      codEstruturado: 1.02.01.06.03.00.00.00
+      nomeUnidade: 'Setor de Ações em Saúde - GDH - Araguaína'
+  filtro_unidade_538:
+      codEstruturado: 1.02.01.07.00.00.00.00
+      nomeUnidade: 'Hospital Veterinário - Araguaína'
+  filtro_unidade_539:
+      codEstruturado: 1.02.01.08.00.00.00.00
+      nomeUnidade: 'Setor de T.I.-  Araguaína'
+  filtro_unidade_540:
+      codEstruturado: 1.02.01.09.00.00.00.00
+      nomeUnidade: 'Serviço Integrado Multiprofissional e Interdisciplinar de Assistência Estudantil'
+  filtro_unidade_541:
+      codEstruturado: 1.02.01.10.00.00.00.00
+      nomeUnidade: 'Subprefeitura do Campus de Araguaína'
+  filtro_unidade_542:
+      codEstruturado: 1.02.01.11.00.00.00.00
+      nomeUnidade: 'Fazenda de Ensino | Pesquisa e Extensão - EMVZ'
+  filtro_unidade_543:
+      codEstruturado: 1.02.01.12.00.00.00.00
+      nomeUnidade: 'HDT-Hospital de Doenças Tropicais'
+  filtro_unidade_544:
+      codEstruturado: 1.03.00.00.00.00.00.00
+      nomeUnidade: 'Campus Universitário de Arraias'
+  filtro_unidade_545:
+      codEstruturado: 1.03.00.01.00.00.00.00
+      nomeUnidade: 'Conselho do Campus - Arraias'
+  filtro_unidade_546:
+      codEstruturado: 1.03.01.00.00.00.00.00
+      nomeUnidade: 'Direção do Campus de Arraias'
+  filtro_unidade_547:
+      codEstruturado: 1.03.01.00.02.00.00.00
+      nomeUnidade: 'Grupo de Trabalho de Pesquisa |Pós-graduação e Extensão - Arraias'
+  filtro_unidade_548:
+      codEstruturado: 1.03.01.00.03.00.00.00
+      nomeUnidade: 'Comissão de Avaliação do Campus - Arraias'
+  filtro_unidade_549:
+      codEstruturado: 1.03.01.00.04.00.00.00
+      nomeUnidade: 'Congregações - Arraias'
+  filtro_unidade_550:
+      codEstruturado: 1.03.01.00.05.00.00.00
+      nomeUnidade: 'Secretaria da Direção do Campus'
+  filtro_unidade_551:
+      codEstruturado: 1.03.01.01.00.00.00.00
+      nomeUnidade: 'Secretaria Acadêmica - Arraias'
+  filtro_unidade_552:
+      codEstruturado: 1.03.01.01.01.00.00.00
+      nomeUnidade: 'Controle de Documentação'
+  filtro_unidade_553:
+      codEstruturado: 1.03.01.02.00.00.00.00
+      nomeUnidade: 'Coordenação de Planejamento e Administração - Arraias'
+  filtro_unidade_554:
+      codEstruturado: 1.03.01.02.01.00.00.00
+      nomeUnidade: 'Setor de Almoxarifado - Arraias'
+  filtro_unidade_555:
+      codEstruturado: 1.03.01.02.02.00.00.00
+      nomeUnidade: 'Setor Operacional de Transporte / Frotas -  Arraias'
+  filtro_unidade_556:
+      codEstruturado: 1.03.01.02.04.00.00.00
+      nomeUnidade: 'Recepção / Telefonia  - Arraias'
+  filtro_unidade_557:
+      codEstruturado: 1.03.01.02.05.00.00.00
+      nomeUnidade: 'Setor de Patrimônio - Arraias'
+  filtro_unidade_558:
+      codEstruturado: 1.03.01.02.06.00.00.00
+      nomeUnidade: 'Laboratório de Informática - CPD - Arraias'
+  filtro_unidade_559:
+      codEstruturado: 1.03.01.02.07.00.00.00
+      nomeUnidade: 'Setor de Protocolo / Repografia - Arraias'
+  filtro_unidade_560:
+      codEstruturado: 1.03.01.02.08.00.00.00
+      nomeUnidade: 'Setor de Orçamentos / Finanças - Arraias'
+  filtro_unidade_561:
+      codEstruturado: 1.03.01.03.00.00.00.00
+      nomeUnidade: 'Cursos - Arraias'
+  filtro_unidade_562:
+      codEstruturado: 1.03.01.03.00.01.00.00
+      nomeUnidade: 'Secretaria - Cursos - Arraias'
+  filtro_unidade_563:
+      codEstruturado: 1.03.01.03.01.00.00.00
+      nomeUnidade: 'Curso de Normal Superior (DAIEF) - Arraias'
+  filtro_unidade_564:
+      codEstruturado: 1.03.01.03.02.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Administração Educacional) - Matutino - Arraias'
+  filtro_unidade_565:
+      codEstruturado: 1.03.01.03.03.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Administração Educacional) - Noturno - Arraias'
+  filtro_unidade_566:
+      codEstruturado: 1.03.01.03.04.00.00.00
+      nomeUnidade: 'Curso de Matemática - Matutino Arraias'
+  filtro_unidade_567:
+      codEstruturado: 1.03.01.03.05.00.00.00
+      nomeUnidade: 'Curso de Matemática - Noturno - Arraias'
+  filtro_unidade_568:
+      codEstruturado: 1.03.01.03.06.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (DAIEF- Adm. Educacional) -Matutino Arraias'
+  filtro_unidade_569:
+      codEstruturado: 1.03.01.03.07.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (DAIEF- Adm. Educacional) -Noturno  Arraias'
+  filtro_unidade_570:
+      codEstruturado: 1.03.01.03.08.00.00.00
+      nomeUnidade: 'Curso Especial da Graduação - Arraias'
+  filtro_unidade_571:
+      codEstruturado: 1.03.01.03.10.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Licenciatura) - Matutino - Arraias'
+  filtro_unidade_572:
+      codEstruturado: 1.03.01.03.11.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Licenciatura) - Noturno - Arraias'
+  filtro_unidade_573:
+      codEstruturado: 1.03.01.03.12.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Licenciatura) - PARFOR - Arraias'
+  filtro_unidade_574:
+      codEstruturado: 1.03.01.03.13.00.00.00
+      nomeUnidade: 'Curso de Matemática (Licenciatura) - PARFOR - Arraias'
+  filtro_unidade_575:
+      codEstruturado: 1.03.01.03.14.00.00.00
+      nomeUnidade: 'Curso de Educação do Campo (Licenciatura) - Arraias'
+  filtro_unidade_576:
+      codEstruturado: 1.03.01.03.15.00.00.00
+      nomeUnidade: 'Curso de Mestrado Profissional em Matemática em Rede Nacional - Arraias'
+  filtro_unidade_577:
+      codEstruturado: 1.03.01.03.16.00.00.00
+      nomeUnidade: 'Curso Especial de Pós-Graduação - Arraias'
+  filtro_unidade_578:
+      codEstruturado: 1.03.01.03.17.00.00.00
+      nomeUnidade: 'Curso de Turismo Patrimonial e Socioambiental - Noturno - Arraias'
+  filtro_unidade_579:
+      codEstruturado: 1.03.01.04.00.00.00.00
+      nomeUnidade: 'Biblioteca - Arraias'
+  filtro_unidade_580:
+      codEstruturado: 1.03.01.04.01.00.00.00
+      nomeUnidade: 'Assistência - Biblioteca - Arraias'
+  filtro_unidade_581:
+      codEstruturado: 1.03.01.05.00.00.00.00
+      nomeUnidade: 'Coordenações de Cursos - Arraias'
+  filtro_unidade_582:
+      codEstruturado: 1.03.01.05.01.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Pedagogia - Arraias'
+  filtro_unidade_583:
+      codEstruturado: 1.03.01.05.01.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Pedagogia(Administração Educacional) - Arraias'
+  filtro_unidade_584:
+      codEstruturado: 1.03.01.05.02.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Matemática - Arraias'
+  filtro_unidade_585:
+      codEstruturado: 1.03.01.05.02.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Matemática - Arraias'
+  filtro_unidade_586:
+      codEstruturado: 1.03.01.05.03.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Licenciatura em Educação do Campo - Arraias'
+  filtro_unidade_587:
+      codEstruturado: 1.03.01.05.04.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Turismo Patrimonial e Socioambiental - Arraias'
+  filtro_unidade_588:
+      codEstruturado: 1.03.01.06.00.00.00.00
+      nomeUnidade: 'Gerência de Desenvolvimento Humano - Arraias'
+  filtro_unidade_589:
+      codEstruturado: 1.03.01.07.00.00.00.00
+      nomeUnidade: 'Pólo EAD - Arraias'
+  filtro_unidade_590:
+      codEstruturado: 1.03.01.08.00.00.00.00
+      nomeUnidade: 'Coordenação de Desenvolvimento Acadêmico - Arraias'
+  filtro_unidade_591:
+      codEstruturado: 1.03.01.09.00.00.00.00
+      nomeUnidade: 'Subprefeitura do Campus de Arraias'
+  filtro_unidade_592:
+      codEstruturado: 1.04.00.00.00.00.00.00
+      nomeUnidade: 'Campus Universitário de Gurupi'
+  filtro_unidade_593:
+      codEstruturado: 1.04.00.01.00.00.00.00
+      nomeUnidade: 'Conselho do Campus - Gurupi'
+  filtro_unidade_594:
+      codEstruturado: 1.04.01.00.00.00.00.00
+      nomeUnidade: 'Direção do Campus de Gurupi'
+  filtro_unidade_595:
+      codEstruturado: 1.04.01.00.01.00.00.00
+      nomeUnidade: 'Incubadora de Empresas'
+  filtro_unidade_596:
+      codEstruturado: 1.04.01.00.02.00.00.00
+      nomeUnidade: 'Centro de Tecnologia em Agricultura Tropical - Gurupi'
+  filtro_unidade_597:
+      codEstruturado: 1.04.01.00.03.00.00.00
+      nomeUnidade: 'Comissão de Avaliação do Campus - Gurupi'
+  filtro_unidade_598:
+      codEstruturado: 1.04.01.00.04.00.00.00
+      nomeUnidade: 'Congregações - Gurupi'
+  filtro_unidade_599:
+      codEstruturado: 1.04.01.00.05.00.00.00
+      nomeUnidade: 'Secretaria de Comissões - Gurupi'
+  filtro_unidade_600:
+      codEstruturado: 1.04.01.00.05.01.00.00
+      nomeUnidade: 'Implantação do Curso de Engenharia Florestal - Gurupi'
+  filtro_unidade_601:
+      codEstruturado: 1.04.01.01.00.00.00.00
+      nomeUnidade: 'Coordenadoria Administrativa - Gurupi'
+  filtro_unidade_602:
+      codEstruturado: 1.04.01.01.00.01.00.00
+      nomeUnidade: 'Secretaria - Coordenadoria Administrativa - Gurupi'
+  filtro_unidade_603:
+      codEstruturado: 1.04.01.01.01.00.00.00
+      nomeUnidade: 'Núcleo de Tecnologia da Informação - Gurupi'
+  filtro_unidade_604:
+      codEstruturado: 1.04.01.01.01.01.00.00
+      nomeUnidade: 'Audio Visual'
+  filtro_unidade_605:
+      codEstruturado: 1.04.01.01.02.00.00.00
+      nomeUnidade: 'Setor de Desenvolvimento Humano - Gurupi'
+  filtro_unidade_606:
+      codEstruturado: 1.04.01.01.02.01.00.00
+      nomeUnidade: 'Serviço de Apoio Social e Psicopedagógico - SASP'
+  filtro_unidade_607:
+      codEstruturado: 1.04.01.01.03.00.00.00
+      nomeUnidade: 'Setor de Patrimônio - Gurupi'
+  filtro_unidade_608:
+      codEstruturado: 1.04.01.01.04.00.00.00
+      nomeUnidade: 'Setor de Transporte e Logística - Gurupi'
+  filtro_unidade_609:
+      codEstruturado: 1.04.01.01.05.00.00.00
+      nomeUnidade: 'Setor de Protocolo - Gurupí'
+  filtro_unidade_610:
+      codEstruturado: 1.04.01.01.06.00.00.00
+      nomeUnidade: 'Setor de Diárias e Passagens'
+  filtro_unidade_611:
+      codEstruturado: 1.04.01.01.07.00.00.00
+      nomeUnidade: 'Setor de Compras - Gurupi'
+  filtro_unidade_612:
+      codEstruturado: 1.04.01.01.08.00.00.00
+      nomeUnidade: 'Setor de Almoxarifado - Gurupi'
+  filtro_unidade_613:
+      codEstruturado: 1.04.01.02.00.00.00.00
+      nomeUnidade: 'Coordenação Planejamento Estratégico - Gurupi'
+  filtro_unidade_614:
+      codEstruturado: 1.04.01.03.00.00.00.00
+      nomeUnidade: 'Coordenação de Desenvolvimento Acadêmico'
+  filtro_unidade_615:
+      codEstruturado: 1.04.01.03.00.01.00.00
+      nomeUnidade: 'Biblioteca  - Gurupi'
+  filtro_unidade_616:
+      codEstruturado: 1.04.01.03.00.01.01.00
+      nomeUnidade: 'Assistente - Biblioteca - Gurupi'
+  filtro_unidade_617:
+      codEstruturado: 1.04.01.03.00.02.00.00
+      nomeUnidade: 'Secretaria Acadêmica  - Gurupi'
+  filtro_unidade_618:
+      codEstruturado: 1.04.01.03.00.02.01.00
+      nomeUnidade: 'Secretaria - Secretaria Acadêmica - Gurupi'
+  filtro_unidade_619:
+      codEstruturado: 1.04.01.03.00.03.00.00
+      nomeUnidade: 'Nucleo de Eduacação à Distância de Gurupi'
+  filtro_unidade_620:
+      codEstruturado: 1.04.01.03.00.03.01.00
+      nomeUnidade: 'Coordenação Curso de Quimica EaD'
+  filtro_unidade_621:
+      codEstruturado: 1.04.01.03.00.03.02.00
+      nomeUnidade: 'Coordenação Curso de Biologia EaD'
+  filtro_unidade_622:
+      codEstruturado: 1.04.01.03.00.04.00.00
+      nomeUnidade: 'Laboratórios do Campus - Gurupi'
+  filtro_unidade_623:
+      codEstruturado: 1.04.01.03.00.04.01.00
+      nomeUnidade: 'Laboratório de Biologia Molecular'
+  filtro_unidade_624:
+      codEstruturado: 1.04.01.03.00.04.02.00
+      nomeUnidade: 'Laboratório de Botânica'
+  filtro_unidade_625:
+      codEstruturado: 1.04.01.03.00.04.03.00
+      nomeUnidade: 'Câmara Fria'
+  filtro_unidade_626:
+      codEstruturado: 1.04.01.03.00.04.04.00
+      nomeUnidade: 'Laboratório de Controle Biológico de Ácaros'
+  filtro_unidade_627:
+      codEstruturado: 1.04.01.03.00.04.05.00
+      nomeUnidade: 'Laboratório de Controle Biológico de Doenças'
+  filtro_unidade_628:
+      codEstruturado: 1.04.01.03.00.04.06.00
+      nomeUnidade: 'Laboratório de Controle Biológico de Pragas'
+  filtro_unidade_629:
+      codEstruturado: 1.04.01.03.00.04.07.00
+      nomeUnidade: 'Laboratório de Laboratório de Secagem de Sementes'
+  filtro_unidade_630:
+      codEstruturado: 1.04.01.03.00.04.08.00
+      nomeUnidade: 'Laboratório de Ecofisiologia de Plantas Daninhas'
+  filtro_unidade_631:
+      codEstruturado: 1.04.01.03.00.04.09.00
+      nomeUnidade: 'Laboratório de Ecofisiologia Vegetal'
+  filtro_unidade_632:
+      codEstruturado: 1.04.01.03.00.04.10.00
+      nomeUnidade: 'Laboratório de Entomologia'
+  filtro_unidade_633:
+      codEstruturado: 1.04.01.03.00.04.11.00
+      nomeUnidade: 'Laboratório de Física'
+  filtro_unidade_634:
+      codEstruturado: 1.04.01.03.00.04.12.00
+      nomeUnidade: 'Laboratório de Fitopatologia'
+  filtro_unidade_635:
+      codEstruturado: 1.04.01.03.00.04.13.00
+      nomeUnidade: 'Laboratório de Microbiologia/Nematologia'
+  filtro_unidade_636:
+      codEstruturado: 1.04.01.03.00.04.14.00
+      nomeUnidade: 'Laboratório de Multiuso e Microbiologia I'
+  filtro_unidade_637:
+      codEstruturado: 1.04.01.03.00.04.15.00
+      nomeUnidade: 'Laboratório de Multiuso e Microbiologia II'
+  filtro_unidade_638:
+      codEstruturado: 1.04.01.03.00.04.16.00
+      nomeUnidade: 'Laboratório de Processamento de Produtos Agropecuários'
+  filtro_unidade_639:
+      codEstruturado: 1.04.01.03.00.04.17.00
+      nomeUnidade: 'Laboratório de Qualidade do Solo e Recursos Hídricos'
+  filtro_unidade_640:
+      codEstruturado: 1.04.01.03.00.04.18.00
+      nomeUnidade: 'Laboratório de Química'
+  filtro_unidade_641:
+      codEstruturado: 1.04.01.03.00.04.19.00
+      nomeUnidade: 'Laboratório de Química Inorgânica'
+  filtro_unidade_642:
+      codEstruturado: 1.04.01.03.00.04.20.00
+      nomeUnidade: 'Laboratório de Química Orgânica'
+  filtro_unidade_643:
+      codEstruturado: 1.04.01.03.00.04.21.00
+      nomeUnidade: 'Laboratório de Sementes'
+  filtro_unidade_644:
+      codEstruturado: 1.04.01.03.00.04.22.00
+      nomeUnidade: 'Laboratório de Sementes/Plantas Daninhas'
+  filtro_unidade_645:
+      codEstruturado: 1.04.01.03.00.04.23.00
+      nomeUnidade: 'Laboratório de Solos'
+  filtro_unidade_646:
+      codEstruturado: 1.04.01.03.00.04.24.00
+      nomeUnidade: 'Laboratório de Zoologia'
+  filtro_unidade_647:
+      codEstruturado: 1.04.01.03.00.04.25.00
+      nomeUnidade: 'Laboratório de Ciências Florestais'
+  filtro_unidade_648:
+      codEstruturado: 1.04.01.03.01.00.00.00
+      nomeUnidade: 'Coordenações de Cursos - Gurupi'
+  filtro_unidade_649:
+      codEstruturado: 1.04.01.03.01.01.00.00
+      nomeUnidade: 'Coordenação do Curso de Agronomia - Gurupi'
+  filtro_unidade_650:
+      codEstruturado: 1.04.01.03.01.02.00.00
+      nomeUnidade: 'Coordenação do Curso de Engenharia de Bioprocessos e Biotecnologia - Gurupi'
+  filtro_unidade_651:
+      codEstruturado: 1.04.01.03.01.03.00.00
+      nomeUnidade: 'Coordenação do Curso de Química Ambiental - Gurupi'
+  filtro_unidade_652:
+      codEstruturado: 1.04.01.03.01.04.00.00
+      nomeUnidade: 'Coordenação do Curso de Engenharia Florestal - Gurupi'
+  filtro_unidade_653:
+      codEstruturado: 1.04.01.03.02.00.00.00
+      nomeUnidade: 'Cursos - Gurupi'
+  filtro_unidade_654:
+      codEstruturado: 1.04.01.03.02.00.01.00
+      nomeUnidade: 'Secretaria - Cursos - Gurupi'
+  filtro_unidade_655:
+      codEstruturado: 1.04.01.03.02.01.00.00
+      nomeUnidade: 'Curso de Agronomia - Gurupi'
+  filtro_unidade_656:
+      codEstruturado: 1.04.01.03.02.02.00.00
+      nomeUnidade: 'Curso Especial da Graduação - Gurupi'
+  filtro_unidade_657:
+      codEstruturado: 1.04.01.03.02.04.00.00
+      nomeUnidade: 'Curso de Mestrado em Produção Vegetal - Gurupi'
+  filtro_unidade_658:
+      codEstruturado: 1.04.01.03.02.05.00.00
+      nomeUnidade: 'Curso de Engenharia Florestal - Gurupi - Integral'
+  filtro_unidade_659:
+      codEstruturado: 1.04.01.03.02.06.00.00
+      nomeUnidade: 'Curso Especial de Pós-Graduação - Gurupi'
+  filtro_unidade_660:
+      codEstruturado: 1.04.01.03.02.07.00.00
+      nomeUnidade: 'Curso de Engenharia de Bioprocessos e Biotecnologia - Integral - Gurupi'
+  filtro_unidade_661:
+      codEstruturado: 1.04.01.03.02.08.00.00
+      nomeUnidade: 'Curso de Química Ambiental - Integral - Gurupi'
+  filtro_unidade_662:
+      codEstruturado: 1.04.01.03.02.09.00.00
+      nomeUnidade: 'Curso de Biologia (Licenciatura) - PARFOR - Gurupi'
+  filtro_unidade_663:
+      codEstruturado: 1.04.01.03.02.10.00.00
+      nomeUnidade: 'Curso de Geografia (Licenciatura) - PARFOR - Gurupi'
+  filtro_unidade_664:
+      codEstruturado: 1.04.01.03.02.11.00.00
+      nomeUnidade: 'Curso de Matemática (Licenciatura) - PARFOR - Gurupi'
+  filtro_unidade_665:
+      codEstruturado: 1.04.01.03.02.12.00.00
+      nomeUnidade: 'Curso de Doutorado em Produção Vegetal - Gurupi'
+  filtro_unidade_666:
+      codEstruturado: 1.04.01.03.02.13.00.00
+      nomeUnidade: 'Curso de Mestrado em Biotecnologia - Gurupi'
+  filtro_unidade_667:
+      codEstruturado: 1.04.01.03.02.14.00.00
+      nomeUnidade: 'Curso de Mestrado em Ciências Florestais e Ambientais - Gurupi'
+  filtro_unidade_668:
+      codEstruturado: 1.04.01.04.00.00.00.00
+      nomeUnidade: 'Coordenação de Pesquisa e Pós Graduação - Gurupi'
+  filtro_unidade_669:
+      codEstruturado: 1.04.01.04.01.00.00.00
+      nomeUnidade: 'Programa de Produção Vegetal'
+  filtro_unidade_670:
+      codEstruturado: 1.04.01.04.02.00.00.00
+      nomeUnidade: 'Programa em Biotecnologia'
+  filtro_unidade_671:
+      codEstruturado: 1.04.01.04.03.00.00.00
+      nomeUnidade: 'Programa em Ciências Florestais e Ambientais'
+  filtro_unidade_672:
+      codEstruturado: 1.04.01.05.00.00.00.00
+      nomeUnidade: 'Coordenação de Assuntos Comunitários | Cultura e Extensão - Gurupi'
+  filtro_unidade_673:
+      codEstruturado: 1.04.01.06.00.00.00.00
+      nomeUnidade: 'Coordenação de Uso do Espaço Físico'
+  filtro_unidade_674:
+      codEstruturado: 1.04.01.06.01.00.00.00
+      nomeUnidade: 'Área Experimental - Gurupi'
+  filtro_unidade_675:
+      codEstruturado: 1.04.01.06.02.00.00.00
+      nomeUnidade: 'Fazenda Experimental'
+  filtro_unidade_676:
+      codEstruturado: 1.04.01.06.03.00.00.00
+      nomeUnidade: 'Viveiro | Arborização e Paisagismos'
+  filtro_unidade_677:
+      codEstruturado: 1.04.01.06.04.00.00.00
+      nomeUnidade: 'Operacional e Logistica'
+  filtro_unidade_678:
+      codEstruturado: 1.04.01.07.00.00.00.00
+      nomeUnidade: 'Subprefeitura do Campus de Gurupi'
+  filtro_unidade_679:
+      codEstruturado: 1.04.01.08.00.00.00.00
+      nomeUnidade: 'Coordenação de Estágio'
+  filtro_unidade_680:
+      codEstruturado: 1.04.01.09.00.00.00.00
+      nomeUnidade: 'Coordenação de Infraestrutura'
+  filtro_unidade_681:
+      codEstruturado: 1.04.01.10.00.00.00.00
+      nomeUnidade: 'Núcleo de Gestão e Suprimentos Laboratórios - NCLAB'
+  filtro_unidade_682:
+      codEstruturado: 1.04.01.11.00.00.00.00
+      nomeUnidade: 'Auditoria Interna - Gurupi'
+  filtro_unidade_683:
+      codEstruturado: 1.05.00.00.00.00.00.00
+      nomeUnidade: 'Campus Universitário de Miracema'
+  filtro_unidade_684:
+      codEstruturado: 1.05.00.01.00.00.00.00
+      nomeUnidade: 'Conselho do Campus - Miracema'
+  filtro_unidade_685:
+      codEstruturado: 1.05.01.00.00.00.00.00
+      nomeUnidade: 'Direção do Campus de Miracema'
+  filtro_unidade_686:
+      codEstruturado: 1.05.01.00.01.00.00.00
+      nomeUnidade: 'Secretaria da  Direção do Campus - Miracema'
+  filtro_unidade_687:
+      codEstruturado: 1.05.01.00.02.00.00.00
+      nomeUnidade: 'Grupo de Trabalho de Pesquisa | Pós-graduação e Extensão - Miracema'
+  filtro_unidade_688:
+      codEstruturado: 1.05.01.00.03.00.00.00
+      nomeUnidade: 'Comissão de Avaliação do Campus - Miracema'
+  filtro_unidade_689:
+      codEstruturado: 1.05.01.01.00.00.00.00
+      nomeUnidade: 'Secretaria Acadêmica - Miracema'
+  filtro_unidade_690:
+      codEstruturado: 1.05.01.02.00.00.00.00
+      nomeUnidade: 'Coordenação Administrativa - Miracema'
+  filtro_unidade_691:
+      codEstruturado: 1.05.01.02.01.00.00.00
+      nomeUnidade: 'Setor de Almoxarifado - Miracema'
+  filtro_unidade_692:
+      codEstruturado: 1.05.01.02.02.00.00.00
+      nomeUnidade: 'Setor Operacional de Transportes - Miracema'
+  filtro_unidade_693:
+      codEstruturado: 1.05.01.02.03.00.00.00
+      nomeUnidade: 'Setor de Pessoal  - Miracema'
+  filtro_unidade_694:
+      codEstruturado: 1.05.01.02.04.00.00.00
+      nomeUnidade: 'Setor de Compras - Miracema'
+  filtro_unidade_695:
+      codEstruturado: 1.05.01.02.05.00.00.00
+      nomeUnidade: 'Setor de Patrimônio - Miracema'
+  filtro_unidade_696:
+      codEstruturado: 1.05.01.02.06.00.00.00
+      nomeUnidade: 'Laboratório de Informática - CPD - Miracema'
+  filtro_unidade_697:
+      codEstruturado: 1.05.01.02.07.00.00.00
+      nomeUnidade: 'Setor de Protocolo - Miracema'
+  filtro_unidade_698:
+      codEstruturado: 1.05.01.02.08.00.00.00
+      nomeUnidade: 'Setor de Orçamentos / Finanças -  Miracema'
+  filtro_unidade_699:
+      codEstruturado: 1.05.01.03.00.00.00.00
+      nomeUnidade: 'Cursos - Miracema'
+  filtro_unidade_700:
+      codEstruturado: 1.05.01.03.00.01.00.00
+      nomeUnidade: 'Secretaria - Cursos - Miracema'
+  filtro_unidade_701:
+      codEstruturado: 1.05.01.03.01.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Administração Educacional) - Matutino - Miracema'
+  filtro_unidade_702:
+      codEstruturado: 1.05.01.03.02.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Administração Educacional) - Noturno - Miracema'
+  filtro_unidade_703:
+      codEstruturado: 1.05.01.03.03.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Supervisão Educacional) - Noturno - Miracema'
+  filtro_unidade_704:
+      codEstruturado: 1.05.01.03.04.00.00.00
+      nomeUnidade: 'Curso de Normal Superior (Magistério dos Anos Iniciais do Ensino Fundamental) - Matutino - Miracema'
+  filtro_unidade_705:
+      codEstruturado: 1.05.01.03.05.00.00.00
+      nomeUnidade: 'Curso de Normal Superior (Magistério dos Anos Iniciais do Ensino Fundamental) - Noturno - Miracema'
+  filtro_unidade_706:
+      codEstruturado: 1.05.01.03.06.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (DAIEF- Adm. Educacional) -Noturno Miracema'
+  filtro_unidade_707:
+      codEstruturado: 1.05.01.03.07.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (DAIEF-Sup. Educacional) -Matutino Miracema'
+  filtro_unidade_708:
+      codEstruturado: 1.05.01.03.08.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (DAIEF- Sup. Educacional) -Noturno Miracema'
+  filtro_unidade_709:
+      codEstruturado: 1.05.01.03.09.00.00.00
+      nomeUnidade: 'Curso Especial da Graduação - Miracema'
+  filtro_unidade_710:
+      codEstruturado: 1.05.01.03.10.00.00.00
+      nomeUnidade: 'Curso de Especialização em Educação Matemática'
+  filtro_unidade_711:
+      codEstruturado: 1.05.01.03.11.00.00.00
+      nomeUnidade: 'Curso de Especialização em Orientação Educacional'
+  filtro_unidade_712:
+      codEstruturado: 1.05.01.03.12.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Supervisão Educacional) - Matutino - Miracema'
+  filtro_unidade_713:
+      codEstruturado: 1.05.01.03.13.00.00.00
+      nomeUnidade: 'Curso de Serviço Social (Bacharelado) - Noturno - Miracema'
+  filtro_unidade_714:
+      codEstruturado: 1.05.01.03.14.00.00.00
+      nomeUnidade: 'Curso de Serviço Social (Bacharelado) - Matutino - Miracema'
+  filtro_unidade_715:
+      codEstruturado: 1.05.01.03.15.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Licenciatura) - Matutino - Miracema'
+  filtro_unidade_716:
+      codEstruturado: 1.05.01.03.16.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Licenciatura) - Noturno - Miracema'
+  filtro_unidade_717:
+      codEstruturado: 1.05.01.03.17.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Licenciatura) - PARFOR - Miracema'
+  filtro_unidade_718:
+      codEstruturado: 1.05.01.03.18.00.00.00
+      nomeUnidade: 'Curso de Educação Física (Licenciatura) - PARFOR - Miracema'
+  filtro_unidade_719:
+      codEstruturado: 1.05.01.03.19.00.00.00
+      nomeUnidade: 'Curso de História (Licenciatura) - PARFOR - Miracema'
+  filtro_unidade_720:
+      codEstruturado: 1.05.01.03.20.00.00.00
+      nomeUnidade: 'Curso de Psicologia - Integral - Miracema'
+  filtro_unidade_721:
+      codEstruturado: 1.05.01.03.21.00.00.00
+      nomeUnidade: 'Curso de Educação Física - Licenciatura - Miracema'
+  filtro_unidade_722:
+      codEstruturado: 1.05.01.04.00.00.00.00
+      nomeUnidade: 'Biblioteca - Miracema'
+  filtro_unidade_723:
+      codEstruturado: 1.05.01.04.01.00.00.00
+      nomeUnidade: 'Biblioteca Paulo Freire - Miracema'
+  filtro_unidade_724:
+      codEstruturado: 1.05.01.05.00.00.00.00
+      nomeUnidade: 'Coordenações de Cursos - Miracema'
+  filtro_unidade_725:
+      codEstruturado: 1.05.01.05.24.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Pedagogia - Miracema'
+  filtro_unidade_726:
+      codEstruturado: 1.05.01.05.24.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Pedagogia - Miracema'
+  filtro_unidade_727:
+      codEstruturado: 1.05.01.05.25.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Serviço Social - Miracema'
+  filtro_unidade_728:
+      codEstruturado: 1.05.01.05.25.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Serviço Social - Miracema'
+  filtro_unidade_729:
+      codEstruturado: 1.05.01.05.26.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Psicologia - Miracema'
+  filtro_unidade_730:
+      codEstruturado: 1.05.01.05.27.00.00.00
+      nomeUnidade: 'Coordenação de Curso de Educação Física - Miracema'
+  filtro_unidade_731:
+      codEstruturado: 1.05.01.05.27.01.00.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Educação Física - Miracema'
+  filtro_unidade_732:
+      codEstruturado: 1.05.01.06.00.00.00.00
+      nomeUnidade: 'Subprefeitura do Campus de Miracema'
+  filtro_unidade_733:
+      codEstruturado: 1.06.00.00.00.00.00.00
+      nomeUnidade: 'Campus Universitário de Palmas'
+  filtro_unidade_734:
+      codEstruturado: 1.06.00.01.00.00.00.00
+      nomeUnidade: 'Conselho do Campus - Palmas'
+  filtro_unidade_735:
+      codEstruturado: 1.06.01.00.00.00.00.00
+      nomeUnidade: 'Direção do Campus de Palmas'
+  filtro_unidade_736:
+      codEstruturado: 1.06.01.00.01.00.00.00
+      nomeUnidade: 'Secretaria da Direção - Palmas'
+  filtro_unidade_737:
+      codEstruturado: 1.06.01.00.02.00.00.00
+      nomeUnidade: 'Comissão Setorial de Avaliação CSA - Palmas'
+  filtro_unidade_738:
+      codEstruturado: 1.06.01.00.03.00.00.00
+      nomeUnidade: 'Serviço Social - Palmas'
+  filtro_unidade_739:
+      codEstruturado: 1.06.01.00.04.00.00.00
+      nomeUnidade: 'Programa de Apoio Psicopedagógico - Palmas'
+  filtro_unidade_740:
+      codEstruturado: 1.06.01.00.05.00.00.00
+      nomeUnidade: 'Centro de Idiomas - Palmas'
+  filtro_unidade_741:
+      codEstruturado: 1.06.01.00.06.00.00.00
+      nomeUnidade: 'Setor de Extensão e Cultura - Palmas'
+  filtro_unidade_742:
+      codEstruturado: 1.06.01.00.07.00.00.00
+      nomeUnidade: 'Custo Aluno NECOM- Palmas'
+  filtro_unidade_743:
+      codEstruturado: 1.06.01.00.08.00.00.00
+      nomeUnidade: 'Diretório Central dos Estudantes DCE - Palmas'
+  filtro_unidade_744:
+      codEstruturado: 1.06.01.00.09.00.00.00
+      nomeUnidade: 'Olímpiadas Brasileira de Matemática em Escola Pública OBMEP- Palmas'
+  filtro_unidade_745:
+      codEstruturado: 1.06.01.00.10.00.00.00
+      nomeUnidade: 'Programa de Acesso Democrático à Universidade PADU- Palmas'
+  filtro_unidade_746:
+      codEstruturado: 1.06.01.00.11.00.00.00
+      nomeUnidade: 'Sindicato dos Técnicos Administrativos SINTAD - Palmas'
+  filtro_unidade_747:
+      codEstruturado: 1.06.01.00.12.00.00.00
+      nomeUnidade: 'Sindicato dos Professores  SESDUFT- Palmas'
+  filtro_unidade_748:
+      codEstruturado: 1.06.01.00.13.00.00.00
+      nomeUnidade: 'Central de Estágio - Palmas'
+  filtro_unidade_749:
+      codEstruturado: 1.06.01.00.14.00.00.00
+      nomeUnidade: 'Núcleo de Tecnologia da Informação - Palmas'
+  filtro_unidade_750:
+      codEstruturado: 1.06.01.00.20.00.00.00
+      nomeUnidade: 'Ouvidoria do Campus - Palmas'
+  filtro_unidade_751:
+      codEstruturado: 1.06.01.01.00.00.00.00
+      nomeUnidade: 'Secretaria Acadêmica - Palmas'
+  filtro_unidade_752:
+      codEstruturado: 1.06.01.01.01.00.00.00
+      nomeUnidade: 'Controle da Documentação - Secretaria Acadêmica - Palmas'
+  filtro_unidade_753:
+      codEstruturado: 1.06.01.02.00.00.00.00
+      nomeUnidade: 'Coordenação Administrativa - Palmas'
+  filtro_unidade_754:
+      codEstruturado: 1.06.01.02.00.01.00.00
+      nomeUnidade: 'Secretaria - Coordenadoria Administrativa - Palmas'
+  filtro_unidade_755:
+      codEstruturado: 1.06.01.02.01.00.00.00
+      nomeUnidade: 'Setor de Almoxarifado - Palmas'
+  filtro_unidade_756:
+      codEstruturado: 1.06.01.02.02.00.00.00
+      nomeUnidade: 'Setor Operacional de Transporte / Frotas - Palmas'
+  filtro_unidade_757:
+      codEstruturado: 1.06.01.02.03.00.00.00
+      nomeUnidade: 'Setor de Multimeios - Palmas'
+  filtro_unidade_758:
+      codEstruturado: 1.06.01.02.04.00.00.00
+      nomeUnidade: 'Setor de Protocolo - Palmas'
+  filtro_unidade_759:
+      codEstruturado: 1.06.01.02.05.00.00.00
+      nomeUnidade: 'Setor de Patrimônio - Palmas'
+  filtro_unidade_760:
+      codEstruturado: 1.06.01.02.07.00.00.00
+      nomeUnidade: 'Setor de Diárias e Passagens - Palmas'
+  filtro_unidade_761:
+      codEstruturado: 1.06.01.02.08.00.00.00
+      nomeUnidade: 'Setor de Apoio ao Professor - SAP'
+  filtro_unidade_762:
+      codEstruturado: 1.06.01.03.00.00.00.00
+      nomeUnidade: 'Gerência de Desenvolvimento Humano (RH) - Palmas'
+  filtro_unidade_763:
+      codEstruturado: 1.06.01.03.00.01.00.00
+      nomeUnidade: 'Secretaria - Gerência de Desenvolvimento Humano - Palmas'
+  filtro_unidade_764:
+      codEstruturado: 1.06.01.03.02.00.00.00
+      nomeUnidade: 'Setor de Desenvolvimento Organizacional - CUP'
+  filtro_unidade_765:
+      codEstruturado: 1.06.01.04.00.00.00.00
+      nomeUnidade: 'Coordenação da Biblioteca - Palmas'
+  filtro_unidade_766:
+      codEstruturado: 1.06.01.04.01.00.00.00
+      nomeUnidade: 'Assistência - Biblioteca - Palmas'
+  filtro_unidade_767:
+      codEstruturado: 1.06.01.05.00.00.00.00
+      nomeUnidade: 'Coordenações de Cursos - Palmas'
+  filtro_unidade_768:
+      codEstruturado: 1.06.01.05.01.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Administração - Palmas'
+  filtro_unidade_769:
+      codEstruturado: 1.06.01.05.01.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Cursos de Administração - Palmas'
+  filtro_unidade_770:
+      codEstruturado: 1.06.01.05.01.01.00.00
+      nomeUnidade: 'Escritório Modelo - Coordenação do Curso de Administração - Palmas'
+  filtro_unidade_771:
+      codEstruturado: 1.06.01.05.01.02.00.00
+      nomeUnidade: 'Pós-Graduação MBA em Gestão de Pessoas - Coordenação do Curso de Administração - Palmas'
+  filtro_unidade_772:
+      codEstruturado: 1.06.01.05.01.03.00.00
+      nomeUnidade: 'Pós-Graduação MBA em Gestão de Projetos e Cidades - Coordenação do Curso de Administração - Palmas'
+  filtro_unidade_773:
+      codEstruturado: 1.06.01.05.02.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Arquitetura e Urbanismo - Palmas'
+  filtro_unidade_774:
+      codEstruturado: 1.06.01.05.02.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Arquitetura e Urbanismo - Palmas'
+  filtro_unidade_775:
+      codEstruturado: 1.06.01.05.02.01.00.00
+      nomeUnidade: 'Laboratório de Arquitetura e Urbanismo - Coordenação do Curso de Arquitetura e Urbanismo - Palmas'
+  filtro_unidade_776:
+      codEstruturado: 1.06.01.05.02.02.00.00
+      nomeUnidade: 'Laboratório de Audiovisual - Coord. de Arqui. e Urb - Palmas'
+  filtro_unidade_777:
+      codEstruturado: 1.06.01.05.02.03.00.00
+      nomeUnidade: 'Laboratório de Conforto Ambiental - Coord. de Arqui. e Urbanismo - Palmas'
+  filtro_unidade_778:
+      codEstruturado: 1.06.01.05.03.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Artes (Teatro) - Palmas'
+  filtro_unidade_779:
+      codEstruturado: 1.06.01.05.03.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Artes - Palmas'
+  filtro_unidade_780:
+      codEstruturado: 1.06.01.05.03.01.00.00
+      nomeUnidade: 'Laboratório de Artes Visuais - Coordenação do Curso de Artes - Palmas'
+  filtro_unidade_781:
+      codEstruturado: 1.06.01.05.03.02.00.00
+      nomeUnidade: 'Laboratório de Dança - Coordenação do Curso de Artes - Palmas'
+  filtro_unidade_782:
+      codEstruturado: 1.06.01.05.03.03.00.00
+      nomeUnidade: 'Laboratório de Música - Coordenação do Curso de Artes - Palmas'
+  filtro_unidade_783:
+      codEstruturado: 1.06.01.05.03.04.00.00
+      nomeUnidade: 'Laboratório de Teatro - Coordenação do Curso de Artes - Palmas'
+  filtro_unidade_784:
+      codEstruturado: 1.06.01.05.04.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Ciência da Computação - Palmas'
+  filtro_unidade_785:
+      codEstruturado: 1.06.01.05.04.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Ciências da Computação - Palmas'
+  filtro_unidade_786:
+      codEstruturado: 1.06.01.05.04.01.00.00
+      nomeUnidade: 'Laboratório de Informática LABIN 9 - Coordenação do Curso de Ciências da Computação - Palmas'
+  filtro_unidade_787:
+      codEstruturado: 1.06.01.05.04.02.00.00
+      nomeUnidade: 'Laboratório de Informática LABIN 11 - Coordenação do Curso de Ciências da Computação - Palmas'
+  filtro_unidade_788:
+      codEstruturado: 1.06.01.05.04.03.00.00
+      nomeUnidade: 'Laboratório de Informática LABIN 12 - Coordenação do Curso de Ciências da Computação - Palmas'
+  filtro_unidade_789:
+      codEstruturado: 1.06.01.05.04.04.00.00
+      nomeUnidade: 'Laboratório de Informática LABIN 13 - Coordenação do Curso de Ciências da Computação - Palmas'
+  filtro_unidade_790:
+      codEstruturado: 1.06.01.05.04.05.00.00
+      nomeUnidade: 'Laborátorio de Hardware - Coordenação do Curso de Ciências da Computação - Palmas'
+  filtro_unidade_791:
+      codEstruturado: 1.06.01.05.04.06.00.00
+      nomeUnidade: 'Laboratório de Programação - Coordenação do Curso de Ciências da Computação - Palmas'
+  filtro_unidade_792:
+      codEstruturado: 1.06.01.05.04.07.00.00
+      nomeUnidade: 'Laboratório de Projeto | Pesquisa | Inovação e Negócio - Coord. do Curso de Ciências da Computação'
+  filtro_unidade_793:
+      codEstruturado: 1.06.01.05.04.08.00.00
+      nomeUnidade: 'Laboratório de Redes - Coordenação do Curso de Ciências da Computação - Palmas'
+  filtro_unidade_794:
+      codEstruturado: 1.06.01.05.06.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Ciências Contábeis - Palmas'
+  filtro_unidade_795:
+      codEstruturado: 1.06.01.05.06.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Ciências Contábeis - Palmas'
+  filtro_unidade_796:
+      codEstruturado: 1.06.01.05.07.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Ciências Econômicas - Palmas'
+  filtro_unidade_797:
+      codEstruturado: 1.06.01.05.07.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Ciências Econômicas - Palmas'
+  filtro_unidade_798:
+      codEstruturado: 1.06.01.05.07.01.00.00
+      nomeUnidade: 'Escritório Modelo de Economia - Coordenação do Curso de Economia - Palmas'
+  filtro_unidade_799:
+      codEstruturado: 1.06.01.05.07.02.00.00
+      nomeUnidade: 'Núcleo de Economia Aplicada - Coordenação do Curso de Economia - Palmas'
+  filtro_unidade_800:
+      codEstruturado: 1.06.01.05.07.03.00.00
+      nomeUnidade: 'Programa de Educação Tutorial de Economia - Coordenação do Curso de Economia - Palmas'
+  filtro_unidade_801:
+      codEstruturado: 1.06.01.05.08.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Comunicação Social (Jornalismo) - Palmas'
+  filtro_unidade_802:
+      codEstruturado: 1.06.01.05.08.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Comunicação Social - Palmas'
+  filtro_unidade_803:
+      codEstruturado: 1.06.01.05.08.01.00.00
+      nomeUnidade: 'Laboratório de Rádio - Coordenação do Curso de Comunicação Social - Palmas'
+  filtro_unidade_804:
+      codEstruturado: 1.06.01.05.08.02.00.00
+      nomeUnidade: 'Laboratório de Vídeo - Coordenação do Curso de Comunicação Social - Palmas'
+  filtro_unidade_805:
+      codEstruturado: 1.06.01.05.08.03.00.00
+      nomeUnidade: 'Laboratório de Fotografia - Coordenação do Curso de Comunicação Social - Palmas'
+  filtro_unidade_806:
+      codEstruturado: 1.06.01.05.08.04.00.00
+      nomeUnidade: 'Laboratório de Redação - Coordenação do Curso de Comunicação Social - Palmas'
+  filtro_unidade_807:
+      codEstruturado: 1.06.01.05.08.05.00.00
+      nomeUnidade: 'Coordenação Pós-Graduação em Comunicação Social - Coordenação do Curso de Comunicação Social - Palma'
+  filtro_unidade_808:
+      codEstruturado: 1.06.01.05.09.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Direito - Palmas'
+  filtro_unidade_809:
+      codEstruturado: 1.06.01.05.09.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Direito - Palmas'
+  filtro_unidade_810:
+      codEstruturado: 1.06.01.05.09.01.00.00
+      nomeUnidade: 'Núcleo de Práticas Jurídicas - Coordenação do Curso de Direito - Palmas'
+  filtro_unidade_811:
+      codEstruturado: 1.06.01.05.09.02.00.00
+      nomeUnidade: 'Escritório Modelo Justiça federal - Coordenação do Curso de Direito - Palmas'
+  filtro_unidade_812:
+      codEstruturado: 1.06.01.05.09.03.00.00
+      nomeUnidade: 'Escritório Modelo do Fórum Estadual - Coordenação do Curso de Direito - Palmas'
+  filtro_unidade_813:
+      codEstruturado: 1.06.01.05.10.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Enfermagem - Palmas'
+  filtro_unidade_814:
+      codEstruturado: 1.06.01.05.10.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Enfermagem - Palmas'
+  filtro_unidade_815:
+      codEstruturado: 1.06.01.05.10.01.00.00
+      nomeUnidade: 'Laboratório de Enfermagem - Coordenação do Curso de Enfermagem - Palmas'
+  filtro_unidade_816:
+      codEstruturado: 1.06.01.05.10.02.00.00
+      nomeUnidade: 'Laboratório Materno Infantil'
+  filtro_unidade_817:
+      codEstruturado: 1.06.01.05.11.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Engenharia Ambiental - Palmas'
+  filtro_unidade_818:
+      codEstruturado: 1.06.01.05.11.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Engenharia Ambiental - Palmas'
+  filtro_unidade_819:
+      codEstruturado: 1.06.01.05.11.01.00.00
+      nomeUnidade: 'Laboratório de Geologia - Coordenação do Curso de Engenharia Ambiental - Palmas'
+  filtro_unidade_820:
+      codEstruturado: 1.06.01.05.11.02.00.00
+      nomeUnidade: 'Laboratório de Hidrologia e Hidráulica- Coordenação do Curso de Engenharia Ambiental - Palmas'
+  filtro_unidade_821:
+      codEstruturado: 1.06.01.05.11.03.00.00
+      nomeUnidade: 'Laboratório de Recursos Naturais - Coordenação do Curso de Engenharia Ambiental - Palmas'
+  filtro_unidade_822:
+      codEstruturado: 1.06.01.05.11.04.00.00
+      nomeUnidade: 'Laboratório de Geoprocessamento - Coordenação do Curso de Engenharia Ambiental - Palmas'
+  filtro_unidade_823:
+      codEstruturado: 1.06.01.05.11.05.00.00
+      nomeUnidade: 'Laboratório de Biotecnologia - Coordenação do Curso de Engenharia Ambiental - Palmas'
+  filtro_unidade_824:
+      codEstruturado: 1.06.01.05.11.06.00.00
+      nomeUnidade: 'Laboratório de Quimica - Coordenação do Curso de Engenharia Ambiental - Palmas'
+  filtro_unidade_825:
+      codEstruturado: 1.06.01.05.11.07.00.00
+      nomeUnidade: 'Laboratório de Microbiologia Ambiental e Biotecnologia - Coordenação do Curso de Eng. Ambiental'
+  filtro_unidade_826:
+      codEstruturado: 1.06.01.05.11.08.00.00
+      nomeUnidade: 'Laboratório de Experimentos de Grande Escala na Biosfera e na Atmosfera da Amazônia'
+  filtro_unidade_827:
+      codEstruturado: 1.06.01.05.11.09.00.00
+      nomeUnidade: 'Laboratório Metereologia - Coordenação do Curso de Engenharia Ambiental - Palmas'
+  filtro_unidade_828:
+      codEstruturado: 1.06.01.05.11.10.00.00
+      nomeUnidade: 'Laboratório de Sistema de Produção e Energia de Fontes Renováveis LASPER- Coordenação do Curso de En'
+  filtro_unidade_829:
+      codEstruturado: 1.06.01.05.11.11.00.00
+      nomeUnidade: 'Laboratório de Caracterização e Impactos Ambientais - Coordenação do Curso de Engenharia Ambien'
+  filtro_unidade_830:
+      codEstruturado: 1.06.01.05.11.12.00.00
+      nomeUnidade: 'Laboratório de Ecologia - Coordenação do Curso de Engenharia Ambiental - Palmas'
+  filtro_unidade_831:
+      codEstruturado: 1.06.01.05.11.13.00.00
+      nomeUnidade: 'Laboratório de Ensaio e Desenvolvimento em Biomassa e Biocombustível - Coordenação de eng. Ambiental'
+  filtro_unidade_832:
+      codEstruturado: 1.06.01.05.11.14.00.00
+      nomeUnidade: 'Laboratório de Entomologia - Coordenação do Curso de Engenharia Ambiental - Palmas'
+  filtro_unidade_833:
+      codEstruturado: 1.06.01.05.11.15.00.00
+      nomeUnidade: 'Laboratório de Fitoterapia - Coordenação do Curso de Engenharia Ambiental - Palmas'
+  filtro_unidade_834:
+      codEstruturado: 1.06.01.05.11.16.00.00
+      nomeUnidade: 'Laboratório de Instrumentação e Modelagem- Coordenação do Curso de Engenharia Ambiental - Palmas'
+  filtro_unidade_835:
+      codEstruturado: 1.06.01.05.11.17.00.00
+      nomeUnidade: 'Laboratório de Saneamento Ambiental - Coordenação do Curso de Engenharia Ambiental - Palmas'
+  filtro_unidade_836:
+      codEstruturado: 1.06.01.05.11.18.00.00
+      nomeUnidade: 'Laboratório de Residuos Sólidos - Coordenação do Curso de Engenharia Ambiental - Palmas'
+  filtro_unidade_837:
+      codEstruturado: 1.06.01.05.11.19.00.00
+      nomeUnidade: 'Programa de Educação Tutorial de Engenharia Ambiental - Coordenação do Curso de Engenharia Ambiental'
+  filtro_unidade_838:
+      codEstruturado: 1.06.01.05.11.20.00.00
+      nomeUnidade: 'Laboratório de Pesquisa em Química Ambiental - LAPEQ - Palmas'
+  filtro_unidade_839:
+      codEstruturado: 1.06.01.05.11.21.00.00
+      nomeUnidade: 'Laboratório de Materiais Compósitos - Coordenação do Curso de Engenharia Ambiental - Palmas'
+  filtro_unidade_840:
+      codEstruturado: 1.06.01.05.12.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Engenharia de Alimentos - Palmas'
+  filtro_unidade_841:
+      codEstruturado: 1.06.01.05.12.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Engenharia de Alimentos - Palmas'
+  filtro_unidade_842:
+      codEstruturado: 1.06.01.05.12.01.00.00
+      nomeUnidade: 'Laboratório de Fisíca -  Coordenação do Curso de Engenharia de Alimentos - Palmas'
+  filtro_unidade_843:
+      codEstruturado: 1.06.01.05.12.02.00.00
+      nomeUnidade: 'Laboratório de Microbiologia de Alimentos-  Coordenação do Curso de Engenharia de Alimentos - Palmas'
+  filtro_unidade_844:
+      codEstruturado: 1.06.01.05.12.03.00.00
+      nomeUnidade: 'Laboratório de Análise Sensorial - Coordenação do Curso de Engenharia de Alimentos - Palmas'
+  filtro_unidade_845:
+      codEstruturado: 1.06.01.05.12.04.00.00
+      nomeUnidade: 'Laboratório de Microbiologia e Bioprocessos - Coordenação do Curso de Engenharia de Alimentos - Palm'
+  filtro_unidade_846:
+      codEstruturado: 1.06.01.05.12.06.00.00
+      nomeUnidade: 'NUTIN - Núcleo de Tecnologia Industrial - Coordenação do Curso de Engenharia de Alimentos - Palmas'
+  filtro_unidade_847:
+      codEstruturado: 1.06.01.05.12.07.00.00
+      nomeUnidade: 'Laboratório de Tecnologia de  Frutas e Hortalícias - Coordenação do Curso de Engenharia de Alimentos'
+  filtro_unidade_848:
+      codEstruturado: 1.06.01.05.12.08.00.00
+      nomeUnidade: 'Laboratório de Análise de Alimentos - Coordenação do Curso de Engenharia de Alimentos - Palmas'
+  filtro_unidade_849:
+      codEstruturado: 1.06.01.05.12.09.00.00
+      nomeUnidade: 'Laboratório de Tecnologia de Carnes e Derivados - Coordenação do Curso de Engenharia de Alimentos -'
+  filtro_unidade_850:
+      codEstruturado: 1.06.01.05.12.10.00.00
+      nomeUnidade: 'Laboratório de Instrumentação Científica -  Coordenação do Curso de Engenharia de Alimentos -'
+  filtro_unidade_851:
+      codEstruturado: 1.06.01.05.12.11.00.00
+      nomeUnidade: 'Laboratório de Leites e Derivados - Coordenação do Curso de Engenharia de Alimentos - Palma'
+  filtro_unidade_852:
+      codEstruturado: 1.06.01.05.12.12.00.00
+      nomeUnidade: 'Laboratório de Tecnologia de Panificação - Coordenação do Curso de Engenharia de Alimentos - Palmas'
+  filtro_unidade_853:
+      codEstruturado: 1.06.01.05.12.13.00.00
+      nomeUnidade: 'Laboratório de Pesquisa Agropecuária Coordenação do Curso de Engenharia de Alimentos - Palmas'
+  filtro_unidade_854:
+      codEstruturado: 1.06.01.05.12.14.00.00
+      nomeUnidade: 'Laboratório de Segurança Alimentar e Nutricional - Coordenação do Curso de Engenharia de Al'
+  filtro_unidade_855:
+      codEstruturado: 1.06.01.05.12.15.00.00
+      nomeUnidade: 'Laboratório de Microbiologia Aplicada - Coordenação do Curso de Engenharia de Alimentos - Palm'
+  filtro_unidade_856:
+      codEstruturado: 1.06.01.05.12.16.00.00
+      nomeUnidade: 'Laboratório de Processos de Separação de Biomoléculas e Desidratação de Alimentos'
+  filtro_unidade_857:
+      codEstruturado: 1.06.01.05.12.17.00.00
+      nomeUnidade: 'Programa de Educação Tutorial de Engenharia de Alimentos - Coordenação do Curso de Engenharia de Ali'
+  filtro_unidade_858:
+      codEstruturado: 1.06.01.05.13.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Engenharia Civil - Palmas'
+  filtro_unidade_859:
+      codEstruturado: 1.06.01.05.13.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Engenharia Civil - Palmas'
+  filtro_unidade_860:
+      codEstruturado: 1.06.01.05.13.01.00.00
+      nomeUnidade: 'Laboratório de Engenharia Civil - Coordenação do Curso de Engenharia Civil - Palmas'
+  filtro_unidade_861:
+      codEstruturado: 1.06.01.05.14.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Engenharia Elétrica - Palmas'
+  filtro_unidade_862:
+      codEstruturado: 1.06.01.05.14.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Engenharia Elétrica - Palmas'
+  filtro_unidade_863:
+      codEstruturado: 1.06.01.05.14.01.00.00
+      nomeUnidade: 'Laboratório de Antenas e Microondas - Coordenação do Curso de Engenharia Elétrica - Palmas'
+  filtro_unidade_864:
+      codEstruturado: 1.06.01.05.14.02.00.00
+      nomeUnidade: 'Laboratório de Circuitos e Medidas Elétricas - Coordenação do Curso de Engenharia Elétrica - Palmas'
+  filtro_unidade_865:
+      codEstruturado: 1.06.01.05.14.03.00.00
+      nomeUnidade: 'Laboratório de Eletrônica Analógica e Digital - Coordenação do Curso de Engenharia Elétrica - Palmas'
+  filtro_unidade_866:
+      codEstruturado: 1.06.01.05.14.04.00.00
+      nomeUnidade: 'Programa de Educação Tutorial  de Engenharia Elétrica - Coordenação do Curso de Engenharia Ambiental'
+  filtro_unidade_867:
+      codEstruturado: 1.06.01.05.15.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Filosofia - Palmas'
+  filtro_unidade_868:
+      codEstruturado: 1.06.01.05.15.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Filosofia - Palmas'
+  filtro_unidade_869:
+      codEstruturado: 1.06.01.05.15.01.00.00
+      nomeUnidade: 'Laboratório de Filosofia I - Coordenação do Curso de Filosofia - Palmas'
+  filtro_unidade_870:
+      codEstruturado: 1.06.01.05.15.02.00.00
+      nomeUnidade: 'Laboratório de Filosofia II - Coordenação do Curso de Filosofia - Palmas'
+  filtro_unidade_871:
+      codEstruturado: 1.06.01.05.16.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Medicina - Palmas'
+  filtro_unidade_872:
+      codEstruturado: 1.06.01.05.16.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Medicina - Palmas'
+  filtro_unidade_873:
+      codEstruturado: 1.06.01.05.16.01.00.00
+      nomeUnidade: 'Centro de Informação e Assistência Toxicológica - Coordenação do Curso de Medicina - Palmas'
+  filtro_unidade_874:
+      codEstruturado: 1.06.01.05.16.02.00.00
+      nomeUnidade: 'Comissão de Residência Médica - Coordenação do Curso de Medicina - Palmas'
+  filtro_unidade_875:
+      codEstruturado: 1.06.01.05.16.03.00.00
+      nomeUnidade: 'Corpo Técnico - Coordenação do Curso de Medicina - Palmas'
+  filtro_unidade_876:
+      codEstruturado: 1.06.01.05.16.04.00.00
+      nomeUnidade: 'Enfermaria Modelo - Coordenação do Curso de Medicina - Palmas'
+  filtro_unidade_877:
+      codEstruturado: 1.06.01.05.16.05.00.00
+      nomeUnidade: 'Laboratório de Semiologia e Avaliação Nutricional - Coordenação do Curso de Medicina - Palmas'
+  filtro_unidade_878:
+      codEstruturado: 1.06.01.05.16.06.00.00
+      nomeUnidade: 'Laboratório de Anatomia - Coordenação do Curso de Medicina - Palmas'
+  filtro_unidade_879:
+      codEstruturado: 1.06.01.05.16.07.00.00
+      nomeUnidade: 'Laboratório de Bioquímica | Imunologia e Genética - Coordenação do Curso de Medicina - Palmas'
+  filtro_unidade_880:
+      codEstruturado: 1.06.01.05.16.08.00.00
+      nomeUnidade: 'Laboratório de Citologia | Histologia e Patologia - Coordenação do Curso de Medicina - Palmas'
+  filtro_unidade_881:
+      codEstruturado: 1.06.01.05.16.09.00.00
+      nomeUnidade: 'Laboratório de Cultura de Células - Coordenação do Curso de Medicina - Palmas'
+  filtro_unidade_882:
+      codEstruturado: 1.06.01.05.16.10.00.00
+      nomeUnidade: 'Laboratório de Epidemiologia - Coordenação do Curso de Medicina - Palmas'
+  filtro_unidade_883:
+      codEstruturado: 1.06.01.05.16.11.00.00
+      nomeUnidade: 'Laboratório de Experimentação Animal e Biotério - Coordenação do Curso de Medicina - Palmas'
+  filtro_unidade_884:
+      codEstruturado: 1.06.01.05.16.12.00.00
+      nomeUnidade: 'Laboratório de Fisiologia | Farmacologia e Biofísica - Coordenação do Curso de Medicina - Palmas'
+  filtro_unidade_885:
+      codEstruturado: 1.06.01.05.16.13.00.00
+      nomeUnidade: 'Laboratório de Gerenciamento e Logística - Coordernação do Curso de Medicina - Palmas'
+  filtro_unidade_886:
+      codEstruturado: 1.06.01.05.16.14.00.00
+      nomeUnidade: 'Laboratório de Microbiologia e Parasitologia - Coordenação do Curso de Medicina - Palmas'
+  filtro_unidade_887:
+      codEstruturado: 1.06.01.05.16.15.00.00
+      nomeUnidade: 'Laboratório de Multiusuário - Coordenação do Curso de Medicina - Palmas'
+  filtro_unidade_888:
+      codEstruturado: 1.06.01.05.16.16.00.00
+      nomeUnidade: 'Laboratório de Técnica Cirúrgica - Coordenação do Curso de Medicina - Palmas'
+  filtro_unidade_889:
+      codEstruturado: 1.06.01.05.17.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Nutrição - Palmas'
+  filtro_unidade_890:
+      codEstruturado: 1.06.01.05.17.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Nutrição - Palmas'
+  filtro_unidade_891:
+      codEstruturado: 1.06.01.05.17.01.00.00
+      nomeUnidade: 'Laboratório de Epidemiologia Estatística - Coordenação do Curso de Nutrição - Palmas'
+  filtro_unidade_892:
+      codEstruturado: 1.06.01.05.17.02.00.00
+      nomeUnidade: 'Laboratório - Curso de Nutrição - Palmas'
+  filtro_unidade_893:
+      codEstruturado: 1.06.01.05.17.03.00.00
+      nomeUnidade: 'Laboratório de Ciências Básicas e da Saúde - Curso de Nutrição - Palmas'
+  filtro_unidade_894:
+      codEstruturado: 1.06.01.05.17.04.00.00
+      nomeUnidade: 'Laboratório de Tecnologia de Alimentos -  Coordenação do Curso de Nutrição - Palmas'
+  filtro_unidade_895:
+      codEstruturado: 1.06.01.05.18.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Pedagogia - Palmas'
+  filtro_unidade_896:
+      codEstruturado: 1.06.01.05.18.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Pedagogia (Supervisão Educacional) - Palmas'
+  filtro_unidade_897:
+      codEstruturado: 1.06.01.05.18.01.00.00
+      nomeUnidade: 'NEEDIH - Núcleo de Direitos Humanos - Coordenação do Curso de Pedagogia (Supervisão Educacional) - P'
+  filtro_unidade_898:
+      codEstruturado: 1.06.01.05.18.02.00.00
+      nomeUnidade: 'NEPPCE - Núcleo de Estudos de Pesquisas Politicas em Extensão - Coordenação do Curso de Pedagogia'
+  filtro_unidade_899:
+      codEstruturado: 1.06.01.05.18.03.00.00
+      nomeUnidade: 'Programa de Educação Tutorial de Pedagogia - Coordenação do Curso de Pedagogia - Palmas'
+  filtro_unidade_900:
+      codEstruturado: 1.06.01.05.18.04.00.00
+      nomeUnidade: 'Brinquedoteca - Coordenação do Curso de Pedagogia - Palmas'
+  filtro_unidade_901:
+      codEstruturado: 1.06.01.06.00.00.00.00
+      nomeUnidade: 'Cursos - Palmas'
+  filtro_unidade_902:
+      codEstruturado: 1.06.01.06.00.01.00.00
+      nomeUnidade: 'Secretaria - Cursos - Palmas'
+  filtro_unidade_903:
+      codEstruturado: 1.06.01.06.00.02.00.00
+      nomeUnidade: 'Cursos Residentes - Palmas'
+  filtro_unidade_904:
+      codEstruturado: 1.06.01.06.00.02.01.00
+      nomeUnidade: 'Residência Multiprofissional em Saúde da Família e Comunidade'
+  filtro_unidade_905:
+      codEstruturado: 1.06.01.06.00.02.02.00
+      nomeUnidade: 'Residência Médica em Cirurgia Geral'
+  filtro_unidade_906:
+      codEstruturado: 1.06.01.06.00.02.03.00
+      nomeUnidade: 'Residência Médica em Clínica Médica'
+  filtro_unidade_907:
+      codEstruturado: 1.06.01.06.00.02.04.00
+      nomeUnidade: 'Residência Médica em Medicina de Família e Comunidade'
+  filtro_unidade_908:
+      codEstruturado: 1.06.01.06.00.02.05.00
+      nomeUnidade: 'Residência Médica em Obstetrícia e Ginecologia'
+  filtro_unidade_909:
+      codEstruturado: 1.06.01.06.00.02.06.00
+      nomeUnidade: 'Residência Médica em Pediatria'
+  filtro_unidade_910:
+      codEstruturado: 1.06.01.06.00.02.07.00
+      nomeUnidade: 'Residência Médica em Psiquiatria'
+  filtro_unidade_911:
+      codEstruturado: 1.06.01.06.00.02.08.00
+      nomeUnidade: 'Residência Médica em Anestesiologia'
+  filtro_unidade_912:
+      codEstruturado: 1.06.01.06.00.02.09.00
+      nomeUnidade: 'Residência Médica em Cirurgia Vascular'
+  filtro_unidade_913:
+      codEstruturado: 1.06.01.06.00.02.10.00
+      nomeUnidade: 'Residência Médica em Reumatologia'
+  filtro_unidade_914:
+      codEstruturado: 1.06.01.06.00.02.12.00
+      nomeUnidade: 'Residência Médica em Angiorradiologia e Cirurgia Endovascular'
+  filtro_unidade_915:
+      codEstruturado: 1.06.01.06.00.02.13.00
+      nomeUnidade: 'Residência Médica em Medicina Intensiva Pediátrica'
+  filtro_unidade_916:
+      codEstruturado: 1.06.01.06.00.02.14.00
+      nomeUnidade: 'Residência Médica em Cirurgia Videolaparoscópica'
+  filtro_unidade_917:
+      codEstruturado: 1.06.01.06.00.02.15.00
+      nomeUnidade: 'Residência Médica em Cirurgia do Aparelho Digestivo'
+  filtro_unidade_918:
+      codEstruturado: 1.06.01.06.00.02.16.00
+      nomeUnidade: 'Residência Médica em Dermatologia'
+  filtro_unidade_919:
+      codEstruturado: 1.06.01.06.00.02.17.00
+      nomeUnidade: 'Residência Médica em Infectologia'
+  filtro_unidade_920:
+      codEstruturado: 1.06.01.06.00.02.18.00
+      nomeUnidade: 'Residência Médica em  Nefrologia'
+  filtro_unidade_921:
+      codEstruturado: 1.06.01.06.00.02.19.00
+      nomeUnidade: 'Residência Médica em Neonatologia'
+  filtro_unidade_922:
+      codEstruturado: 1.06.01.06.00.02.20.00
+      nomeUnidade: 'Residência Médica em Ortopedia e Traumatologia'
+  filtro_unidade_923:
+      codEstruturado: 1.06.01.06.00.02.21.00
+      nomeUnidade: 'Residência Médica em Patologia'
+  filtro_unidade_924:
+      codEstruturado: 1.06.01.06.01.00.00.00
+      nomeUnidade: 'Curso de Administração - Matutino - Palmas'
+  filtro_unidade_925:
+      codEstruturado: 1.06.01.06.02.00.00.00
+      nomeUnidade: 'Curso de Administração - Noturno - Palmas'
+  filtro_unidade_926:
+      codEstruturado: 1.06.01.06.03.00.00.00
+      nomeUnidade: 'Curso de Arquitetura e Urbanismo - Palmas'
+  filtro_unidade_927:
+      codEstruturado: 1.06.01.06.04.00.00.00
+      nomeUnidade: 'Curso de Ciência da Computação - Palmas'
+  filtro_unidade_928:
+      codEstruturado: 1.06.01.06.05.00.00.00
+      nomeUnidade: 'Curso de Ciências Contábeis - Matutino - Palmas'
+  filtro_unidade_929:
+      codEstruturado: 1.06.01.06.06.00.00.00
+      nomeUnidade: 'Curso de Ciências Contábeis - Vespertino - Palmas'
+  filtro_unidade_930:
+      codEstruturado: 1.06.01.06.07.00.00.00
+      nomeUnidade: 'Curso de Ciências Contábeis - Noturno - Palmas'
+  filtro_unidade_931:
+      codEstruturado: 1.06.01.06.08.00.00.00
+      nomeUnidade: 'Curso de Ciências Econômicas - Matutino - Palmas'
+  filtro_unidade_932:
+      codEstruturado: 1.06.01.06.09.00.00.00
+      nomeUnidade: 'Curso de Ciências Econômicas - Vespertino - Palmas'
+  filtro_unidade_933:
+      codEstruturado: 1.06.01.06.10.00.00.00
+      nomeUnidade: 'Curso de Ciências Econômicas - Noturno - Palmas'
+  filtro_unidade_934:
+      codEstruturado: 1.06.01.06.11.00.00.00
+      nomeUnidade: 'Curso de Comunicação Social - Matutino - Palmas'
+  filtro_unidade_935:
+      codEstruturado: 1.06.01.06.12.00.00.00
+      nomeUnidade: 'Curso de Comunicação Social - Noturno - Palmas'
+  filtro_unidade_936:
+      codEstruturado: 1.06.01.06.13.00.00.00
+      nomeUnidade: 'Curso de Direito - Matutino - Palmas'
+  filtro_unidade_937:
+      codEstruturado: 1.06.01.06.14.00.00.00
+      nomeUnidade: 'Curso de Direito - Noturno - Palmas'
+  filtro_unidade_938:
+      codEstruturado: 1.06.01.06.15.00.00.00
+      nomeUnidade: 'Curso de Engenharia Ambiental - Palmas'
+  filtro_unidade_939:
+      codEstruturado: 1.06.01.06.16.00.00.00
+      nomeUnidade: 'Curso de Engenharia de Alimentos - Palmas'
+  filtro_unidade_940:
+      codEstruturado: 1.06.01.06.17.00.00.00
+      nomeUnidade: 'Curso de Normal Superior (DAIEF) - Palmas'
+  filtro_unidade_941:
+      codEstruturado: 1.06.01.06.18.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Supervisão Educacional) - Palmas'
+  filtro_unidade_942:
+      codEstruturado: 1.06.01.06.19.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (DAIEF- Sup. Educacional) Vespertino Palmas'
+  filtro_unidade_943:
+      codEstruturado: 1.06.01.06.20.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (DAIEF- Sup. Educaciona) - Noturno - Palmas'
+  filtro_unidade_944:
+      codEstruturado: 1.06.01.06.21.00.00.00
+      nomeUnidade: 'Curso Especial da Graduação - Palmas'
+  filtro_unidade_945:
+      codEstruturado: 1.06.01.06.22.00.00.00
+      nomeUnidade: 'Curso de Especialização em Ciência Política e Estratégia Brasileira'
+  filtro_unidade_946:
+      codEstruturado: 1.06.01.06.23.00.00.00
+      nomeUnidade: 'Curso de Especialização Gestão do Agronegócio'
+  filtro_unidade_947:
+      codEstruturado: 1.06.01.06.24.00.00.00
+      nomeUnidade: 'Curso de Especialização em Planejamento e Gestão Ambiental'
+  filtro_unidade_948:
+      codEstruturado: 1.06.01.06.25.00.00.00
+      nomeUnidade: 'Curso de Especialização em Infra - Estrutura Urbana'
+  filtro_unidade_949:
+      codEstruturado: 1.06.01.06.26.00.00.00
+      nomeUnidade: 'Curso de Especialização em Políticas Públicas e Gestão Estratégica da Saúde'
+  filtro_unidade_950:
+      codEstruturado: 1.06.01.06.27.00.00.00
+      nomeUnidade: 'Curso de Especialização em Recursos Hídricos'
+  filtro_unidade_951:
+      codEstruturado: 1.06.01.06.28.00.00.00
+      nomeUnidade: 'Curso de Especialização em Gerontologia: A Inserção do Velho no Mundo Contemporâneo'
+  filtro_unidade_952:
+      codEstruturado: 1.06.01.06.29.00.00.00
+      nomeUnidade: 'Curso de Especialização em Língua Inglesa e Metodologias de Ensino Aprendizagem'
+  filtro_unidade_953:
+      codEstruturado: 1.06.01.06.30.00.00.00
+      nomeUnidade: 'Curso de Especialização em Estratégia Saúde da Família'
+  filtro_unidade_954:
+      codEstruturado: 1.06.01.06.31.00.00.00
+      nomeUnidade: 'Curso de Mestrado em Ciências do Ambiente - Palmas'
+  filtro_unidade_955:
+      codEstruturado: 1.06.01.06.32.00.00.00
+      nomeUnidade: 'Curso de Medicina - Palmas - Integral'
+  filtro_unidade_956:
+      codEstruturado: 1.06.01.06.33.00.00.00
+      nomeUnidade: 'Curso de Mestrado em Desenvolvimento Regional e Agronegócio - Palmas'
+  filtro_unidade_957:
+      codEstruturado: 1.06.01.06.34.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Licenciatura) - Noturno - Palmas'
+  filtro_unidade_958:
+      codEstruturado: 1.06.01.06.35.00.00.00
+      nomeUnidade: 'Curso de Mestrado Profissional em Ciências da Saúde - Palmas'
+  filtro_unidade_959:
+      codEstruturado: 1.06.01.06.37.00.00.00
+      nomeUnidade: 'Curso de Mestrado em Agroenergia - Palmas'
+  filtro_unidade_960:
+      codEstruturado: 1.06.01.06.38.00.00.00
+      nomeUnidade: 'Curso Especial de Pós-Graduação - Palmas'
+  filtro_unidade_961:
+      codEstruturado: 1.06.01.06.39.00.00.00
+      nomeUnidade: 'Curso de Artes - Teatro - Licenciatura - Noturno - Palmas'
+  filtro_unidade_962:
+      codEstruturado: 1.06.01.06.40.00.00.00
+      nomeUnidade: 'Curso de Filosofia - Licenciatura - Noturno - Palmas'
+  filtro_unidade_963:
+      codEstruturado: 1.06.01.06.41.00.00.00
+      nomeUnidade: 'Curso de Engenharia Civil - Integral - Palmas'
+  filtro_unidade_964:
+      codEstruturado: 1.06.01.06.42.00.00.00
+      nomeUnidade: 'Curso de Engenharia Elétrica - Integral - Palmas'
+  filtro_unidade_965:
+      codEstruturado: 1.06.01.06.43.00.00.00
+      nomeUnidade: 'Curso de Enfermagem - Integral - Palmas'
+  filtro_unidade_966:
+      codEstruturado: 1.06.01.06.44.00.00.00
+      nomeUnidade: 'Curso de Nutrição - Integral - Palmas'
+  filtro_unidade_967:
+      codEstruturado: 1.06.01.06.45.00.00.00
+      nomeUnidade: 'Curso de Artes - Teatro - Licenciatura - PARFOR - Palmas'
+  filtro_unidade_968:
+      codEstruturado: 1.06.01.06.46.00.00.00
+      nomeUnidade: 'Curso de Filosofia (Licenciatura) - PARFOR - Palmas'
+  filtro_unidade_969:
+      codEstruturado: 1.06.01.06.47.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Licenciatura) - PARFOR - Palmas'
+  filtro_unidade_970:
+      codEstruturado: 1.06.01.06.48.00.00.00
+      nomeUnidade: 'Curso de Mestrado em Desenvolvimento Regional - Palmas'
+  filtro_unidade_971:
+      codEstruturado: 1.06.01.06.49.00.00.00
+      nomeUnidade: 'Curso de Matemática (Licenciatura) - PARFOR - Palmas'
+  filtro_unidade_972:
+      codEstruturado: 1.06.01.06.50.00.00.00
+      nomeUnidade: 'Curso de Mestrado Profissional em Engenharia Ambiental - Palmas'
+  filtro_unidade_973:
+      codEstruturado: 1.06.01.06.51.00.00.00
+      nomeUnidade: 'Curso de Informática (Licenciatura) - PARFOR - Palmas'
+  filtro_unidade_974:
+      codEstruturado: 1.06.01.06.52.00.00.00
+      nomeUnidade: 'Curso de Mestrado Profissional em Matemática em Rede Nacional - Palmas'
+  filtro_unidade_975:
+      codEstruturado: 1.06.01.06.53.00.00.00
+      nomeUnidade: 'Curso de Mestrado em Ciência e Tecnologia de Alimentos - Palmas'
+  filtro_unidade_976:
+      codEstruturado: 1.06.01.06.54.00.00.00
+      nomeUnidade: 'Curso de Mestrado em Educação - Palmas'
+  filtro_unidade_977:
+      codEstruturado: 1.06.01.06.55.00.00.00
+      nomeUnidade: 'Curso de Mestrado Profissional em Modelagem Computacional do Conhecimento - Palmas'
+  filtro_unidade_978:
+      codEstruturado: 1.06.01.06.56.00.00.00
+      nomeUnidade: 'Curso de Mestrado Profissional em Prestação Jurisdicional e Direitos Humanos - Palmas'
+  filtro_unidade_979:
+      codEstruturado: 1.06.01.06.57.00.00.00
+      nomeUnidade: 'Curso de Doutorado em Rede em Biotecnologia e Biodiversidade - Palmas'
+  filtro_unidade_980:
+      codEstruturado: 1.06.01.06.58.00.00.00
+      nomeUnidade: 'Curso de Mestrado Profissional em Gestão de Políticas Públicas'
+  filtro_unidade_981:
+      codEstruturado: 1.06.01.06.59.00.00.00
+      nomeUnidade: 'Curso de Doutorado em Ciências do Ambiente'
+  filtro_unidade_982:
+      codEstruturado: 1.06.01.06.60.00.00.00
+      nomeUnidade: 'Curso de Teatro - Licenciatura - Noturno - Palmas'
+  filtro_unidade_983:
+      codEstruturado: 1.06.01.06.61.00.00.00
+      nomeUnidade: 'Curso de Teatro - Licenciatura - PARFOR - Palmas'
+  filtro_unidade_984:
+      codEstruturado: 1.06.01.06.62.00.00.00
+      nomeUnidade: 'Curso de Jornalismo - Matutino - Palmas'
+  filtro_unidade_985:
+      codEstruturado: 1.06.01.06.63.00.00.00
+      nomeUnidade: 'Curso de Jornalismo - Noturno - Palmas'
+  filtro_unidade_986:
+      codEstruturado: 1.06.01.06.64.00.00.00
+      nomeUnidade: 'Curso de Mestrado Ensino em Ciência e Saúde - Palmas'
+  filtro_unidade_987:
+      codEstruturado: 1.06.01.06.65.00.00.00
+      nomeUnidade: 'Curso de Informática (Segunda Licenciatura) - PARFOR - Palmas'
+  filtro_unidade_988:
+      codEstruturado: 1.06.01.06.66.00.00.00
+      nomeUnidade: 'Curso de Doutorado em Desenvolvimento Regional - Palmas'
+  filtro_unidade_989:
+      codEstruturado: 1.06.01.06.67.00.00.00
+      nomeUnidade: 'Curso de Mestrado em Comunicação e Sociedade - Palmas'
+  filtro_unidade_990:
+      codEstruturado: 1.06.01.06.68.00.00.00
+      nomeUnidade: 'Curso de Mestrado Profissional em Modelagem Computacional de Sistemas - Palmas'
+  filtro_unidade_991:
+      codEstruturado: 1.06.01.07.00.00.00.00
+      nomeUnidade: 'Coordenações de Mestrados - Pós Graduação'
+  filtro_unidade_992:
+      codEstruturado: 1.06.01.07.01.00.00.00
+      nomeUnidade: 'Coordenação do Mestrado em Agroenergia - Palmas'
+  filtro_unidade_993:
+      codEstruturado: 1.06.01.07.01.00.01.00
+      nomeUnidade: 'Secretaria do Mestrado em Agroenergia - Palmas'
+  filtro_unidade_994:
+      codEstruturado: 1.06.01.07.02.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Mestrado em Ciência do Ambiente - Palmas'
+  filtro_unidade_995:
+      codEstruturado: 1.06.01.07.02.00.01.00
+      nomeUnidade: 'Secretaria do Mestrado em Ciências do Ambiente - Palmas'
+  filtro_unidade_996:
+      codEstruturado: 1.06.01.07.03.00.00.00
+      nomeUnidade: 'Coordenação do Mestrado em Ciências da Saúde - Palmas'
+  filtro_unidade_997:
+      codEstruturado: 1.06.01.07.03.00.01.00
+      nomeUnidade: 'Secretaria do Mestrado em Ciências da Saúde - Palmas'
+  filtro_unidade_998:
+      codEstruturado: 1.06.01.07.04.00.00.00
+      nomeUnidade: 'Coordenação do Mestrado em Desenvolvimento Regional - Palmas'
+  filtro_unidade_999:
+      codEstruturado: 1.06.01.07.04.00.01.00
+      nomeUnidade: 'Secretaria do Mestrado em Desenvolvimento Regional - Palmas'
+  filtro_unidade_1000:
+      codEstruturado: 1.06.01.07.04.01.00.00
+      nomeUnidade: 'Estudos Avançados em Economia Agrícola - Mestrado em Desenvolvimento Regional - Palmas'
+  filtro_unidade_1001:
+      codEstruturado: 1.06.01.07.04.02.00.00
+      nomeUnidade: 'Laboratório em Geoprocessamento - Mestrado em Desenvolvimento Regional - Palmas'
+  filtro_unidade_1002:
+      codEstruturado: 1.06.01.07.05.00.00.00
+      nomeUnidade: 'Coordenação do Mestrado em Ciência e Tecnologia de Alimentos - Palmas'
+  filtro_unidade_1003:
+      codEstruturado: 1.06.01.07.05.00.01.00
+      nomeUnidade: 'Secretaria do Mestrado em Ciência e Tecnologia de Alimentos - Palmas'
+  filtro_unidade_1004:
+      codEstruturado: 1.06.01.07.06.00.00.00
+      nomeUnidade: 'Coordenação do Mestrado em Educação - Palmas'
+  filtro_unidade_1005:
+      codEstruturado: 1.06.01.07.06.00.01.00
+      nomeUnidade: 'Secretaria do Mestrado em Educação - Palmas'
+  filtro_unidade_1006:
+      codEstruturado: 1.06.01.07.07.00.00.00
+      nomeUnidade: 'Coordenação do Mestrado Profissional em Engenharia Ambiental - Palmas'
+  filtro_unidade_1007:
+      codEstruturado: 1.06.01.07.07.00.01.00
+      nomeUnidade: 'Secretaria do Mestrado Profissional em Engenharia Ambiental - Palmas'
+  filtro_unidade_1008:
+      codEstruturado: 1.06.01.07.08.00.00.00
+      nomeUnidade: 'Coordenação do Mestrado Profissional em Matemática - Palmas'
+  filtro_unidade_1009:
+      codEstruturado: 1.06.01.07.08.00.01.00
+      nomeUnidade: 'Secretaria do Mestrado Profissional em Matemática - Palmas'
+  filtro_unidade_1010:
+      codEstruturado: 1.06.01.07.09.00.00.00
+      nomeUnidade: 'Coordenação do Mestrado em Modelagem Computacional - Palmas'
+  filtro_unidade_1011:
+      codEstruturado: 1.06.01.07.09.00.01.00
+      nomeUnidade: 'Secretaria do Mestrado em Modelagem Computacional - Palmas'
+  filtro_unidade_1012:
+      codEstruturado: 1.06.01.07.10.00.00.00
+      nomeUnidade: 'Coordenação de Mestrado em Prestação Jurisdicional e Direitos Humanos - Palmas'
+  filtro_unidade_1013:
+      codEstruturado: 1.06.01.07.10.00.01.00
+      nomeUnidade: 'Secretaria de Mestrado em Prestação Jurisdicional e Direitos Humanos - Palmas'
+  filtro_unidade_1014:
+      codEstruturado: 1.06.01.07.11.00.00.00
+      nomeUnidade: 'Coordenação do Mestrado Profissional em Políticas Públicas'
+  filtro_unidade_1015:
+      codEstruturado: 1.06.01.07.12.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Mestrado em Comunicação e Sociedade'
+  filtro_unidade_1016:
+      codEstruturado: 1.06.01.07.13.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Mestrado em Ensino de Ciências e Saúde'
+  filtro_unidade_1017:
+      codEstruturado: 1.06.01.08.00.00.00.00
+      nomeUnidade: 'Coordenações de Doutorados - Palmas'
+  filtro_unidade_1018:
+      codEstruturado: 1.06.01.08.01.00.00.00
+      nomeUnidade: 'Coordenação do Doutorado em Biodiversidade e Biotecnologia - Palmas'
+  filtro_unidade_1019:
+      codEstruturado: 1.06.01.08.01.00.01.00
+      nomeUnidade: 'Secretaria do Doutorado em Biodiversidade e Biotecnologia - Palmas'
+  filtro_unidade_1020:
+      codEstruturado: 1.06.01.09.00.00.00.00
+      nomeUnidade: Núcleos
+  filtro_unidade_1021:
+      codEstruturado: 1.06.01.09.01.00.00.00
+      nomeUnidade: 'Núcleo de Desenvolvimento de Software -  Palmas'
+  filtro_unidade_1022:
+      codEstruturado: 1.06.01.09.02.00.00.00
+      nomeUnidade: 'Núcleo de Economia Solidáriia - Palmas'
+  filtro_unidade_1023:
+      codEstruturado: 1.06.01.09.03.00.00.00
+      nomeUnidade: 'Núcleo de Estudos da Saúde do Tocantins - Palmas'
+  filtro_unidade_1024:
+      codEstruturado: 1.06.01.09.04.00.00.00
+      nomeUnidade: 'Núcleo de Estudos e Pesquisas em Jornalismo e Multimídia - Palmas'
+  filtro_unidade_1025:
+      codEstruturado: 1.06.01.09.05.00.00.00
+      nomeUnidade: 'Núcleo de Estudos Estratégicos em Gestão Contemporânea - Palmas'
+  filtro_unidade_1026:
+      codEstruturado: 1.06.01.09.06.00.00.00
+      nomeUnidade: 'Núcleo de Telessaúde Brasil Redes Tocantins - Palmas'
+  filtro_unidade_1027:
+      codEstruturado: 1.06.01.09.07.00.00.00
+      nomeUnidade: 'Núcleo Interdisciplinar de Educação e Direitos Humanos - Palmas'
+  filtro_unidade_1028:
+      codEstruturado: 1.06.01.10.00.00.00.00
+      nomeUnidade: 'Subprefeitura do Campus - Palmas'
+  filtro_unidade_1029:
+      codEstruturado: 1.07.00.00.00.00.00.00
+      nomeUnidade: 'Campus Universitário de Porto Nacional'
+  filtro_unidade_1030:
+      codEstruturado: 1.07.00.01.00.00.00.00
+      nomeUnidade: 'Conselho do Campus - Porto Nacional'
+  filtro_unidade_1031:
+      codEstruturado: 1.07.00.01.01.00.00.00
+      nomeUnidade: 'Comitê de Ensino - Porto Nacional'
+  filtro_unidade_1032:
+      codEstruturado: 1.07.00.01.02.00.00.00
+      nomeUnidade: 'Comitê de Pesquisa - Porto Nacional'
+  filtro_unidade_1033:
+      codEstruturado: 1.07.00.01.03.00.00.00
+      nomeUnidade: 'Comitê de Extensão e Cultura - Porto Nacional'
+  filtro_unidade_1034:
+      codEstruturado: 1.07.01.00.00.00.00.00
+      nomeUnidade: 'Direção do Campus de Porto Nacional'
+  filtro_unidade_1035:
+      codEstruturado: 1.07.01.00.01.00.00.00
+      nomeUnidade: 'Secretaria Executiva - Porto Nacional'
+  filtro_unidade_1036:
+      codEstruturado: 1.07.01.00.02.00.00.00
+      nomeUnidade: 'Grupo de Trabalho de Pesquisa | Pós-graduação e Extensão - Porto Nacional'
+  filtro_unidade_1037:
+      codEstruturado: 1.07.01.00.03.00.00.00
+      nomeUnidade: 'Comissão de Avaliação do Campus - Porto Nacional'
+  filtro_unidade_1038:
+      codEstruturado: 1.07.01.00.04.00.00.00
+      nomeUnidade: 'Congregações - Porto Nacional'
+  filtro_unidade_1039:
+      codEstruturado: 1.07.01.00.05.00.00.00
+      nomeUnidade: 'Assessoria de Comunicação - Porto Nacional'
+  filtro_unidade_1040:
+      codEstruturado: 1.07.01.00.06.00.00.00
+      nomeUnidade: 'Assessoria de Planejamento- Porto Nacional'
+  filtro_unidade_1041:
+      codEstruturado: 1.07.01.00.07.00.00.00
+      nomeUnidade: 'Ouvidoria - Porto Nacional'
+  filtro_unidade_1042:
+      codEstruturado: 1.07.01.00.08.00.00.00
+      nomeUnidade: 'Central de Estágio - Porto Nacional'
+  filtro_unidade_1043:
+      codEstruturado: 1.07.01.01.00.00.00.00
+      nomeUnidade: 'Secretaria Acadêmica - Porto Nacional'
+  filtro_unidade_1044:
+      codEstruturado: 1.07.01.01.01.00.00.00
+      nomeUnidade: 'Controle de Documentação - Secretaria Acadêmica - Porto Nacional'
+  filtro_unidade_1045:
+      codEstruturado: 1.07.01.02.00.00.00.00
+      nomeUnidade: 'Coordenação Administrativa  - Porto Nacional'
+  filtro_unidade_1046:
+      codEstruturado: 1.07.01.02.01.00.00.00
+      nomeUnidade: 'Setor de Almoxarifado - Porto Nacional'
+  filtro_unidade_1047:
+      codEstruturado: 1.07.01.02.02.00.00.00
+      nomeUnidade: 'Setor de Transportes e Logística - Porto Nacional'
+  filtro_unidade_1048:
+      codEstruturado: 1.07.01.02.03.00.00.00
+      nomeUnidade: 'Setor de Desenvolvimento Humano - Porto Nacional'
+  filtro_unidade_1049:
+      codEstruturado: 1.07.01.02.04.00.00.00
+      nomeUnidade: 'Recepção / Telefonia - Porto Nacional'
+  filtro_unidade_1050:
+      codEstruturado: 1.07.01.02.05.00.00.00
+      nomeUnidade: 'Setor de Patrimônio - Porto Nacional'
+  filtro_unidade_1051:
+      codEstruturado: 1.07.01.02.06.00.00.00
+      nomeUnidade: 'Setor de Tecnologia da Informação  - Porto Nacional'
+  filtro_unidade_1052:
+      codEstruturado: 1.07.01.02.06.01.00.00
+      nomeUnidade: 'Laboratório de Informática - CPD - Porto Nacional'
+  filtro_unidade_1053:
+      codEstruturado: 1.07.01.02.07.00.00.00
+      nomeUnidade: 'Setor de Protocolo - Porto Nacional'
+  filtro_unidade_1054:
+      codEstruturado: 1.07.01.02.08.00.00.00
+      nomeUnidade: 'Setor Financeiro - Porto Nacional'
+  filtro_unidade_1055:
+      codEstruturado: 1.07.01.02.09.00.00.00
+      nomeUnidade: 'Setor de Compras - Porto Nacional'
+  filtro_unidade_1056:
+      codEstruturado: 1.07.01.02.10.00.00.00
+      nomeUnidade: 'Setor de Cozinha - (UFT/ Centro ) -  Porto Nacional'
+  filtro_unidade_1057:
+      codEstruturado: 1.07.01.02.11.00.00.00
+      nomeUnidade: 'Setor de Vigilância - (UFT/Centro) - Porto Nacional'
+  filtro_unidade_1058:
+      codEstruturado: 1.07.01.02.12.00.00.00
+      nomeUnidade: 'Centro de Pós-Graduação | Extensão e Cultura (CePEC) - Porto Nacional'
+  filtro_unidade_1059:
+      codEstruturado: 1.07.01.03.00.00.00.00
+      nomeUnidade: 'Cursos - Porto Nacional'
+  filtro_unidade_1060:
+      codEstruturado: 1.07.01.03.00.01.00.00
+      nomeUnidade: 'Secretaria - Cursos - Porto Nacional'
+  filtro_unidade_1061:
+      codEstruturado: 1.07.01.03.01.00.00.00
+      nomeUnidade: 'Curso de Letras (Língua Portuguesa e Língua Inglesa) Matutino - Porto Nac.'
+  filtro_unidade_1062:
+      codEstruturado: 1.07.01.03.02.00.00.00
+      nomeUnidade: 'Curso de Letras (Língua Portuguesa e Língua Inglesa) Noturno - Porto Nac.'
+  filtro_unidade_1063:
+      codEstruturado: 1.07.01.03.03.00.00.00
+      nomeUnidade: 'Curso de Letras (Língua Portuguesa) - Matutino - Porto Nacional'
+  filtro_unidade_1064:
+      codEstruturado: 1.07.01.03.04.00.00.00
+      nomeUnidade: 'Curso de Letras (Língua Portuguesa) - Noturno - Porto Nacional'
+  filtro_unidade_1065:
+      codEstruturado: 1.07.01.03.05.00.00.00
+      nomeUnidade: 'Curso de Geografia - Matutino - Porto Nacional'
+  filtro_unidade_1066:
+      codEstruturado: 1.07.01.03.06.00.00.00
+      nomeUnidade: 'Curso de Geografia (Bacharelado) - Noturno - Porto Nacional'
+  filtro_unidade_1067:
+      codEstruturado: 1.07.01.03.07.00.00.00
+      nomeUnidade: 'Curso de Geografia (Licenciatura) - Vespertino - Porto Nacional'
+  filtro_unidade_1068:
+      codEstruturado: 1.07.01.03.08.00.00.00
+      nomeUnidade: 'Curso de Geografia (Licenciatura)  - Noturno - Porto Nacional'
+  filtro_unidade_1069:
+      codEstruturado: 1.07.01.03.09.00.00.00
+      nomeUnidade: 'Curso de Geografia - Integral - Porto Nacional'
+  filtro_unidade_1070:
+      codEstruturado: 1.07.01.03.10.00.00.00
+      nomeUnidade: 'Curso de Ciências Biológicas (Bacharelado) - Porto Nacional'
+  filtro_unidade_1071:
+      codEstruturado: 1.07.01.03.11.00.00.00
+      nomeUnidade: 'Curso de Ciências Biológicas - Integral - Porto Nacional'
+  filtro_unidade_1072:
+      codEstruturado: 1.07.01.03.12.00.00.00
+      nomeUnidade: 'Curso de Ciências Biológicas - Matutino - Porto Nacional'
+  filtro_unidade_1073:
+      codEstruturado: 1.07.01.03.13.00.00.00
+      nomeUnidade: 'Curso de Ciências Biológicas (Licenciatura) - Noturno- Porto Nacional'
+  filtro_unidade_1074:
+      codEstruturado: 1.07.01.03.14.00.00.00
+      nomeUnidade: 'Curso de História (Licenciatura) - Matutino - Porto Nacional'
+  filtro_unidade_1075:
+      codEstruturado: 1.07.01.03.15.00.00.00
+      nomeUnidade: 'Curso de História (Licenciatura) - Noturno - Porto Nacional'
+  filtro_unidade_1076:
+      codEstruturado: 1.07.01.03.16.00.00.00
+      nomeUnidade: 'Curso de História (Licenciatura) - Vespertino - Porto Nacional'
+  filtro_unidade_1077:
+      codEstruturado: 1.07.01.03.17.00.00.00
+      nomeUnidade: 'Curso de Geografia (Licenciatura) - Matutino - Porto Nacional'
+  filtro_unidade_1078:
+      codEstruturado: 1.07.01.03.18.00.00.00
+      nomeUnidade: 'Curso de Ciências Biológicas (Bacharelado) - Integral - Porto Nacional'
+  filtro_unidade_1079:
+      codEstruturado: 1.07.01.03.19.00.00.00
+      nomeUnidade: 'Curso Especial da Graduação - Porto Nacional'
+  filtro_unidade_1080:
+      codEstruturado: 1.07.01.03.20.00.00.00
+      nomeUnidade: 'Curso de Geografia (Bacharelado) - Integral -  Porto Nacional'
+  filtro_unidade_1081:
+      codEstruturado: 1.07.01.03.21.00.00.00
+      nomeUnidade: 'Curso de Ciências Biológicas (Licenciatura) - Integral - Porto Nacional'
+  filtro_unidade_1082:
+      codEstruturado: 1.07.01.03.22.00.00.00
+      nomeUnidade: 'Curso de Especialização  em Docência do Ensino Superior'
+  filtro_unidade_1083:
+      codEstruturado: 1.07.01.03.23.00.00.00
+      nomeUnidade: 'Curso de Especialização em História da África | da Cultura Negra e do Negro no Brasil'
+  filtro_unidade_1084:
+      codEstruturado: 1.07.01.03.24.00.00.00
+      nomeUnidade: 'Curso de Especialização História Social'
+  filtro_unidade_1085:
+      codEstruturado: 1.07.01.03.25.00.00.00
+      nomeUnidade: 'Curso de Especialização Língua Inglesa e Literatura Anglo - Americana'
+  filtro_unidade_1086:
+      codEstruturado: 1.07.01.03.26.00.00.00
+      nomeUnidade: 'Curso Especial de Pós-Graduação - Porto Nacional'
+  filtro_unidade_1087:
+      codEstruturado: 1.07.01.03.27.00.00.00
+      nomeUnidade: 'Curso de Mestrado em Ecologia de Ecótonos - Porto Nacional'
+  filtro_unidade_1088:
+      codEstruturado: 1.07.01.03.28.00.00.00
+      nomeUnidade: 'Curso de Letras - Matutino - Porto Nacional (Núcleo Comum)'
+  filtro_unidade_1089:
+      codEstruturado: 1.07.01.03.28.01.00.00
+      nomeUnidade: 'Curso de Letras - Língua Portuguesa e Literaturas - Matutino - Porto Nacional'
+  filtro_unidade_1090:
+      codEstruturado: 1.07.01.03.28.02.00.00
+      nomeUnidade: 'Curso de Letras - Língua Inglesa e Literaturas - Matutino - Porto Nacional'
+  filtro_unidade_1091:
+      codEstruturado: 1.07.01.03.29.00.00.00
+      nomeUnidade: 'Curso de Letras - Noturno - Porto Nacional (Núcleo Comum)'
+  filtro_unidade_1092:
+      codEstruturado: 1.07.01.03.29.01.00.00
+      nomeUnidade: 'Curso de Letras - Língua Portuguesa e Literaturas - Noturno - Porto Nacional'
+  filtro_unidade_1093:
+      codEstruturado: 1.07.01.03.29.02.00.00
+      nomeUnidade: 'Curso de Letras - Língua Inglesa e Literaturas - Noturno - Porto Nacional'
+  filtro_unidade_1094:
+      codEstruturado: 1.07.01.03.30.00.00.00
+      nomeUnidade: 'Curso de Geografia (Licenciatura) - PARFOR - Porto Nacional'
+  filtro_unidade_1095:
+      codEstruturado: 1.07.01.03.31.00.00.00
+      nomeUnidade: 'Curso de História (Licenciatura) - PARFOR - Porto Nacional'
+  filtro_unidade_1096:
+      codEstruturado: 1.07.01.03.32.00.00.00
+      nomeUnidade: 'Curso de Ciências Biológicas (Licenciatura) - PARFOR - Porto Nacional'
+  filtro_unidade_1097:
+      codEstruturado: 1.07.01.03.33.00.00.00
+      nomeUnidade: 'Curso de Letras (Núcleo Comum) - PARFOR - Porto Nacional'
+  filtro_unidade_1098:
+      codEstruturado: 1.07.01.03.33.01.00.00
+      nomeUnidade: 'Curso de Letras - Língua Portuguesa e Literaturas (Licenciatura) - PARFOR - Porto Nacional'
+  filtro_unidade_1099:
+      codEstruturado: 1.07.01.03.33.02.00.00
+      nomeUnidade: 'Curso de Letras - Língua Inglesa e Literaturas (Licenciatura) - PARFOR - Porto Nacional'
+  filtro_unidade_1100:
+      codEstruturado: 1.07.01.03.34.00.00.00
+      nomeUnidade: 'Curso de Mestrado em Geografia - Porto Nacional'
+  filtro_unidade_1101:
+      codEstruturado: 1.07.01.03.35.00.00.00
+      nomeUnidade: 'Curso de Letras - Libras - Licenciatura - Porto Nacional'
+  filtro_unidade_1102:
+      codEstruturado: 1.07.01.03.36.00.00.00
+      nomeUnidade: 'Curso de Relações Internacionais - Bacharelado - Vespertino - Porto Nacional'
+  filtro_unidade_1103:
+      codEstruturado: 1.07.01.03.37.00.00.00
+      nomeUnidade: 'Curso de Relações Internacionais - Bacharelado - Matutino - Porto Nacional'
+  filtro_unidade_1104:
+      codEstruturado: 1.07.01.03.38.00.00.00
+      nomeUnidade: 'Curso de Geografia (Bacharelado) - Matutino - Porto Nacional'
+  filtro_unidade_1105:
+      codEstruturado: 1.07.01.03.39.00.00.00
+      nomeUnidade: 'Curso de Ciências Sociais (Bacharelado) - Noturno - Porto Nacional'
+  filtro_unidade_1106:
+      codEstruturado: 1.07.01.03.40.00.00.00
+      nomeUnidade: 'Curso de Letras - Libras (Licenciatura) - PARFOR - Porto Nacional'
+  filtro_unidade_1107:
+      codEstruturado: 1.07.01.03.41.00.00.00
+      nomeUnidade: 'Curso de Mestrado em Letras - Porto Nacional'
+  filtro_unidade_1108:
+      codEstruturado: 1.07.01.03.42.00.00.00
+      nomeUnidade: 'Curso de Mestrado em Biodiversidade | Ecologia e Conservação - Porto Nacional'
+  filtro_unidade_1109:
+      codEstruturado: 1.07.01.04.00.00.00.00
+      nomeUnidade: 'Biblioteca - Porto Nacional'
+  filtro_unidade_1110:
+      codEstruturado: 1.07.01.04.01.00.00.00
+      nomeUnidade: 'Assistência - Biblioteca - Porto Nacional'
+  filtro_unidade_1111:
+      codEstruturado: 1.07.01.05.00.00.00.00
+      nomeUnidade: 'Coordenações de Cursos - Porto Nacional'
+  filtro_unidade_1112:
+      codEstruturado: 1.07.01.05.04.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Ciências Biológicas - Porto Nacional'
+  filtro_unidade_1113:
+      codEstruturado: 1.07.01.05.04.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Biologia - Porto Nacional'
+  filtro_unidade_1114:
+      codEstruturado: 1.07.01.05.04.00.02.00
+      nomeUnidade: 'Coordenação de Laboratórios de Ciências Biológicas - Porto Nacional'
+  filtro_unidade_1115:
+      codEstruturado: 1.07.01.05.04.00.02.01
+      nomeUnidade: 'Almoxarifado Químico - Porto Nacional'
+  filtro_unidade_1116:
+      codEstruturado: 1.07.01.05.04.00.02.02
+      nomeUnidade: 'Laboratório de Alimentação Natural - Porto Nacional'
+  filtro_unidade_1117:
+      codEstruturado: 1.07.01.05.04.00.02.03
+      nomeUnidade: 'Laboratório Didático de Física e Matemática - Porto Nacional'
+  filtro_unidade_1118:
+      codEstruturado: 1.07.01.05.04.00.02.05
+      nomeUnidade: 'Laboratório Didático de Química | Bioquímica | Biofísica e Fisiologia - Porto Nacional'
+  filtro_unidade_1119:
+      codEstruturado: 1.07.01.05.04.00.02.06
+      nomeUnidade: 'Laboratório de Entomologia - Porto Nacional'
+  filtro_unidade_1120:
+      codEstruturado: 1.07.01.05.04.00.02.07
+      nomeUnidade: 'Laboratório Didático de Estereomicroscopia - Porto Nacional'
+  filtro_unidade_1121:
+      codEstruturado: 1.07.01.05.04.00.02.08
+      nomeUnidade: 'Laboratório de Fitoquímica - Porto Nacional'
+  filtro_unidade_1122:
+      codEstruturado: 1.07.01.05.04.00.02.09
+      nomeUnidade: 'Laboratório de Genética e Bioquímica - Porto Nacional'
+  filtro_unidade_1123:
+      codEstruturado: 1.07.01.05.04.00.02.10
+      nomeUnidade: 'Laboratório de Microbiologia - Porto Nacional'
+  filtro_unidade_1124:
+      codEstruturado: 1.07.01.05.04.00.02.11
+      nomeUnidade: 'Laboratório Didático de Microscopia - Porto Nacional'
+  filtro_unidade_1125:
+      codEstruturado: 1.07.01.05.04.00.02.12
+      nomeUnidade: 'Laboratório Didático de Zoologia - Porto Nacional'
+  filtro_unidade_1126:
+      codEstruturado: 1.07.01.05.04.00.02.13
+      nomeUnidade: 'Laboratório de Anatomia e Histologia Vegetal - Porto Nacional'
+  filtro_unidade_1127:
+      codEstruturado: 1.07.01.05.04.00.02.14
+      nomeUnidade: 'Laboratório de Limnologia - Porto Nacional'
+  filtro_unidade_1128:
+      codEstruturado: 1.07.01.05.04.01.00.00
+      nomeUnidade: 'Instituto de Biologia - Porto Nacional'
+  filtro_unidade_1129:
+      codEstruturado: 1.07.01.05.04.02.00.00
+      nomeUnidade: 'Núcleo de Estudos Ambientais - NEAMB - Porto Nacioanl'
+  filtro_unidade_1130:
+      codEstruturado: 1.07.01.05.04.02.00.01
+      nomeUnidade: 'Secretaria do NEAMB - Porto Nacional'
+  filtro_unidade_1131:
+      codEstruturado: 1.07.01.05.04.02.01.00
+      nomeUnidade: 'Laboratório de Ovos e Lavas - NEAMB'
+  filtro_unidade_1132:
+      codEstruturado: 1.07.01.05.04.02.02.00
+      nomeUnidade: 'Laboratório de Ictologia - NEAMB'
+  filtro_unidade_1133:
+      codEstruturado: 1.07.01.05.04.02.03.00
+      nomeUnidade: 'Laboratório de Micropropagação - NEAMB'
+  filtro_unidade_1134:
+      codEstruturado: 1.07.01.05.04.02.04.00
+      nomeUnidade: 'Informática - NEAMB'
+  filtro_unidade_1135:
+      codEstruturado: 1.07.01.05.04.02.05.00
+      nomeUnidade: 'Coordenação de Projetos - NEAMB'
+  filtro_unidade_1136:
+      codEstruturado: 1.07.01.05.04.02.06.00
+      nomeUnidade: 'Herbário - NEAMB'
+  filtro_unidade_1137:
+      codEstruturado: 1.07.01.05.04.02.07.00
+      nomeUnidade: 'Divisão da Cozinha - NEAMB'
+  filtro_unidade_1138:
+      codEstruturado: 1.07.01.05.04.02.08.00
+      nomeUnidade: 'Divisão de Transportes - NEAMB'
+  filtro_unidade_1139:
+      codEstruturado: 1.07.01.05.04.03.00.00
+      nomeUnidade: 'Coleções - Porto Nacional'
+  filtro_unidade_1140:
+      codEstruturado: 1.07.01.05.04.03.01.00
+      nomeUnidade: 'Coleção de Peixes - Porto Nacional'
+  filtro_unidade_1141:
+      codEstruturado: 1.07.01.05.04.03.01.01
+      nomeUnidade: 'Laboratório de Ictiologia Sistemática de Peixes - Porto Nacional'
+  filtro_unidade_1142:
+      codEstruturado: 1.07.01.05.04.03.02.00
+      nomeUnidade: 'Coleção do Herbário - Porto Nacional'
+  filtro_unidade_1143:
+      codEstruturado: 1.07.01.05.04.03.02.01
+      nomeUnidade: 'Laboratório de Taxonomia Vegetal e Herbário - Porto Nacional'
+  filtro_unidade_1144:
+      codEstruturado: 1.07.01.05.04.03.03.00
+      nomeUnidade: 'Coleção de Fósseis - Porto Nacional'
+  filtro_unidade_1145:
+      codEstruturado: 1.07.01.05.04.03.03.01
+      nomeUnidade: 'Laboratório Paleobiologia - Porto Nacional'
+  filtro_unidade_1146:
+      codEstruturado: 1.07.01.05.04.03.04.00
+      nomeUnidade: 'Coleção de Ovos e Larvas - Porto Nacional'
+  filtro_unidade_1147:
+      codEstruturado: 1.07.01.05.04.03.04.01
+      nomeUnidade: 'Laboratório de Ovos e Larvas - Porto Nacional'
+  filtro_unidade_1148:
+      codEstruturado: 1.07.01.05.04.03.05.00
+      nomeUnidade: 'Coleção de Sementes e de Plantas Vivas - Porto Nacional'
+  filtro_unidade_1149:
+      codEstruturado: 1.07.01.05.04.03.05.01
+      nomeUnidade: 'Laboratório de Produção de Mudas e Casa de Vegetação e Viveiro - Porto Nacional'
+  filtro_unidade_1150:
+      codEstruturado: 1.07.01.05.04.03.05.02
+      nomeUnidade: 'Laboratório de Micropropagação - Porto Nacional'
+  filtro_unidade_1151:
+      codEstruturado: 1.07.01.05.15.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Geografia - Porto Nacional'
+  filtro_unidade_1152:
+      codEstruturado: 1.07.01.05.15.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Geografia - Porto Nacional'
+  filtro_unidade_1153:
+      codEstruturado: 1.07.01.05.15.01.00.00
+      nomeUnidade: 'Núcleo de Educação e Meio Ambiente - NEMAD - Porto Nacional'
+  filtro_unidade_1154:
+      codEstruturado: 1.07.01.05.15.02.00.00
+      nomeUnidade: 'Núcleo  de Estudos Urbanos - NURBA'
+  filtro_unidade_1155:
+      codEstruturado: 1.07.01.05.15.03.00.00
+      nomeUnidade: 'Centro de Capacitação Permanente da Base Cartográfica da Amazônia Legal - Porto Nacional'
+  filtro_unidade_1156:
+      codEstruturado: 1.07.01.05.15.04.00.00
+      nomeUnidade: 'Laboratório Análises Geo-Ambientais (LGA) - Porto Nacional'
+  filtro_unidade_1157:
+      codEstruturado: 1.07.01.05.15.05.00.00
+      nomeUnidade: 'Laboratório de Cartografia - Porto Nacional'
+  filtro_unidade_1158:
+      codEstruturado: 1.07.01.05.15.06.00.00
+      nomeUnidade: 'Laboratório de Pesquisa em Metodologias e Práticas de Ensino em Geografia  - Porto Nacional'
+  filtro_unidade_1159:
+      codEstruturado: 1.07.01.05.15.07.00.00
+      nomeUnidade: 'Laboratório de Planejamento e Desenvolvimento - Porto Nacional'
+  filtro_unidade_1160:
+      codEstruturado: 1.07.01.05.15.08.00.00
+      nomeUnidade: 'Laboratório Estudos do Solo e Biogeografia - Porto Nacional'
+  filtro_unidade_1161:
+      codEstruturado: 1.07.01.05.15.09.00.00
+      nomeUnidade: 'Laboratório Estudos Geo-Territoriais - Porto Nacional'
+  filtro_unidade_1162:
+      codEstruturado: 1.07.01.05.15.10.00.00
+      nomeUnidade: 'Laboratório Geoprocessamento - Porto Nacional'
+  filtro_unidade_1163:
+      codEstruturado: 1.07.01.05.16.00.00.00
+      nomeUnidade: 'Coordenação do Curso de História - Porto Nacional'
+  filtro_unidade_1164:
+      codEstruturado: 1.07.01.05.16.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de História - Porto Nacional'
+  filtro_unidade_1165:
+      codEstruturado: 1.07.01.05.16.01.00.00
+      nomeUnidade: 'Núcleo de Estudos Urbanos Cidades - (NEUCIDADES)  Porto Nacional'
+  filtro_unidade_1166:
+      codEstruturado: 1.07.01.05.16.02.00.00
+      nomeUnidade: 'Núcleo de Estudos Afro-Brasileiros (NEAB) Porto Nacional'
+  filtro_unidade_1167:
+      codEstruturado: 1.07.01.05.16.03.00.00
+      nomeUnidade: 'Núcleo de Estudos das Difência de Gênero (NEDIG) Porto Nacional'
+  filtro_unidade_1168:
+      codEstruturado: 1.07.01.05.16.04.00.00
+      nomeUnidade: 'Núcleo de Estudos  Antropologia  Indigena (NEAI) Porto Nacional'
+  filtro_unidade_1169:
+      codEstruturado: 1.07.01.05.16.05.00.00
+      nomeUnidade: 'Centro de Documentação Histórica – Porto Nacional'
+  filtro_unidade_1170:
+      codEstruturado: 1.07.01.05.16.06.00.00
+      nomeUnidade: 'Laboratório de Arqueologia Histórica | Pré-Histórica  & Educação Patrimonial - Porto Nacional'
+  filtro_unidade_1171:
+      codEstruturado: 1.07.01.05.17.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Letras - Porto Nacional'
+  filtro_unidade_1172:
+      codEstruturado: 1.07.01.05.17.00.01.00
+      nomeUnidade: 'Secretaria da Coordenação do Curso de Letras - Porto Nacional'
+  filtro_unidade_1173:
+      codEstruturado: 1.07.01.05.17.00.02.00
+      nomeUnidade: 'Laboratório de Línguas - Porto Nacional'
+  filtro_unidade_1174:
+      codEstruturado: 1.07.01.05.17.00.03.00
+      nomeUnidade: 'Laboratório de Fonética e Fonologia – Porto Nacional'
+  filtro_unidade_1175:
+      codEstruturado: 1.07.01.05.17.00.04.00
+      nomeUnidade: 'Centro de Estudos Continuados em Letras | Linguística e Artes - Porto Nacional'
+  filtro_unidade_1176:
+      codEstruturado: 1.07.01.05.18.00.00.00
+      nomeUnidade: 'Coordenação de Curso de Relações Internacionais - Porto Nacional'
+  filtro_unidade_1177:
+      codEstruturado: 1.07.01.05.19.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Ciências Sociais - Porto Nacional'
+  filtro_unidade_1178:
+      codEstruturado: 1.07.01.05.20.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Letras: Libras - Porto Nacional'
+  filtro_unidade_1179:
+      codEstruturado: 1.07.01.06.00.00.00.00
+      nomeUnidade: 'Comissão Setorial de Avaliação - Porto Nacional'
+  filtro_unidade_1180:
+      codEstruturado: 1.07.01.07.00.00.00.00
+      nomeUnidade: 'Núcleo de Estudos Afro-Brasileiros - Porto Nacional'
+  filtro_unidade_1181:
+      codEstruturado: 1.07.01.08.00.00.00.00
+      nomeUnidade: 'Núcleo de Estudos Ambientais - Porto Nacional'
+  filtro_unidade_1182:
+      codEstruturado: 1.07.01.09.00.00.00.00
+      nomeUnidade: 'Núcleo de Estudos das Difer. de Gênero - Porto Nacional'
+  filtro_unidade_1183:
+      codEstruturado: 1.07.01.10.00.00.00.00
+      nomeUnidade: 'Núcleo de Estudos Meio Amb. e Desenv. - Porto Nacional'
+  filtro_unidade_1184:
+      codEstruturado: 1.07.01.11.00.00.00.00
+      nomeUnidade: 'Núcleo de Estudos Urbanos e das Cid. - Porto Nacional'
+  filtro_unidade_1185:
+      codEstruturado: 1.07.01.12.00.00.00.00
+      nomeUnidade: 'Núcleo de Estudos Urb. | Reg. e Agrários - Porto Nacional'
+  filtro_unidade_1186:
+      codEstruturado: 1.07.01.13.00.00.00.00
+      nomeUnidade: 'Secretaria de Pós  Graduação - (UFT/Centro) - Porto Nacional'
+  filtro_unidade_1187:
+      codEstruturado: 1.07.01.13.01.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Pós Graduação - História Social - (UFT/Centro)Porto Nacional'
+  filtro_unidade_1188:
+      codEstruturado: 1.07.01.13.02.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Pós Graduação - Educação Ambiental - (UFT/Centro) - Poto Nacional'
+  filtro_unidade_1189:
+      codEstruturado: 1.07.01.13.03.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Pós Graduação - Docência do Ensino Superior - (UFT/Centro) - Porto Nacional'
+  filtro_unidade_1190:
+      codEstruturado: 1.07.01.13.04.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Pós Graduação - Lit. Inglesa e Anglo Americana - (UFT/Centro) - Porto Nacion'
+  filtro_unidade_1191:
+      codEstruturado: 1.07.01.14.00.00.00.00
+      nomeUnidade: 'Núcleo de Estudos da Linguagem - Porto Nacional'
+  filtro_unidade_1192:
+      codEstruturado: 1.07.01.15.00.00.00.00
+      nomeUnidade: 'Núcleo de Estudos e Assuntos Indígenas - Porto Nacional'
+  filtro_unidade_1193:
+      codEstruturado: 1.07.01.15.01.00.00.00
+      nomeUnidade: 'Grupo de Trabalho Indígena - Porto Nacional'
+  filtro_unidade_1194:
+      codEstruturado: 1.07.01.16.00.00.00.00
+      nomeUnidade: 'Coordenação do Programa de Pós-graduação em Ecologia de Ecótonos - Porto Nacional'
+  filtro_unidade_1195:
+      codEstruturado: 1.07.01.16.01.00.00.00
+      nomeUnidade: 'Secretaria do Programa de Pós-graduação em Ecologia de Ecótonos - Porto Nacional'
+  filtro_unidade_1196:
+      codEstruturado: 1.07.01.17.00.00.00.00
+      nomeUnidade: 'Coordenação do Programa de Pós-graduação em Geografia - Porto Nacional'
+  filtro_unidade_1197:
+      codEstruturado: 1.07.01.17.01.00.00.00
+      nomeUnidade: 'Secretaria do Programa de Pós-graduação em Geografia - Porto Nacional'
+  filtro_unidade_1198:
+      codEstruturado: 1.07.01.18.00.00.00.00
+      nomeUnidade: 'Subprefeitura do Campus de Porto Nacional'
+  filtro_unidade_1199:
+      codEstruturado: 1.08.00.00.00.00.00.00
+      nomeUnidade: 'Campus Universitário de Tocantinópolis'
+  filtro_unidade_1200:
+      codEstruturado: 1.08.00.01.00.00.00.00
+      nomeUnidade: 'Conselho do Campus - Tocantinópolis'
+  filtro_unidade_1201:
+      codEstruturado: 1.08.01.00.00.00.00.00
+      nomeUnidade: 'Direção do Campus de Tocantinópolis'
+  filtro_unidade_1202:
+      codEstruturado: 1.08.01.00.00.01.00.00
+      nomeUnidade: 'Secretaria Executiva - Direção do Campus'
+  filtro_unidade_1203:
+      codEstruturado: 1.08.01.00.01.00.00.00
+      nomeUnidade: 'Coord. Planejamento Estratégico e do Uso do Espaço Físico'
+  filtro_unidade_1204:
+      codEstruturado: 1.08.01.00.02.00.00.00
+      nomeUnidade: 'Laboratório  Áudio Visual - Tocantinópolis'
+  filtro_unidade_1205:
+      codEstruturado: 1.08.01.00.03.00.00.00
+      nomeUnidade: 'Comissão de Avaliação do Campus - Tocantinópolis'
+  filtro_unidade_1206:
+      codEstruturado: 1.08.01.00.04.00.00.00
+      nomeUnidade: 'Central de Estágios - Tocantinópolis'
+  filtro_unidade_1207:
+      codEstruturado: 1.08.01.00.05.00.00.00
+      nomeUnidade: 'Ouvidoria - Tocantinópolis'
+  filtro_unidade_1208:
+      codEstruturado: 1.08.01.00.06.00.00.00
+      nomeUnidade: 'Grupo de Trabalho de Pesquisa - Tocantinópolis'
+  filtro_unidade_1209:
+      codEstruturado: 1.08.01.00.07.00.00.00
+      nomeUnidade: 'Grupo de Trabalho de Extensão - Tocantinópolis'
+  filtro_unidade_1210:
+      codEstruturado: 1.08.01.00.08.00.00.00
+      nomeUnidade: 'Grupo de Trabalho de Pós-Graduação - Tocantinópolis'
+  filtro_unidade_1211:
+      codEstruturado: 1.08.01.00.09.00.00.00
+      nomeUnidade: 'Brinquedoteca - Tocantinópolis'
+  filtro_unidade_1212:
+      codEstruturado: 1.08.01.00.10.00.00.00
+      nomeUnidade: 'Setor de Cultura - Tocantinópolis'
+  filtro_unidade_1213:
+      codEstruturado: 1.08.01.00.11.00.00.00
+      nomeUnidade: 'Universidade da Maturidade - UMA - Tocantinópolis'
+  filtro_unidade_1214:
+      codEstruturado: 1.08.01.00.12.00.00.00
+      nomeUnidade: 'PARFOR - Tocantinópolis'
+  filtro_unidade_1215:
+      codEstruturado: 1.08.01.00.13.00.00.00
+      nomeUnidade: 'PRONERA - Tocantinópolis'
+  filtro_unidade_1216:
+      codEstruturado: 1.08.01.01.00.00.00.00
+      nomeUnidade: 'Secretaria Acadêmica  - Tocantinópolis'
+  filtro_unidade_1217:
+      codEstruturado: 1.08.01.01.01.00.00.00
+      nomeUnidade: 'Controle de Documentação'
+  filtro_unidade_1218:
+      codEstruturado: 1.08.01.02.00.00.00.00
+      nomeUnidade: 'Coordenadoria Administrativa  - Tocantinópolis'
+  filtro_unidade_1219:
+      codEstruturado: 1.08.01.02.01.00.00.00
+      nomeUnidade: 'Setor de Almoxarifado - Tocantinópolis'
+  filtro_unidade_1220:
+      codEstruturado: 1.08.01.02.02.00.00.00
+      nomeUnidade: 'Setor Operacional de Transportes'
+  filtro_unidade_1221:
+      codEstruturado: 1.08.01.02.04.00.00.00
+      nomeUnidade: 'Setor de Recepção / Telefonia - Tocantinópolis'
+  filtro_unidade_1222:
+      codEstruturado: 1.08.01.02.05.00.00.00
+      nomeUnidade: 'Setor de Patrimônio - Tocantinópolis'
+  filtro_unidade_1223:
+      codEstruturado: 1.08.01.02.06.00.00.00
+      nomeUnidade: 'Laboratório de Informática - CPD - Tocantinópolis'
+  filtro_unidade_1224:
+      codEstruturado: 1.08.01.02.07.00.00.00
+      nomeUnidade: 'Setor de Protocolo - Tocantinópolis'
+  filtro_unidade_1225:
+      codEstruturado: 1.08.01.02.08.00.00.00
+      nomeUnidade: 'Setor de Contratos'
+  filtro_unidade_1226:
+      codEstruturado: 1.08.01.02.09.00.00.00
+      nomeUnidade: 'Setor Financeiro e Compras'
+  filtro_unidade_1227:
+      codEstruturado: 1.08.01.02.10.00.00.00
+      nomeUnidade: 'Setor de Manutenção'
+  filtro_unidade_1228:
+      codEstruturado: 1.08.01.02.11.00.00.00
+      nomeUnidade: 'Setor de T.I.'
+  filtro_unidade_1229:
+      codEstruturado: 1.08.01.02.12.00.00.00
+      nomeUnidade: 'Setor de Suportes e Multimeios'
+  filtro_unidade_1230:
+      codEstruturado: 1.08.01.02.13.00.00.00
+      nomeUnidade: 'Setor Operacional de Diárias'
+  filtro_unidade_1231:
+      codEstruturado: 1.08.01.03.00.00.00.00
+      nomeUnidade: 'Gerência de Desenvolvimento Humano - Tocantinópolis'
+  filtro_unidade_1232:
+      codEstruturado: 1.08.01.03.01.00.00.00
+      nomeUnidade: 'Setor de Apoio às Políticas Estudantis'
+  filtro_unidade_1233:
+      codEstruturado: 1.08.01.04.00.00.00.00
+      nomeUnidade: 'Coordenação da Biblioteca - Tocantinópolis'
+  filtro_unidade_1234:
+      codEstruturado: 1.08.01.04.01.00.00.00
+      nomeUnidade: 'Assistência da Biblioteca - Tocantinópolis'
+  filtro_unidade_1235:
+      codEstruturado: 1.08.01.05.00.00.00.00
+      nomeUnidade: 'Coordenações de Cursos - Tocantinópolis'
+  filtro_unidade_1236:
+      codEstruturado: 1.08.01.05.09.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Ciências Sociais - Tocantinópolis'
+  filtro_unidade_1237:
+      codEstruturado: 1.08.01.05.09.00.01.00
+      nomeUnidade: 'Secretaria - Coordenação do Curso de Ciências Sociais - Tocantinópolis'
+  filtro_unidade_1238:
+      codEstruturado: 1.08.01.05.22.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Pedagogia - Tocantinópolis'
+  filtro_unidade_1239:
+      codEstruturado: 1.08.01.05.22.00.01.00
+      nomeUnidade: 'Secretaria - Coordenação do Curso de Pedagogia - Tocantinópolis'
+  filtro_unidade_1240:
+      codEstruturado: 1.08.01.05.22.04.00.00
+      nomeUnidade: 'LAPES - Tocantinópolis'
+  filtro_unidade_1241:
+      codEstruturado: 1.08.01.05.22.05.00.00
+      nomeUnidade: 'CEDOC - Tocantinópolis'
+  filtro_unidade_1242:
+      codEstruturado: 1.08.01.05.23.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Licenciatura em Educação do Campo - Tocantinópolis'
+  filtro_unidade_1243:
+      codEstruturado: 1.08.01.05.24.00.00.00
+      nomeUnidade: 'Coordenação do Curso de Educação Física - Tocantinópolis'
+  filtro_unidade_1244:
+      codEstruturado: 1.08.01.06.00.00.00.00
+      nomeUnidade: 'Cursos - Tocantinópolis'
+  filtro_unidade_1245:
+      codEstruturado: 1.08.01.06.00.01.00.00
+      nomeUnidade: 'Secretaria - Cursos - Tocantinópolis'
+  filtro_unidade_1246:
+      codEstruturado: 1.08.01.06.01.00.00.00
+      nomeUnidade: 'Curso de Normal Superior (DAIEF) - Matutino - Tocantinópolis'
+  filtro_unidade_1247:
+      codEstruturado: 1.08.01.06.02.00.00.00
+      nomeUnidade: 'Curso de Normal Superior (DAIEF) - Noturno - Tocantinópolis'
+  filtro_unidade_1248:
+      codEstruturado: 1.08.01.06.03.00.00.00
+      nomeUnidade: 'Curso de Normal Superior (Educação Infantil) - Noturno - Tocantinópolis'
+  filtro_unidade_1249:
+      codEstruturado: 1.08.01.06.04.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Administração Educacional) - Matutino - Tocantinópolis'
+  filtro_unidade_1250:
+      codEstruturado: 1.08.01.06.05.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Administração Educacional) - Noturno - Tocantinópolis'
+  filtro_unidade_1251:
+      codEstruturado: 1.08.01.06.06.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (DAIEF- Adm. Educacional) Matutino Tocantinópolis'
+  filtro_unidade_1252:
+      codEstruturado: 1.08.01.06.07.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (DAIEF- Adm. Educacional) Noturno Tocantinópolis'
+  filtro_unidade_1253:
+      codEstruturado: 1.08.01.06.08.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Docência em Educação Infantil - Adm. Educacional) - Matutino Tocantinópolis'
+  filtro_unidade_1254:
+      codEstruturado: 1.08.01.06.09.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Docência em Educação Infantil - Adm. Educacional) - Noturno Tocantinópolis'
+  filtro_unidade_1255:
+      codEstruturado: 1.08.01.06.10.00.00.00
+      nomeUnidade: 'Curso Especial da Graduação - Tocantinópolis'
+  filtro_unidade_1256:
+      codEstruturado: 1.08.01.06.11.00.00.00
+      nomeUnidade: 'Curso de Especialização em Matemática'
+  filtro_unidade_1257:
+      codEstruturado: 1.08.01.06.12.00.00.00
+      nomeUnidade: 'Curso de Ciências Sociais (Licenciatura) - Matutino - Tocantinópolis'
+  filtro_unidade_1258:
+      codEstruturado: 1.08.01.06.13.00.00.00
+      nomeUnidade: 'Curso de Ciências Sociais (Licenciatura) - Noturno - Tocantinópolis'
+  filtro_unidade_1259:
+      codEstruturado: 1.08.01.06.14.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Licenciatura) - Matutino - Tocantinópolis'
+  filtro_unidade_1260:
+      codEstruturado: 1.08.01.06.15.00.00.00
+      nomeUnidade: 'Curso de Pedagogia (Licenciatura) - Noturno - Tocantinópolis'
+  filtro_unidade_1261:
+      codEstruturado: 1.08.01.06.16.00.00.00
+      nomeUnidade: 'Curso Pedagogia (Licenciatura) - PARFOR - Tocantinópolis'
+  filtro_unidade_1262:
+      codEstruturado: 1.08.01.06.17.00.00.00
+      nomeUnidade: 'Curso Ciências Sociais (Licenciatura) - PARFOR - Tocantinópolis'
+  filtro_unidade_1263:
+      codEstruturado: 1.08.01.06.18.00.00.00
+      nomeUnidade: 'Curso de Educação do Campo (Licenciatura) - Tocantinópolis'
+  filtro_unidade_1264:
+      codEstruturado: 1.08.01.06.19.00.00.00
+      nomeUnidade: 'Curso de Educação Física (Licenciatura) - Noturno - Tocantinópolis'
+  filtro_unidade_1265:
+      codEstruturado: 1.08.01.07.00.00.00.00
+      nomeUnidade: 'Subprefeitura do Campus de Tocantinópolis'

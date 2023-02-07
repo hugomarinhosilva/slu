@@ -1,0 +1,15 @@
+{% extends '::base.html.twig' %}
+
+{% block page_content -%}
+    {{ macro_uft.flash() }}
+    {{ macro_uft.new_form_horizontal(form,'Confrime os dados abaixo','homepage', {obrigatorio: 'obrigatorio'}) }}
+{% endblock %}
+
+{% block javascripts_inline %}
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            //Mascara de telefone
+            $('.cpf').inputmask("999.999.999-99")
+        });
+    </script>
+{% endblock %}

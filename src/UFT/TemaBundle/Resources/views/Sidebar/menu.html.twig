@@ -1,0 +1,13 @@
+<!-- sidebar menu: : style can be found in sidebar.less -->
+{% import "AvanzuAdminThemeBundle:layout:macros.html.twig" as macro %}
+{% import "::macro.html.twig" as macro_uft %}
+
+<ul class="sidebar-menu">
+    {% for item in menu %}
+        {% if(item.routeAcess is null and not is_granted('IS_AUTHENTICATED_FULLY')) %}
+            {{ macro.menu_item(item) }}
+        {% elseif(is_granted(item.routeAcess) ) %}
+            {{ macro_uft.menu_item_acess(item) }}
+        {% endif %}
+    {% endfor %}
+</ul>

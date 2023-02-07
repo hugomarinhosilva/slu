@@ -1,0 +1,7 @@
+user_homepage:
+    path:     /user/{name}
+    defaults: { _controller: UserBundle:Default:index }
+
+uft_change_password:
+    path:       /profile/change-password
+    defaults: { _controller: UserBundle:ChangePassword:ChangePassword }

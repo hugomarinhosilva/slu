@@ -1,0 +1,74 @@
+{% extends "::login.html.twig" %}
+
+{% block page_content %}
+    {% trans_default_domain 'FOSUserBundle' %}
+    <body class="hold-transition register-page">
+    <div class="login-box">
+        <div class="login-box-body">
+            <div class="login-logo row">
+                <img src="{{ asset('bundles/slu/image/marcaUFT_vertical.png') }}" class="logo-img" height="120px"
+                     width="175px">
+            </div>
+            <h5 class="text-center">Sistema de Login Unificado - SLU</h5>
+            <hr>
+            <p class="login-box-action">Alterar Senha</p>
+
+            <div>
+                <p class="login-box-action">Usuário: <strong>{{ user }}</strong></p>
+            </div>
+            <div class="login-box-content">
+                <div class="column one">
+
+                    {{ form_start(form, { 'action': path('recuperar_senha_reset', {'token': token}), 'attr': { 'class': 'fos_user_resetting_reset' } }) }}
+                    {{ form_widget(form.password) }}
+                    <div id="resultado_senha" class="col-md-offset-0" style=" margin-bottom: 10px!important;"></div>
+                    {#</br>#}
+
+                    <div>
+                        <input type="submit" class="btn btn-primary btn-block btn-flat"
+                               value="{{ 'resetting.reset.submit'|trans }}"/>
+                    </div>
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+{% endblock page_content %}
+
+{% block javascripts_inline %}
+    <script type="text/javascript">
+        // Verifica a 'força' da senha digitada...
+        $('#slu_rest_form_password_first').keyup(function (e) {
+            var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
+            var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+            var enoughRegex = new RegExp("(?=.{8,}).*", "g");
+            if ($(this).val() == '') {
+                $('#resultado_senha').html('');
+                $('#btn_submit').removeAttr('disabled');
+            }
+            else if (false == enoughRegex.test($(this).val())) {
+                $('#resultado_senha').html('Senha muito Curta, tamanho mínimo 8 caracteres.');
+                $('#resultado_senha').css('color', 'red');
+                $('#btn_submit').attr('disabled', 'disabled');
+            } else if (strongRegex.test($(this).val())) {
+                $('#resultado_senha').className = 'ok';
+                $('#resultado_senha').html('Forte!');
+                $('#resultado_senha').css('color', 'lime');
+                $('#btn_submit').removeAttr('disabled');
+            } else if (mediumRegex.test($(this).val())) {
+                $('#resultado_senha').className = 'alert';
+                $('#resultado_senha').html('Mediana!');
+                $('#resultado_senha').css('color', '#b4d100');
+                $('#btn_submit').removeAttr('disabled');
+            } else {
+                $('#resultado_senha').className = 'error';
+                $('#resultado_senha').html('Fraca!');
+                $('#resultado_senha').css('color', 'red');
+                $('#btn_submit').removeAttr('disabled');
+            }
+            return true;
+        });
+    </script>
+{% endblock %}
+

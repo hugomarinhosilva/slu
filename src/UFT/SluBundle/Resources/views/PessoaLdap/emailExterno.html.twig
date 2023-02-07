@@ -1,0 +1,24 @@
+{% extends '::base.html.twig' %}
+{% block page_content -%}
+    {{ macro_uft.flash() }}
+    {{ macro_uft.new_form_horizontal(insere_email_form,'Inserir','lista_pessoas',{obrigatorio: 'obrigatorio'}) }}{#insere_email_externo#}
+{% endblock %}
+{% block javascripts_inline %}
+    <script >
+        $('#insere_email_externo_mailExterno').blur(function (e) {
+//                $(this).val("AHHAHAHHAHAH");
+                if ($(this).val().indexOf('uft.edu') >=0) {
+                    $(this).closest('.form-group').addClass('has-error');
+                    $('#btn_submit').attr('disabled', 'disabled');
+                    $('#resultado_mailexterno').html("O e-mail secundário não pode ser um e-mail da UFT");
+                    $('#resultado_mailexterno').css('color','red');
+                } else {
+                    $(this).closest('.form-group').removeClass('has-error');
+                    $('#btn_submit').removeAttr('disabled');
+                    $('#resultado_mailexterno').css('color','red');
+                    $('#resultado_mailexterno').html("");
+                }
+//            });
+        });
+    </script>
+{% endblock %}

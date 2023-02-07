@@ -1,0 +1,43 @@
+{% extends '::base.html.twig' %}
+{% import "::macro.html.twig" as macro_uft %}
+
+{% block page_content -%}
+    {{ macro_uft.flash() }}
+    {{ macro_uft.new_form(edit_form,'Alterar Senha','homepage') }}
+
+{% endblock %}
+
+{% block javascripts_inline %}
+    <script>// Verifica a 'força' da senha digitada...
+        $('#altera_senha_ldap_userPassword_first').keyup(function (e) {
+            var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
+            var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+            var enoughRegex = new RegExp("(?=.{8,}).*", "g");
+            if ($(this).val() == '') {
+                $('#resultado_userpassword').html('');
+                $('#btn_submit').removeAttr('disabled');
+            }
+            else if (false == enoughRegex.test($(this).val())) {
+                $('#resultado_userpassword').html('Senha muito Curta, tamanho mínimo 8 caracteres.');
+                $('#resultado_userpassword').css('color', 'red');
+                $('#btn_submit').attr('disabled', 'disabled');
+            } else if (strongRegex.test($(this).val())) {
+                $('#resultado_userpassword').className = 'ok';
+                $('#resultado_userpassword').html('Forte!');
+                $('#resultado_userpassword').css('color', 'lime');
+                $('#btn_submit').removeAttr('disabled');
+            } else if (mediumRegex.test($(this).val())) {
+                $('#resultado_userpassword').className = 'alert';
+                $('#resultado_userpassword').html('Mediana!');
+                $('#resultado_userpassword').css('color', '#b4d100');
+                $('#btn_submit').removeAttr('disabled');
+            } else {
+                $('#resultado_userpassword').className = 'error';
+                $('#resultado_userpassword').html('Fraca!');
+                $('#resultado_userpassword').css('color', 'red');
+                $('#btn_submit').removeAttr('disabled');
+            }
+            return true;
+        });
+    </script>
+{% endblock %}

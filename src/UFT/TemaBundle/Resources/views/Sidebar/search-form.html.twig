@@ -1,0 +1,13 @@
+<!-- search form -->
+{% if is_granted('ROLE_GERENTE_DEPARTAMENTO') %}
+<form name="busca_geral" action="{{ path('pessoaLdap_busca') }}" method="POST" class="sidebar-form">
+    <div class="input-group">
+        <input type="text" name="busca" class="form-control" placeholder="Buscar Contas..."/>
+        <input type="hidden" name="tipoBusca" value="todosCampos"/>
+        <span class="input-group-btn">
+            <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+        </span>
+    </div>
+</form>
+{% endif %}
+<!-- /.search form -->

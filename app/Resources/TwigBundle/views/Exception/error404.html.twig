@@ -1,0 +1,42 @@
+{# app/Resources/TwigBundle/views/Exception/error404.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block page_content %}
+    <div class="row" align="center">
+    <div class="col-md-6 col-centered">
+    <div class="box box-primary" style="padding:  12em 3em 12em 3em">
+    <p style="font-size: 600%">Eita!</p>
+    <h3>Bem, isto é constrangedor...</h3>
+        <h4>A página que você estava procurando não foi encontrada.</h4>
+        <br />
+    </div>
+    </div>
+    </div>
+    {% if is_granted('ROLE_ADMIN') %}#}
+        <button class="btn" data-toggle="collapse" data-target="#demo">Ver detalhes do erro</button>
+
+        <div id="demo" class="collapse">
+            <div class="toggle" id="traces" >
+                {% block exception %}
+                    <link href="http://localhost:8000/bundles/framework/css/structure.css" rel="stylesheet" />
+                    <link href="http://localhost:8000/bundles/framework/css/body.css" rel="stylesheet" />
+                    <link href="http://localhost:8000/bundles/framework/css/exception.css" rel="stylesheet" type="text/css" media="all" />
+                    <div class="header clear-fix">
+                        <div class="sf-reset">
+                            {#<div class="block-exception">#}
+                            {#<div class="block-exception-detected clear-fix">#}
+                            {#<div class="illustration-exception">#}
+                            {% include '@Twig/Exception/exception.html.twig' with { 'exception': exception } %}
+
+                            {#</div>#}
+                            {#asd#}
+                            {#</div>#}
+                            {#</div>#}
+                        </div>
+                    </div>
+                {% endblock %}
+            </div>
+        </div>
+    {% endif %}
+
+{% endblock %}

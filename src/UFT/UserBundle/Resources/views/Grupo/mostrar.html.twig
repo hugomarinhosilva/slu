@@ -1,0 +1,157 @@
+{% extends '::base.html.twig' %}
+
+{% block page_content -%}
+    {{ macro_uft.flash() }}
+
+    <div class="row">
+        <div class="col-md-8 col-centered">
+            <div class="box box-primary">
+                <div class="box-header"
+                     style="background-color:  #bebebe !important; border-bottom: solid black 1px !important;">
+                    <h1 class="box-title"><span style=" font-weight: bold !important;">{{ entity.name|upper }}</span>
+                    </h1>
+                </div>
+                <div class="box-body">
+                    <div class="row">
+                        <legend class="col-md-12 control-label">Filtros</legend>
+                        <div class="col-md-12">
+                            <div class="row" style="padding-left: 1em">
+                                <dl class="dl-horizontal">
+                                    {% if entity.filtros  is iterable and entity.filtros is not empty %}
+                                        <dt>Número de filtros:</dt>
+                                        <dd>{{ entity.filtros|length }}</dd>
+                                        <dt>Filtros:</dt>
+                                        {% for filtro in entity.filtros %}
+                                            <dd>- {{ filtro.nomeUnidade }}</dd>
+                                        {% endfor %}
+                                    {% else %}
+                                        <dd style="color: red;">Não existem filtros vinculados a este grupo.</dd>
+                                    {% endif %}
+                                </dl>
+                            </div>
+                        </div>
+                        <legend class="col-md-12 control-label">Permissões</legend>
+                        <div class="col-md-12">
+                            <div class="row" style="padding-left: 1em">
+                                <dl class="dl-horizontal">
+                                    <dt>Número de Permissões:</dt>
+                                    <dd>{{ entity.roles|length }}</dd>
+
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    {% if entity.roles  is iterable and entity.roles is not empty %}
+
+                                        <dt>Permissões:</dt>
+                                        {% for role in entity.roles %}
+                                            <dd>- {{ role.role }}</dd>
+                                        {% endfor %}
+                                    {% else %}
+                                        <dd style="color: red;">Não existem permissões vinculados a este grupo.</dd>
+                                    {% endif %}
+                                </dl>
+                            </div>
+                        </div>
+                        <legend class="col-md-12 control-label">Membros</legend>
+                        <div class="col-md-12">
+                            <div class="row" style="padding-left: 1em">
+                                <dl class="dl-horizontal">
+                                    <dt>Número de Membros:</dt>
+                                    <dd>{{ entity.users|length }}</dd>
+
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    {% if entity.users  is iterable and entity.users is not empty %}
+
+                                        <dt>Membros:</dt>
+                                        {% for membro in entity.users %}
+                                            <dd>- {{ membro.username }}</dd>
+                                        {% endfor %}
+                                    {% else %}
+                                        <dd style="color: red;">Não existem membros vinculados a este grupo.</dd>
+                                    {% endif %}
+                                </dl>
+                            </div>
+                        </div>
+                        <legend class="col-md-12 control-label">Gerentes</legend>
+                        <div class="col-md-12">
+                            <div class="row" style="padding-left: 1em">
+                                <dl class="dl-horizontal">
+                                    <dt>Número de Gerentes:</dt>
+                                    <dd>{{ entity.chefes|length }}</dd>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    {% if entity.chefes  is iterable and entity.chefes is not empty %}
+                                        <dt>Membros:</dt>
+                                        {% for chefe in entity.chefes %}
+                                            <dd>- {{ chefe.username }}</dd>
+                                        {% endfor %}
+                                    {% else %}
+                                        <dd style="color: red;">Não existem chefes vinculados a este grupo.</dd>
+                                    {% endif %}
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-footer clearfix ">
+                    {% if  is_granted("ROLE_GRUPO_EDITAR")%}
+                        <a href="{{ path('edita_usergrupo', { 'id': entity.id }) }}" class="btn btn-info pull-left btn-flat"
+                           style="margin-left: 0.5em;"><i class="fa fa-pencil-square-o"></i> Alterar</a>
+                    {% endif %}
+                    {% if is_granted("ROLE_GRUPO_REMOVER") %}
+                        <a href="{{ path('remover_usergrupo', { 'id': entity.id }) }} " class="btn btn-danger pull-left btn-flat"
+                           style="margin-left: 0.5em;" onclick="return confirm('Deseja remover este grupo?')">Excluir</a>
+                    {% endif %}
+                    <a class="pull-right btn btn-primary btn-flat" href="{{ path('lista_meusgrupos') }}">
+                        <i class="fa fa-arrow-left"></i> Voltar para a lista de grupos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    {#<div class="box-footer clearfix">#}
+    {#<a href="javascript: history.go(-1)" class="btn btn-primary pull-left"><i class="fa fa-arrow-left"></i>#}
+    {#Voltar</a>#}
+    {#{% if is_granted("ROLE_ADMIN") %}#}
+
+    {#{% if 'Desativados' in entity.dn %}#}
+    {#<a href="{{ path('ativar_pessoa', { 'uid': entity.uid }) }}" class="btn btn-success pull-left"#}
+    {#style="margin-left: 0.5em;"><i class="fa fa-check"></i> Ativar</a>#}
+    {#{% else %}#}
+    {#<a href="{{ path('edita_pessoa_ldap', { 'uid': entity.uid }) }}" class="btn btn-success pull-left"#}
+    {#style="margin-left: 0.5em;"><i class="fa fa-pencil-square-o"></i> Alterar</a>#}
+    {#<a href="{{ path('suspender_pessoa', { 'uid': entity.uid }) }}" class="btn btn-warning pull-left"#}
+    {#style="margin-left: 0.5em;"><i class="fa fa-power-off"></i> Suspender</a>#}
+    {#{% endif %}#}
+    {#<a href="{{ path('sincronizar_pessoa', { 'uid': entity.uid }) }}" class="btn btn-info pull-left"#}
+    {#style="margin-left: 0.5em;"><i class="fa fa-refresh"></i> Sincronizar</a>#}
+    {#<a href="{{ path('remover_pessoa', { 'uid': entity.uid }) }}" class="btn btn-danger pull-left"#}
+    {#style="margin-left: 0.5em;"><i class="fa fa-times"></i> Excluir</a>#}
+    {#{% endif %}#}
+    {#</div>#}
+    {#<a href="{{ path('conta') }}">#}
+    {#Back to the list#}
+    {#</a>#}
+    {#</li>#}
+    {#<li>#}
+    {#<a href="{{ path('conta_edit', { 'id': entity.id }) }}">#}
+    {#Edit#}
+    {#</a>#}
+    {#</li>#}
+    {#<li>{{ form(delete_form) }}</li>#}
+    {#</ul>#}
+{% endblock %}
+
+                            {% block javascripts_inline %}
+                                {#<link href="{{ asset('bundles/slu/select2/select2-bootstrap.css') }}" rel="stylesheet"/>#}
+                                {#<link href="{{ asset('bundles/slu/select2/select2.css') }}" rel="stylesheet"/>#}
+                                {#<script src="{{ asset('bundles/slu/select2/select2.min.js') }}"></script>#}
+                                {#<script src="{{ asset('bundles/slu/select2/i18n/pt-BR.js') }}"></script>#}
+                                {#<script>#}
+
+
+                                {#</script>#}
+                            {% endblock %}

@@ -1,0 +1,199 @@
+Role:
+    role_1:
+        id: 1
+        role: ROLE_DESENVOLVEDOR
+        roleIdentifier: Desenvolvedores
+        principal: 0
+        nivel: 0
+    role_2:
+        id: 2
+        role: ROLE_ALLOWED_TO_SWITCH
+        roleIdentifier: ''
+        principal: 1
+        nivel: 99
+    role_3:
+        id: 3
+        role: ROLE_SLU_USUARIO_CRIAR_TESTE
+        roleIdentifier: ''
+        principal: 1
+        nivel: 99
+    role_4:
+        id: 4
+        role: ROLE_SUPER_ADMINISTRADOR_SLU
+        roleIdentifier: 'Central de Serviços'
+        principal: 0
+        nivel: 1
+    role_5:
+        id: 5
+        role: ROLE_SLU_USUARIO_DELETAR
+        roleIdentifier: ''
+        principal: 1
+        nivel: 99
+    role_6:
+        id: 6
+        role: ROLE_ADMINISTRADOR_SLU
+        roleIdentifier: GDH
+        principal: 0
+        nivel: 4
+    role_7:
+        id: 7
+        role: ROLE_ADMINISTRADOR_GRUPO
+        roleIdentifier: 'Central de Atendimento'
+        principal: 0
+        nivel: 2
+    role_8:
+        id: 8
+        role: ROLE_GERENTE_GRUPO
+        roleIdentifier: 'Administrador do grupo'
+        principal: 0
+        nivel: 3
+    role_9:
+        id: 9
+        role: ROLE_GRUPO_CRIAR
+        roleIdentifier: 'Criar grupo'
+        principal: 1
+        nivel: 99
+    role_10:
+        id: 10
+        role: ROLE_GRUPO_REMOVER
+        roleIdentifier: 'Remover Grupo'
+        principal: 1
+        nivel: 99
+    role_11:
+        id: 11
+        role: ROLE_GRUPO_MOSTRAR
+        roleIdentifier: 'Visualizar grupo'
+        principal: 1
+        nivel: 99
+    role_12:
+        id: 12
+        role: ROLE_GRUPO_EDITAR
+        roleIdentifier: 'Editar grupo'
+        principal: 1
+        nivel: 99
+    role_13:
+        id: 13
+        role: ROLE_GRUPO_USUARIO_ADICIONAR
+        roleIdentifier: 'Adicionar usuário ao grupo'
+        principal: 1
+        nivel: 99
+    role_14:
+        id: 14
+        role: ROLE_GRUPO_USUARIO_REMOVER
+        roleIdentifier: 'Remover usuário do grupo'
+        principal: 1
+        nivel: 99
+    role_15:
+        id: 15
+        role: ROLE_GRUPO_USUARIO_EDITAR
+        roleIdentifier: 'Editar usuário do grupo'
+        principal: 1
+        nivel: 99
+    role_16:
+        id: 16
+        role: ROLE_GRUPO_USUARIO_MOSTRAR
+        roleIdentifier: 'Visualizar usuários do grupo'
+        principal: 1
+        nivel: 99
+    role_17:
+        id: 17
+        role: ROLE_GERENTE_DEPARTAMENTO
+        roleIdentifier: Secretario
+        principal: 0
+        nivel: 5
+    role_18:
+        id: 18
+        role: ROLE_SLU_USUARIO_CRIAR
+        roleIdentifier: 'Criar conta no LDAP sem vinculo no SIE'
+        principal: 1
+        nivel: 99
+    role_19:
+        id: 19
+        role: ROLE_SLU_USUARIO_EDITAR
+        roleIdentifier: 'Editar todas as informações de uma conta'
+        principal: 1
+        nivel: 99
+    role_20:
+        id: 20
+        role: ROLE_USER
+        roleIdentifier: 'Usuario Comum'
+        principal: 0
+        nivel: 6
+    role_21:
+        id: 23
+        role: ROLE_SLU_USUARIO_MOSTRAR
+        roleIdentifier: 'Visualizar dados de Conta'
+        principal: 1
+        nivel: 99
+    role_22:
+        id: 25
+        role: ROLE_SLU_USUARIO_EDITAR_BASICO
+        roleIdentifier: 'Editar informações de recuperação de conta'
+        principal: 1
+        nivel: 99
+    role_23:
+        id: 26
+        role: ROLE_SLU_USUARIO_SITUACAO
+        roleIdentifier: 'Suspender ou ativar conta'
+        principal: 1
+        nivel: 99
+    role_24:
+        id: 27
+        role: ROLE_SLU_USUARIO_SINCRONIZAR
+        roleIdentifier: 'Sincronizar informações da conta com o SIE'
+        principal: 1
+        nivel: 99
+    role_25:
+        id: 29
+        role: ROLE_USUARIO_MOSTRAR
+        roleIdentifier: 'Visualizar dados apenas da sua conta'
+        principal: 1
+        nivel: 99
+    role_26:
+        id: 30
+        role: ROLE_USUARIO_EDITAR_BASICO
+        roleIdentifier: 'Editar apenas as suas informações de recuperação de conta'
+        principal: 1
+        nivel: 99
+    role_27:
+        id: 31
+        role: ROLE_USUARIO_ALTERAR_SENHA
+        roleIdentifier: 'Alterar apenas a sua senha'
+        principal: 1
+        nivel: 99
+    role_28:
+        id: 32
+        role: ROLE_USUARIO_RECADASTRAR
+        roleIdentifier: 'Migrar apenas a sua conta do modelo antigo para o modelo novo'
+        principal: 1
+        nivel: 99
+    role_29:
+        id: 33
+        role: ROLE_SLU_GRUPO_CRIAR
+        roleIdentifier: 'Criar um grupo no LDAP'
+        principal: 1
+        nivel: 99
+    role_30:
+        id: 34
+        role: ROLE_SLU_GRUPO_EDITAR
+        roleIdentifier: 'Editar um grupo no LDAP'
+        principal: 1
+        nivel: 99
+    role_31:
+        id: 35
+        role: ROLE_SLU_GRUPO_MOSTRAR
+        roleIdentifier: 'Mostrar um grupo no LDAP'
+        principal: 1
+        nivel: 99
+    role_32:
+        id: 36
+        role: ROLE_SLU_GRUPO_REMOVER
+        roleIdentifier: 'Remover um grupo no LDAP'
+        principal: 1
+        nivel: 99
+    role_33:
+        id: 37
+        role: ROLE_INSTITUCIONAL
+        roleIdentifier: 'Usuário Institucional'
+        principal: 0
+        nivel: 7

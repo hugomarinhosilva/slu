@@ -1,0 +1,62 @@
+imports:
+    - { resource: config.yml }
+
+framework:
+    router:
+        resource: "%kernel.root_dir%/config/routing_dev.yml"
+        strict_requirements: true
+    profiler: { only_exceptions: false }
+
+web_profiler:
+    toolbar: true
+    intercept_redirects: false
+
+#monolog:
+#    handlers:
+#        main:
+#            type: stream
+#            path: "%kernel.logs_dir%/%kernel.environment%.log"
+#            level: debug
+#            channels: [!event]
+#        console:
+#            type:   console
+#            channels: [!event, !doctrine]
+#        # uncomment to get logging in your browser
+#        # you may have to allow bigger header sizes in your Web server configuration
+#        #firephp:
+#        #    type:   firephp
+#        #    level:  info
+#        #chromephp:
+#        #    type:   chromephp
+#        #    level:  info
+#
+##swiftmailer:
+##    delivery_address: me@example.com
+
+#monolog:
+#    handlers:
+#        main:
+#            type:         fingers_crossed
+#            action_level: critical
+#            handler:      grouped
+#        grouped:
+#            type:    group
+#            members: [streamed, swift]
+#        streamed:
+#            type:  stream
+#            path:  '%kernel.logs_dir%/%kernel.environment%.log'
+#            level: debug
+#        deduplicated:
+#            type:    deduplication
+#            handler: swift
+#        swift:
+#            type:       swift_mailer
+#            from_email: 'naoresponder@dti.uft.edu.br'
+#            to_email:   'rafaelmansilha@uft.edu.br'
+#            subject:    'SLU - TESTE - ERROR! %%message%%'
+#            level:      debug
+#            formatter:  monolog.formatter.html
+#            content_type: text/html
+
+assetic:
+    use_controller: false
